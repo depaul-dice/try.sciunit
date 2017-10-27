@@ -6,12 +6,13 @@ var cmd_id = 0;
 var switch_detail_byID;
 var copy_token = "";
 var copy_token_flag = false;
-
-
+var clicked_button_cmd = "";
 
 function App(props) {
+	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail } = props;
+	const { output, runCommand,cmd_detail,buttonValue} = props;
+
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
@@ -36,9 +37,7 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre>{o.value}</pre></li>
 		}
 	});
-
 	var user_input_command;
-	var clicked_button_cmd;
 	var switch_detail;
 	var command_key = ['Create','Exec','Show','Repeat','List','Copy','Open'];
 	var length_of_cmd_detail = cmd_detail.length;
@@ -50,18 +49,22 @@ function App(props) {
 	for (var i = 0;i<length_of_cmd_detail; i++){
 		command_list_restrict.push(cmd_detail[i].cmd_button);
 	}
-	function printInTerm() {
-		clicked_button_cmd = cmd_detail[cmd_id].cmd_button;
-		// console.log(clicked_button_cmd);
-	}
 
+	// function printInbuttonTerm(){
+	// 	props.buttonValue[0] = cmd_detail[cmd_id].cmd_button;
+	// 	return props.buttonValue[0];
+	// 	// console.log(e.target.getAttribute('value'));
+	// 	// e.target.value = props.buttonValue[0];
+	// };
+
+	// var buttonReturn = printInbuttonTerm();
 	const getinput = (e) => {
 		if (e.keyCode == 13){
 			// console.log("GET INPUT", e.target.value);
 			user_input_command = e.target.value;
 		}
 
-	}
+	};
 	const nextStep = (e) => {
 		if (e.key === 'Enter' &&  user_input_command == cmd_detail[cmd_id].cmd_button && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id<length_of_cmd_detail-1){
@@ -75,12 +78,12 @@ function App(props) {
 			}
 		}
 
-	}
+	};
 
 	// console.log("the globale", cmd_id);
 	const switchDetail = (e) => {
 		// console.log("the globale in switch", cmd_id);
-		switch_detail = e.target.getAttribute('value');
+		// switch_detail = e.target.getAttribute('value');
 		// console.log(switch_detail);
 		// for (var i = 0;i<length_of_cmd_detail; i++){
 		// 	if (switch_detail == command_key[i]){
@@ -91,7 +94,7 @@ function App(props) {
 		// cmd_id = switch_detail_byID;
 		// // console.log(cmd_detail[cmd_id]);
 		// console.log("the globale in switch after ", cmd_id);
-	}
+	};
 	return (
 		<div>
 			<div className="content-body">
@@ -148,8 +151,9 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3} <br/>
 
 					</div>
-					<button type="button" className="button-one"  btn-defaultvalue="sciunit init" onClick={printInTerm}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+					<button type="button" className="button-one"  btn-defaultvalue="sciunit init">{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
+
 
 				<div className="fakeMenu">
 					<div className="fakeButtons fakeClose"></div>
@@ -160,12 +164,12 @@ function App(props) {
 					<div className="scroll-box">
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
-						><input className="terminal__input" type="text" value={clicked_button_cmd} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
+						><input className="terminal__input" type="text" onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	);
 };
-
 module.exports = App;

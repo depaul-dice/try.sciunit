@@ -8,7 +8,8 @@ const commandsActions = require('../actions/commandsActions');
 function mapStateToProps(state) {
 	return {
 		output: state.commands,
-		cmd_detail: state.commandDetailReducer
+		cmd_detail: state.commandDetailReducer,
+		buttonValue: state.button_value_input
 	};
 }
 
