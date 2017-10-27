@@ -3,10 +3,10 @@
 const { combineReducers } = require('redux');
 const commands = require('./commands');
 const commandDetailReducer = require('./commandDetail');
-const button_value_input = require('./button_input');
+const ActiveButtonClickReducer = require('./button_clicked');
 
 module.exports = combineReducers({
 	commands,
 	commandDetailReducer,
-	button_value_input
+	ActiveButtonClickReducer
 });

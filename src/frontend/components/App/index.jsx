@@ -11,8 +11,7 @@ var clicked_button_cmd = "";
 function App(props) {
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail,buttonValue,clickedButton} = props;
-
+	const { output, runCommand,cmd_detail,button,clickedButton} = props;
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
@@ -164,7 +163,7 @@ function App(props) {
 					<div className="scroll-box">
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
-						><input className="terminal__input" type="text" onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
+						><input className="terminal__input" type="text"	value={button} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
 					</div>
 				</div>
 
