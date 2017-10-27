@@ -11,7 +11,7 @@ var clicked_button_cmd = "";
 function App(props) {
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail,buttonValue} = props;
+	const { output, runCommand,cmd_detail,buttonValue,clickedButton} = props;
 
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
@@ -151,7 +151,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3} <br/>
 
 					</div>
-					<button type="button" className="button-one"  btn-defaultvalue="sciunit init">{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one"  btn-defaultvalue="sciunit init" onClick={clickedButton}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
 
 

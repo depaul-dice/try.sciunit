@@ -3,7 +3,7 @@
 const App = require('../components/App/index.jsx');
 const { connect } = require('react-redux');
 const commandsActions = require('../actions/commandsActions');
-
+const clickedButton = require('../actions/clickedButton');
 
 function mapStateToProps(state) {
 	return {
@@ -21,6 +21,9 @@ function mapDispatchToProps(dispatch) {
 			}
 			dispatch(commandsActions.runCommand(e.target.value));
 			e.target.value = '';
+		},
+		clickedButton(e){
+			dispatch(clickedButton.clickedButton(e.target.value));
 		}
 	};
 }
