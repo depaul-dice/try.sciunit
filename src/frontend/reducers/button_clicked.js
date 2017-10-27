@@ -4,6 +4,7 @@ module.exports = function ActiveButtonClickReducer(state="",action) {
 			state = action.payload;
 			return state;
 	}
+	// state = "";
 	return state;
 
 };
