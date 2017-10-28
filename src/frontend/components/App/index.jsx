@@ -167,7 +167,7 @@ function App(props) {
 					<div className="scroll-box">
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
-						><input className="terminal__input" type="text"	value={button} onChange={handleChangeEvent(button)} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
+						><input className="terminal__input" type="text"  value={button} onChange={handleChangeEvent(button)} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
 					</div>
 				</div>
 
