@@ -1,7 +1,7 @@
 'use strict';
 
 const PORT = 9001;
-const WEBSOCKET_PORT = 9002;
+// const WEBSOCKET_PORT = 9002;
 
 const http = require('http');
 const express = require('express');
