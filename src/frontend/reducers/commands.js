@@ -2,7 +2,7 @@
 
 const { List } = require('immutable');
 
-const { 
+const {
 	REQUEST_COMMAND,
 	RECEIVE_COMMAND_OUTPUT,
 	RECEIVE_COMMAND_ERROR,
@@ -24,6 +24,7 @@ module.exports = function commands(state = List(), action) {
 
 		case RECEIVE_COMMAND_OUTPUT:
 			state = pushWithId({ state, value: action.output });
+			console.log(state);
 			return state;
 
 		case RECEIVE_COMMAND_ERROR:

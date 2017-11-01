@@ -1,12 +1,5 @@
 'use strict';
 
-/* THIS IS NO LONGER OPTIMAL!
- * Since this is intended to be a singleton
- * used across the codebase, this pattern can
- * result in race conditions. Tech debt raised
- * to update this:
- * https://github.com/jamesseanwright/term4all/issues/1
- */
 var child_process = require('child_process').spawn;
 var random_number_generator = require('./make_random_number');
 const EventEmitter = require('events');

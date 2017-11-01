@@ -3,6 +3,7 @@ const React = require('react');
 var ReactRouter = require('react-router');
 var parse = require('shell-quote').parse;
 var cmd_id = 0;
+var cmd_id_str = "";
 var switch_detail_byID;
 var copy_token = "";
 var copy_token_flag = false;
@@ -11,7 +12,10 @@ var clicked_button_cmd = "";
 function App(props) {
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail,button,clickedButton} = props;
+	const { output, runCommand,cmd_detail,button,clickedButton,menu_selection,cmd_id_M} = props;
+	cmd_id = cmd_id_M;
+	console.log("cmd_id",cmd_id);
+
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
@@ -65,14 +69,18 @@ function App(props) {
 
 	};
 	const nextStep = (e) => {
+		console.log("Hit Enter:",cmd_id);
 		if (e.key === 'Enter' &&  user_input_command == cmd_detail[cmd_id].cmd_button && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id<length_of_cmd_detail-1){
 				cmd_id+=1;
-				// console.log('cmd_id', cmd_id);
+				menu_selection(cmd_id);
+				console.log(output);
+				console.log('After hit enter', cmd_id);
 			}
 			else
 			{
 				cmd_id = 0;
+				menu_selection(cmd_id);
 				// console.log(cmd_id);
 			}
 		}
@@ -109,30 +117,30 @@ function App(props) {
 								<img src="https://sciunit.run/static/assets/images/new_GeoTrust.png" height="30" width="40" alt=""/>
 							</li>
 							<li>
-								<a value="Create" onClick={switchDetail}>Create</a>
+								<button value="0" onClick={() => menu_selection(0)}>Create</button>
 							</li>
 							<li>
-								<a value="Exec" onClick={switchDetail}>Exec</a>
-							</li>
-
-							<li>
-								<a value="Show" onClick={switchDetail}>Show</a>
+								<button value="1" onClick={() => menu_selection(1)}>Exec</button>
 							</li>
 
 							<li>
-								<a value="Repeat" onClick={switchDetail}>Repeat</a>
+								<button value="2" onClick={() => menu_selection(2)}>Show</button>
 							</li>
 
 							<li>
-								<a value="List" onClick={switchDetail}>List</a>
+								<button value="3" onClick={() => menu_selection(3)}>Repeat</button>
 							</li>
 
 							<li>
-								<a value="Copy" onClick={switchDetail}>Copy</a>
+								<button value="4" onClick={() => menu_selection(4)}>List</button>
 							</li>
 
 							<li>
-								<a value="Open" onClick={switchDetail}>Open</a>
+								<button value="5" onClick={() => menu_selection(5)}>Copy</button>
+							</li>
+
+							<li>
+								<button value="6" onClick={() => menu_selection(6)}>Open</button>
 							</li>
 
 							{/*<li>*/}
@@ -144,6 +152,7 @@ function App(props) {
 
 				<div className="commandDetail" >
 					{/*<h1>The global{cmd_id}</h1>*/}
+					<h1>{cmd_id}</h1>
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
@@ -154,7 +163,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3} <br/>
 
 					</div>
-					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one"  btn-defaultvalue="sciunit init" onClick={clickedButton}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one" onClick={clickedButton}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
 
 
