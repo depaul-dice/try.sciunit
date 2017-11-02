@@ -8,15 +8,18 @@ var switch_detail_byID;
 var copy_token = "";
 var copy_token_flag = false;
 var clicked_button_cmd = "";
+var output_global;
 
 function App(props) {
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,button,clickedButton,menu_selection,cmd_id_M} = props;
 	cmd_id = cmd_id_M;
-	console.log("cmd_id",cmd_id);
+	console.log("Rerendered: cmd_id",cmd_id);
+	output_global = output;
+	console.log("Rerendered: output_global",output_global);
 
-	const outputChildren = output.map(o => {
+	const outputChildren = output_global.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
 		// console.log(o.value.slice(8,12) == 'copy');
@@ -73,14 +76,14 @@ function App(props) {
 		if (e.key === 'Enter' &&  user_input_command == cmd_detail[cmd_id].cmd_button && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id<length_of_cmd_detail-1){
 				cmd_id+=1;
-				menu_selection(cmd_id);
-				console.log(output);
+				// menu_selection(cmd_id);
+				console.log(output_global);
 				console.log('After hit enter', cmd_id);
 			}
 			else
 			{
 				cmd_id = 0;
-				menu_selection(cmd_id);
+				// menu_selection(cmd_id);
 				// console.log(cmd_id);
 			}
 		}
