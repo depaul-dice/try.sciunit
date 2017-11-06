@@ -3,21 +3,15 @@ const React = require('react');
 var ReactRouter = require('react-router');
 var parse = require('shell-quote').parse;
 var cmd_id = 0;
-var progress_bar_percentage = "38%";
-var cmd_id_str = "";
+var switch_detail_byID;
 var copy_token = "";
 var copy_token_flag = false;
-var output_global;
+var clicked_button_cmd = "";
 
 function App(props) {
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,button,clickedButton} = props;
-	// cmd_id = cmd_id_M;
-	// console.log("Rerendered: cmd_id",cmd_id);
-	// output_global = output;
-	// console.log("Rerendered: output_global",output_global);
-
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
@@ -71,18 +65,14 @@ function App(props) {
 
 	};
 	const nextStep = (e) => {
-		console.log("Hit Enter:",cmd_id);
 		if (e.key === 'Enter' &&  user_input_command == cmd_detail[cmd_id].cmd_button && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id<length_of_cmd_detail-1){
 				cmd_id+=1;
-				// menu_selection(cmd_id);
-				console.log(output_global);
-				console.log('After hit enter', cmd_id);
+				// console.log('cmd_id', cmd_id);
 			}
 			else
 			{
 				cmd_id = 0;
-				// menu_selection(cmd_id);
 				// console.log(cmd_id);
 			}
 		}
@@ -107,10 +97,7 @@ function App(props) {
 		// cmd_id = switch_detail_byID;
 		// // console.log(cmd_detail[cmd_id]);
 		// console.log("the globale in switch after ", cmd_id);
-
 	};
-
-
 	return (
 		<div>
 			<div className="content-body">
@@ -122,53 +109,41 @@ function App(props) {
 								<img src="https://sciunit.run/static/assets/images/new_GeoTrust.png" height="30" width="40" alt=""/>
 							</li>
 							<li>
-								{/*<button value="0" onClick={() => menu_selection(0)}>Create</button>*/}
-								<a>Create</a>
+								<a value="Create" onClick={switchDetail}>Create</a>
 							</li>
 							<li>
-								{/*<button value="1" onClick={() => menu_selection(1)}>Exec</button>*/}
-								<a>Exec</a>
+								<a value="Exec" onClick={switchDetail}>Exec</a>
 							</li>
 
 							<li>
-								{/*<button value="2" onClick={() => menu_selection(2)}>Show</button>*/}
-								<a>Show</a>
+								<a value="Show" onClick={switchDetail}>Show</a>
 							</li>
 
 							<li>
-								{/*<button value="3" onClick={() => menu_selection(3)}>Repeat</button>*/}
-								<a>Repeat</a>
+								<a value="Repeat" onClick={switchDetail}>Repeat</a>
 							</li>
 
 							<li>
-								{/*<button value="4" onClick={() => menu_selection(4)}>List</button>*/}
-								<a>List</a>
+								<a value="List" onClick={switchDetail}>List</a>
 							</li>
 
 							<li>
-								{/*<button value="5" onClick={() => menu_selection(5)}>Copy</button>*/}
-								<a>Copy</a>
+								<a value="Copy" onClick={switchDetail}>Copy</a>
 							</li>
 
 							<li>
-								{/*<button value="6" onClick={() => menu_selection(6)}>Open</button>*/}
-								<a>Open</a>
+								<a value="Open" onClick={switchDetail}>Open</a>
 							</li>
 
 							{/*<li>*/}
-								{/*<a href="#">Rm</a>*/}
+							{/*<a href="#">Rm</a>*/}
 							{/*</li>*/}
 						</ol>
 					</div>
-					<div className="meter">
-						<span style={{width:progress_bar_percentage}}></span>
-					</div>
 				</div>
-
 
 				<div className="commandDetail" >
 					{/*<h1>The global{cmd_id}</h1>*/}
-					<h1>{cmd_id}</h1>
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
@@ -179,7 +154,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3} <br/>
 
 					</div>
-					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one" onClick={clickedButton}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one"  btn-defaultvalue="sciunit init" onClick={clickedButton}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
 
 
