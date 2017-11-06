@@ -69,10 +69,15 @@ function App(props) {
 		if (e.key === 'Enter' &&  user_input_command == cmd_detail[cmd_id].cmd_button && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id<length_of_cmd_detail-1){
 				cmd_id+=1;
-				var percen = parseInt(progress_bar_percentage.slice(0,2));
-				percen = percen+10;
-				progress_bar_percentage = percen.toString() + "%";
-				console.log(progress_bar_percentage);
+				if (cmd_id == length_of_cmd_detail-1){
+					progress_bar_percentage = "100%";
+				}
+				else{
+					var percen = parseInt(progress_bar_percentage.slice(0,2));
+					percen = percen+10;
+					progress_bar_percentage = percen.toString() + "%";
+					console.log(progress_bar_percentage);
+				}
 				// console.log('cmd_id', cmd_id);
 			}
 			else
