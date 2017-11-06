@@ -21,6 +21,7 @@ function App(props) {
 		if(o.value.slice(8,12) == 'copy')
 		{
 			copy_token_flag = true;
+			props.remove(output);
 			return <li key={o.id} className="output__item"><pre>>{o.value}</pre></li>
 		}
 
@@ -183,15 +184,6 @@ function App(props) {
 						><input className="terminal__input" type="text"  value={button} onChange={handleChangeEvent(button)} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
 					</div>
 				</div>
-
-				<div className="fakeScreen">
-					<div className="scroll-box">
-						Press enter to submit commands
-						<ul className="terminal--output">{outputChildren}</ul>
-						><input className="terminal__input" type="text"  value={button} onChange={handleChangeEvent(button)} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	);
