@@ -3,13 +3,28 @@
 const CommandRunner = require('./CommandRunner');
 const commandRunner = new CommandRunner();
 const specialCommands = require('./specialCommands');
+const server = require('./server');
+const PORT = 9001;
+// const WEBSOCKET_PORT = 9002;
+
+const http = require('http');
+const express = require('express');
+const { Server } = require('ws');
+
+const assets = express();
+const assetsServer = http.createServer(assets);
+const path = require('path');
+const webSocketServer = new Server({ server: assetsServer });
 
 module.exports = {
 	_parseMessage(message) {
 		let parsedMessage;
+		console.log("_parseMessage:",message);
 
 		try {
 			parsedMessage = JSON.parse(message);
+			var session_two = webSocketServer.on('connection', socket => start(socket));
+			console.log(session_two);
 		} catch (e) {
 			return null;
 		}
@@ -35,7 +50,7 @@ module.exports = {
 
 			if (specialCommands[command]) {
 				specialCommands[command].then(result => {
-					webSocket.send(JSON.stringify(result));					
+					webSocket.send(JSON.stringify(result));
 				});
 
 				return;

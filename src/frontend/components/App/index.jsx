@@ -4,10 +4,8 @@ var ReactRouter = require('react-router');
 var parse = require('shell-quote').parse;
 var cmd_id = 0;
 var cmd_id_str = "";
-var switch_detail_byID;
 var copy_token = "";
 var copy_token_flag = false;
-var clicked_button_cmd = "";
 var output_global;
 
 function App(props) {
@@ -108,6 +106,12 @@ function App(props) {
 		// cmd_id = switch_detail_byID;
 		// // console.log(cmd_detail[cmd_id]);
 		// console.log("the globale in switch after ", cmd_id);
+
+	};
+	var meter_span = {
+		display: 'block',
+		height: '100%',
+		backgroundcolor: 'rgb(43,194,83)'
 	};
 	return (
 		<div>
@@ -151,7 +155,11 @@ function App(props) {
 							{/*</li>*/}
 						</ol>
 					</div>
+					<div className="meter">
+						<span style={{width:'25%'}}></span>
+					</div>
 				</div>
+
 
 				<div className="commandDetail" >
 					{/*<h1>The global{cmd_id}</h1>*/}

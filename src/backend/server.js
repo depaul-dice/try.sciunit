@@ -16,12 +16,14 @@ const webSocketServer = new Server({ server: assetsServer });
 
 assets.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/../frontend'))
+	// console.log(req.session);
 })
 
 assets.use('/', express.static(__dirname + '/../frontend'));
 
 assetsServer.listen(PORT, () => {
 	console.log(`Frontend running on port ${PORT}...`);
+
 	// console.log("process.env: ", process.env);
 
 	if (process.send) {
@@ -35,7 +37,10 @@ assetsServer.listen(PORT, () => {
 
 console.log('Awaiting WebSocket connection...');
 
-webSocketServer.on('connection', socket => session.start(socket));
+var session_one = webSocketServer.on('connection', socket => session.start(socket));
+
+console.log(session_one);
+
 console.log('Session started');
 
 process.on('SIGTERM', () => {
