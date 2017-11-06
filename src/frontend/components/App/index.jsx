@@ -3,6 +3,7 @@ const React = require('react');
 var ReactRouter = require('react-router');
 var parse = require('shell-quote').parse;
 var cmd_id = 0;
+var progress_bar_percentage = "38%";
 var cmd_id_str = "";
 var copy_token = "";
 var copy_token_flag = false;
@@ -11,13 +12,13 @@ var output_global;
 function App(props) {
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail,button,clickedButton,menu_selection,cmd_id_M} = props;
-	cmd_id = cmd_id_M;
-	console.log("Rerendered: cmd_id",cmd_id);
-	output_global = output;
-	console.log("Rerendered: output_global",output_global);
+	const { output, runCommand,cmd_detail,button,clickedButton} = props;
+	// cmd_id = cmd_id_M;
+	// console.log("Rerendered: cmd_id",cmd_id);
+	// output_global = output;
+	// console.log("Rerendered: output_global",output_global);
 
-	const outputChildren = output_global.map(o => {
+	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
 		// console.log(o.value.slice(8,12) == 'copy');
@@ -108,11 +109,8 @@ function App(props) {
 		// console.log("the globale in switch after ", cmd_id);
 
 	};
-	var meter_span = {
-		display: 'block',
-		height: '100%',
-		backgroundcolor: 'rgb(43,194,83)'
-	};
+
+
 	return (
 		<div>
 			<div className="content-body">
@@ -163,7 +161,7 @@ function App(props) {
 						</ol>
 					</div>
 					<div className="meter">
-						<span style={{width:'25%'}}></span>
+						<span style={{width:progress_bar_percentage}}></span>
 					</div>
 				</div>
 
