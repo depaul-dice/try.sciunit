@@ -124,7 +124,8 @@ function App(props) {
 								<img src="https://sciunit.run/static/assets/images/new_GeoTrust.png" height="30" width="40" alt=""/>
 							</li>
 							<li>
-								<button value="0" onClick={() => menu_selection(0)}>Create</button>
+								{/*<button value="0" onClick={() => menu_selection(0)}>Create</button>*/}
+								<a>Create</a>
 							</li>
 							<li>
 								<button value="1" onClick={() => menu_selection(1)}>Exec</button>
