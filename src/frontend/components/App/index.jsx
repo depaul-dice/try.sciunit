@@ -21,7 +21,6 @@ function App(props) {
 		if(o.value.slice(8,12) == 'copy')
 		{
 			copy_token_flag = true;
-			props.remove(output);
 			return <li key={o.id} className="output__item"><pre>>{o.value}</pre></li>
 		}
 
@@ -176,6 +175,7 @@ function App(props) {
 					<div className="fakeButtons fakeClose"></div>
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
+					unbuntu@16.4 session1
 				</div>
 				<div className="fakeScreen">
 					<div className="scroll-box">
