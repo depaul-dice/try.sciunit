@@ -128,27 +128,33 @@ function App(props) {
 								<a>Create</a>
 							</li>
 							<li>
-								<button value="1" onClick={() => menu_selection(1)}>Exec</button>
+								{/*<button value="1" onClick={() => menu_selection(1)}>Exec</button>*/}
+								<a>Exec</a>
 							</li>
 
 							<li>
-								<button value="2" onClick={() => menu_selection(2)}>Show</button>
+								{/*<button value="2" onClick={() => menu_selection(2)}>Show</button>*/}
+								<a>Show</a>
 							</li>
 
 							<li>
-								<button value="3" onClick={() => menu_selection(3)}>Repeat</button>
+								{/*<button value="3" onClick={() => menu_selection(3)}>Repeat</button>*/}
+								<a>Repeat</a>
 							</li>
 
 							<li>
-								<button value="4" onClick={() => menu_selection(4)}>List</button>
+								{/*<button value="4" onClick={() => menu_selection(4)}>List</button>*/}
+								<a>List</a>
 							</li>
 
 							<li>
-								<button value="5" onClick={() => menu_selection(5)}>Copy</button>
+								{/*<button value="5" onClick={() => menu_selection(5)}>Copy</button>*/}
+								<a>Copy</a>
 							</li>
 
 							<li>
-								<button value="6" onClick={() => menu_selection(6)}>Open</button>
+								{/*<button value="6" onClick={() => menu_selection(6)}>Open</button>*/}
+								<a>Open</a>
 							</li>
 
 							{/*<li>*/}
