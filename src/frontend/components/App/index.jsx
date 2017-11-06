@@ -4,6 +4,7 @@ var ReactRouter = require('react-router');
 var parse = require('shell-quote').parse;
 var cmd_id = 0;
 var switch_detail_byID;
+var progress_bar_percentage = "35%";
 var copy_token = "";
 var copy_token_flag = false;
 var clicked_button_cmd = "";
@@ -139,6 +140,9 @@ function App(props) {
 							{/*<a href="#">Rm</a>*/}
 							{/*</li>*/}
 						</ol>
+					</div>
+					<div className="meter">
+						<span style={{width:progress_bar_percentage}}></span>
 					</div>
 				</div>
 
