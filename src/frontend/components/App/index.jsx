@@ -1,6 +1,7 @@
 'use strict';
 const React = require('react');
 var ReactRouter = require('react-router');
+var autofocus = true;
 var parse = require('shell-quote').parse;
 var cmd_id = 0;
 var switch_detail_byID;
@@ -10,6 +11,7 @@ var copy_token_flag = false;
 var clicked_button_cmd = "";
 
 function App(props) {
+	let textInput = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,button,clickedButton} = props;
@@ -90,9 +92,20 @@ function App(props) {
 	};
 
 	const handleChangeEvent = (val) => {
+		console.log("hello from handleChangeEvent");
+		console.log(val);
 		return val;
 	};
 
+	function handlefoucs() {
+		console.log("hello from handle foucs");
+		textInput.focus();
+	};
+
+	function handleMouseDown() {
+		console.log("hello from handleMouseDown");
+		textInput.value = button;
+	};
 	// console.log("the globale", cmd_id);
 	const switchDetail = (e) => {
 		// console.log("the globale in switch", cmd_id);
@@ -119,7 +132,9 @@ function App(props) {
 								<img src="https://sciunit.run/static/assets/images/new_GeoTrust.png" height="30" width="40" alt=""/>
 							</li>
 							<li>
-								<a value="Create" onClick={switchDetail}>Create</a>
+								<a value="Create" onClick={switchDetail} data-tooltip data-tooltip-label={cmd_detail[cmd_id].title} data-tooltip-message-1={cmd_detail[cmd_id].description_1} data-tooltip-message-2={cmd_detail[cmd_id].description_2}>
+									Create
+								</a>
 							</li>
 							<li>
 								<a value="Exec" onClick={switchDetail}>Exec</a>
@@ -155,6 +170,7 @@ function App(props) {
 					</div>
 				</div>
 
+
 				<div className="commandDetail" >
 					{/*<h1>The global{cmd_id}</h1>*/}
 					<h1>{cmd_detail[cmd_id].title}</h1>
@@ -167,7 +183,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3} <br/>
 
 					</div>
-					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one"  btn-defaultvalue="sciunit init" onClick={clickedButton}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one"  btn-defaultvalue="sciunit init" onClick={clickedButton} onMouseUp={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
 
 
@@ -175,13 +191,13 @@ function App(props) {
 					<div className="fakeButtons fakeClose"></div>
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
-					unbuntu@16.4 session1
+					<div>unbuntu@16.4 session1</div>
 				</div>
-				<div className="fakeScreen">
+				<div className="fakeScreen" onClick={handlefoucs}>
 					<div className="scroll-box">
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
-						><input className="terminal__input" type="text"  value={button} onChange={handleChangeEvent(button)} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
+						><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
 					</div>
 				</div>
 			</div>
