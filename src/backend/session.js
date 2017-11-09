@@ -24,7 +24,7 @@ module.exports = {
 		console.log("_parseMessage:",message);
 		console.log(message,message.length);
 		console.log("sciunit exec -i");
-		if (message === "sciunit exec -i")
+		if (message.slice(1,15) === "sciunit exec -i")
 		{
 
 			env = process.env;
