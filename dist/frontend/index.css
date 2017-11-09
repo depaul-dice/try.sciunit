@@ -82,7 +82,10 @@
   margin: 20px;
   border: solid 6px #efa753;
   background: #2c4d81;
-  padding: 40px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 15px;
   color: white;
   width: 90%;

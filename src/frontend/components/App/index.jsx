@@ -15,7 +15,7 @@ function App(props) {
 	let button_ref = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail,button,clickedButton} = props;
+	const { output, runCommand,cmd_detail,clickedButton} = props;
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
@@ -24,20 +24,20 @@ function App(props) {
 		if(o.value.slice(8,12) == 'copy')
 		{
 			copy_token_flag = true;
-			return <li key={o.id} className="output__item"><pre>>{o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
 
 		if ((o.value.slice(0,7) === 'sciunit' || o.value.slice(0,2) === 'ls' || o.value.slice(0,3) === 'man' ) && user_input_command.length < 5){
-			return <li key={o.id} className="output__item"><pre>>{o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
 
 		else if (o.value.length == 8){
 			copy_token = o.value;
 			// console.log(copy_token);
-			return <li key={o.id} className="output__item"><pre>{o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 		else {
-			return <li key={o.id} className="output__item"><pre>{o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 	});
 	var user_input_command;
