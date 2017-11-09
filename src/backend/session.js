@@ -21,10 +21,10 @@ const webSocketServer = new Server({ server: assetsServer });
 module.exports = {
 	_parseMessage(message) {
 		let parsedMessage;
-		console.log("_parseMessage:",message);
-		console.log(message,message.length,typeof(message));
-		console.log(message.slice(1,16));
-		console.log(message.slice(1,16) === "sciunit exec -i");
+		// console.log("_parseMessage:",message);
+		// console.log(message,message.length,typeof(message));
+		// console.log(message.slice(1,16));
+		// console.log(message.slice(1,16) === "sciunit exec -i");
 		// if (message.slice(1,16) === "sciunit exec -i")
 		// {
         //
@@ -37,13 +37,12 @@ module.exports = {
 		// {
 		 	try {
 				parsedMessage = JSON.parse(message);
-				 var session_two = webSocketServer.on('connection', socket => start(socket));
-				 console.log(session_two);
+				 // var session_two = webSocketServer.on('connection', socket => start(socket));
+				 // console.log(session_two);
 			} catch (e) {
 				return null;
 			}
 		// }
-
 
 		return parsedMessage.command ? parsedMessage.command : null;
 	},
@@ -71,7 +70,7 @@ module.exports = {
 
 				return;
 			}
-
+			console.log("hello from start():",command);
 			commandRunner.run({ command });
 		});
 	}
