@@ -59,7 +59,7 @@ CommandClient.prototype.begin = function begin(command) {
 				{
 					console.log("--i -i!!!");
 					command = "env SHELL=fakeshell.py sciunit exec -i";
-					this.webSocket.send(JSON.stringify(command));
+					this.webSocket.send(JSON.stringify({command}));
 				}
 				else
 				{
