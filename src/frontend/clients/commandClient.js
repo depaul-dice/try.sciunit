@@ -54,6 +54,11 @@ CommandClient.prototype.begin = function begin(command) {
 					// console.log(command);
 					this.webSocket.send(JSON.stringify({ command }));
 				}
+				else if (command_lst[2].slice(0, 2) == '-i')
+				{
+					console.log("--i -i!!!");
+					// this.webSocket.send(JSON.stringify());
+				}
 				else
 				{
 					this.webSocket.send(JSON.stringify("ERROR"));
