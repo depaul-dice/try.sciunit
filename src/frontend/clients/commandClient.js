@@ -4,6 +4,7 @@ var child_process = require('child_process').spawn;
 var random_number_generator = require('./make_random_number');
 const EventEmitter = require('events');
 var parse = require('shell-quote').parse;
+const spawn = require('child_process').spawn;
 
 var workspace_relocate_path = [];
 
