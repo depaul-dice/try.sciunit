@@ -27,6 +27,7 @@ module.exports = {
 
 			env = process.env;
 			console.log("childprocess", env);
+			parsedMessage = JSON.parse(message);
 		}
 		else
 		{
