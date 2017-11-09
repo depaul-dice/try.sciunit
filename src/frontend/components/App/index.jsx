@@ -27,11 +27,8 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
 
-		if (o.value.slice(8,12) == 'copy'){
-			return{
-				<li key={o.id} className="output__item"><pre>Interactive capturing started; press Ctrl-D to end</pre></li>;
-				<li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
-			}
+		if (o.value.slice(8,15) == 'exec -i'){
+			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
 
 		if ((o.value.slice(0,7) === 'sciunit' || o.value.slice(0,2) === 'ls' || o.value.slice(0,3) === 'man' ) && user_input_command.length < 5){
