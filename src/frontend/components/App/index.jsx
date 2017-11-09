@@ -37,6 +37,7 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 		else {
+			console.log(o.value);
 			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 	});
