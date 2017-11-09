@@ -22,6 +22,7 @@ module.exports = {
 	_parseMessage(message) {
 		let parsedMessage;
 		console.log("_parseMessage:",message);
+		console.log(message === "sciunit exec -i");
 		if (message === "sciunit exec -i")
 		{
 
