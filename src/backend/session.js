@@ -43,7 +43,8 @@ module.exports = {
 				return null;
 			}
 		// }
-
+		console.log(parsedMessage);
+		console.log(parsedMessage.command);
 		return parsedMessage.command ? parsedMessage.command : null;
 	},
 
@@ -56,7 +57,7 @@ module.exports = {
 
 		webSocket.on('message', message => {
 			const command = this._parseMessage(message);
-			console.log("hello from start():",command);
+			console.log("hello from start():",message);
 			if (!command) {
 
 				webSocket.send(JSON.stringify({ error: 'Invalid payload' }));
