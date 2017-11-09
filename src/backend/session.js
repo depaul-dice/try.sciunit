@@ -8,7 +8,7 @@ const PORT = 9001;
 const child_process = require('child_process');
 
 // const WEBSOCKET_PORT = 9002;
-
+var env = null;
 const http = require('http');
 const express = require('express');
 const { Server } = require('ws');
@@ -24,16 +24,21 @@ module.exports = {
 		console.log("_parseMessage:",message);
 		if (message = "sciunit exec -i")
 		{
-			console.log("childprocess", process.env);
+
+			env = process.env;
+			console.log("childprocess", env);
+		}
+		else
+		{
+			try {
+				parsedMessage = JSON.parse(message);
+				// var session_two = webSocketServer.on('connection', socket => start(socket));
+				// console.log(session_two);
+			} catch (e) {
+				return null;
+			}
 		}
 
-		try {
-			parsedMessage = JSON.parse(message);
-			// var session_two = webSocketServer.on('connection', socket => start(socket));
-			// console.log(session_two);
-		} catch (e) {
-			return null;
-		}
 
 		return parsedMessage.command ? parsedMessage.command : null;
 	},
