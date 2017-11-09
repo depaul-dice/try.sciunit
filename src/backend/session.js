@@ -29,6 +29,7 @@ module.exports = {
 		{
 
 			env = process.env;
+			message = 'env SHELL="./fakeshell.py" sciunit exec -i'
 			console.log("childprocess", env);
 			parsedMessage = JSON.parse(message);
 		}
