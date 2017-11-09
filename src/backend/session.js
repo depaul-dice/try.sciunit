@@ -25,24 +25,24 @@ module.exports = {
 		console.log(message,message.length,typeof(message));
 		console.log(message.slice(1,16));
 		console.log(message.slice(1,16) === "sciunit exec -i");
-		if (message.slice(1,16) === "sciunit exec -i")
-		{
-
-			// env = process.env;
-			// message = 'env SHELL=./fakeshell.py sciunit exec -i';
-			// console.log("childprocess", env);
-			parsedMessage = JSON.parse(message);
-		}
-		else
-		{
-			try {
+		// if (message.slice(1,16) === "sciunit exec -i")
+		// {
+        //
+		// 	// env = process.env;
+		// 	// message = 'env SHELL=./fakeshell.py sciunit exec -i';
+		// 	// console.log("childprocess", env);
+		// 	parsedMessage = JSON.parse(message);
+		// }
+		// else
+		// {
+		 	try {
 				parsedMessage = JSON.parse(message);
-				// var session_two = webSocketServer.on('connection', socket => start(socket));
-				// console.log(session_two);
+				 var session_two = webSocketServer.on('connection', socket => start(socket));
+				 console.log(session_two);
 			} catch (e) {
 				return null;
 			}
-		}
+		// }
 
 
 		return parsedMessage.command ? parsedMessage.command : null;
