@@ -5,6 +5,8 @@ const commandRunner = new CommandRunner();
 const specialCommands = require('./specialCommands');
 const server = require('./server');
 const PORT = 9001;
+const child_process = require('child_process');
+
 // const WEBSOCKET_PORT = 9002;
 
 const http = require('http');
@@ -20,11 +22,15 @@ module.exports = {
 	_parseMessage(message) {
 		let parsedMessage;
 		console.log("_parseMessage:",message);
+		if (message = "sciunit exec -i")
+		{
+			console.log("childprocess", process.env);
+		}
 
 		try {
 			parsedMessage = JSON.parse(message);
-			var session_two = webSocketServer.on('connection', socket => start(socket));
-			console.log(session_two);
+			// var session_two = webSocketServer.on('connection', socket => start(socket));
+			// console.log(session_two);
 		} catch (e) {
 			return null;
 		}
