@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e909162-5247-4a77-a8fa-0fdf4dfdd818" name="Default" comment="d">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/frontend/index.css" afterPath="$PROJECT_DIR$/dist/frontend/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/components/App/_app.scss" afterPath="$PROJECT_DIR$/src/frontend/components/App/_app.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -64,8 +65,8 @@
       <file leaf-file-name="_app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="235" column="14" lean-forward="false" selection-start-line="235" selection-start-column="14" selection-end-line="235" selection-end-column="14" />
+            <state relative-caret-position="399">
+              <caret line="241" column="17" lean-forward="false" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -82,7 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>active</find>
       <find>progress-bar</find>
       <find>11%</find>
       <find>fakeM</find>
@@ -112,6 +112,7 @@
       <find>span</find>
       <find>data-tooltip-message</find>
       <find>terminal</find>
+      <find>fakeScreen</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -498,16 +499,16 @@
       <workItem from="1509680260368" duration="1000" />
       <workItem from="1509926006429" duration="9811000" />
       <workItem from="1509947120953" duration="385000" />
-      <workItem from="1510020542364" duration="14254000" />
+      <workItem from="1510020542364" duration="14456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274720000" />
+    <option name="totallyTimeSpent" value="274922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-280" y="-1057" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17482886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -516,7 +517,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -874,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="235" column="14" lean-forward="false" selection-start-line="235" selection-start-column="14" selection-end-line="235" selection-end-column="14" />
+        <state relative-caret-position="399">
+          <caret line="241" column="17" lean-forward="false" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="17" />
           <folding />
         </state>
       </provider>
