@@ -92,19 +92,13 @@ function App(props) {
 
 	};
 
-	const handleChangeEvent = (val) => {
-		console.log("hello from handleChangeEvent");
-		console.log(val);
-		return val;
-	};
-
 	function handlefoucs() {
-		console.log("hello from handle foucs");
+		// console.log("hello from handle foucs");
 		textInput.focus();
 	};
 
 	function handleMouseDown() {
-		console.log("hello from handleMouseDown");
+		// console.log("hello from handleMouseDown");
 		textInput.value = button_ref.value;
 	};
 	// console.log("the globale", cmd_id);
