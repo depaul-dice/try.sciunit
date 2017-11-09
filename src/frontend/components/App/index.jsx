@@ -202,6 +202,12 @@ function App(props) {
 					</div>
 				</div>
 			</div>
+			<footer class="footer">
+				<br/>
+				<a href="https://sciunit.run/" style={{fontSize: "22px", paddingLeft:"20px"}}>Sciunit Home</a>		<a href="https://sciunit.run/docs/" style={{fontSize: "22px", paddingLeft:"20px"}}>Documentaion</a><br/>
+				The Sciunit is supported by the National Science Foundation under grants ICER-1639759,<br/>
+					ICER-1661918, ICER-1440327, and ICER-1343816, and by Bloomberg Philanthropies (a UChicago subcontract).
+			</footer>
 		</div>
 	);
 };
