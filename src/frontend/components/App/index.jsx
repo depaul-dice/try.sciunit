@@ -12,6 +12,7 @@ var clicked_button_cmd = "";
 
 function App(props) {
 	let textInput = null;
+	let button_ref = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,button,clickedButton} = props;
@@ -104,7 +105,7 @@ function App(props) {
 
 	function handleMouseDown() {
 		console.log("hello from handleMouseDown");
-		textInput.value = button;
+		textInput.value = button_ref.value;
 	};
 	// console.log("the globale", cmd_id);
 	const switchDetail = (e) => {
@@ -183,7 +184,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3} <br/>
 
 					</div>
-					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one"  btn-defaultvalue="sciunit init" onClick={clickedButton} onMouseUp={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
 
 
