@@ -37,6 +37,7 @@ module.exports = {
 		// {
 		 	try {
 				parsedMessage = JSON.parse(message);
+				console.log(parsedMessage);
 				 // var session_two = webSocketServer.on('connection', socket => start(socket));
 				 // console.log(session_two);
 			} catch (e) {
