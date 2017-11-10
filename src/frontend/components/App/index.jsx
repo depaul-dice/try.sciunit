@@ -18,7 +18,7 @@ function App(props) {
 	let menu_ref = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail,menu_selection,cmd_id_M} = props;
+	const { output, runCommand,cmd_detail,cmd_id_M} = props;
 	cmd_id = cmd_id_M;
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
@@ -188,7 +188,8 @@ function App(props) {
 								<button value="0" onClick={() => menu_selection(0)}>Create</button>
 							</li>
 							<li>
-								<button value="Exec" onMouseDown={handleMouseDown_menu}>Exec</button>
+								<button value="1" onClick={() => menu_selection(1)}>Exec</button>
+								{/*<button value="Exec" onMouseDown={handleMouseDown_menu}>Exec</button>*/}
 							</li>
 
 							<li>
