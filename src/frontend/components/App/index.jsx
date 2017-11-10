@@ -27,11 +27,6 @@ function App(props) {
 			copy_token = "";
 			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
-		if (o.value.slice(8,12) == 'open')
-		{
-			console.log("hello from open");
-			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
-		}
 
 		if (o.value.slice(8,15) == 'exec -i'){
 			copy_token = "";
@@ -46,6 +41,11 @@ function App(props) {
 		else if (o.value.length == 8){
 			copy_token = o.value;
 			// console.log(copy_token);
+			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
+		}
+		else if (o.value.slice(8,12) == 'open')
+		{
+			console.log("hello from open");
 			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 		else {
