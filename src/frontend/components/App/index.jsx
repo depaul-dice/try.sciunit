@@ -123,13 +123,13 @@ function App(props) {
 		textInput.value = button_ref.value;
 	};
 	// console.log("the globale", cmd_id);
-	function switchDetail(){
+	function switchDetail(e){
 
 		console.log("the globale in switch", cmd_id);
-		console.log(menu_cmd.value);
-		// switch_detail = e.target.getAttribute('value');
+		// console.log(menu_cmd.value);
+		switch_detail = e.target.getAttribute('value');
 		var cmd_title = menu_cmd.value;
-		// console.log(switch_detail);
+		console.log(switch_detail);
 		for (var i = 0;i<length_of_cmd_detail; i++){
 			if (cmd_title == command_key[i]){
 				switch_detail_byID = i;
