@@ -16,6 +16,7 @@ function App(props) {
 	let textInput = null;
 	let button_ref = null;
 	let menu_ref = null;
+	let detail_ref = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,clickedButton} = props;
@@ -125,19 +126,22 @@ function App(props) {
 	};
 
 	function handleMouseDown_menu(e) {
-		switch_detail = e.target.getAttribute('value');
-		console.log(switch_detail);
-		console.log(switch_detail === 'Create',switch_detail === 'Exec')
 
-		if (switch_detail === 'Create'){
-			cmd_id = 0;
-			console.log("YES");
-
-		}
-		else if (switch_detail === 'Exec'){
-			cmd_id = 1;
-		}
-		console.log(cmd_id);
+		detail_ref.value = parseInt(e.target.getAttribute('value'));
+		console.log(detail_ref.value);
+		// switch_detail = e.target.getAttribute('value');
+		// console.log(switch_detail);
+		// console.log(switch_detail === 'Create',switch_detail === 'Exec')
+        //
+		// if (switch_detail === 'Create'){
+		// 	cmd_id = 0;
+		// 	console.log("YES");
+        //
+		// }
+		// else if (switch_detail === 'Exec'){
+		// 	cmd_id = 1;
+		// }
+		// console.log(cmd_id);
 
 		// console.log("hello from handleMouseDown");
 		// switch_detail = menu_ref.value;
@@ -185,10 +189,10 @@ function App(props) {
 									{/*Create*/}
 
 								{/*</a>*/}
-								<button value="Create" onMouseDown={handleMouseDown_menu}>Create</button>
+								<button value="0" onMouseDown={handleMouseDown_menu}>Create</button>
 							</li>
 							<li>
-								<button value="Exec" onMouseDown={handleMouseDown_menu}>Exec</button>
+								<button value="1" onMouseDown={handleMouseDown_menu}>Exec</button>
 							</li>
 
 							<li>
@@ -222,8 +226,8 @@ function App(props) {
 				</div>
 
 
-				<div className="commandDetail" >
-					<h1>The global{cmd_id}</h1>
+				<div className="commandDetail" value={cmd_id} ref={(input) => { detail_ref = input; }}>
+					<h1>The global{detail_ref.value}</h1>
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
