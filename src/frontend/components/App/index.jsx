@@ -181,23 +181,23 @@ function App(props) {
 							</li>
 
 							<li>
-								<a value="Show" onClick={switchDetail}>Show</a>
+								<a value="Show">Show</a>
 							</li>
 
 							<li>
-								<a value="Repeat" onClick={switchDetail}>Repeat</a>
+								<a value="Repeat">Repeat</a>
 							</li>
 
 							<li>
-								<a value="List" onClick={switchDetail}>List</a>
+								<a value="List">List</a>
 							</li>
 
 							<li>
-								<a value="Copy" onClick={switchDetail}>Copy</a>
+								<a value="Copy">Copy</a>
 							</li>
 
 							<li>
-								<a value="Open" onClick={switchDetail}>Open</a>
+								<a value="Open">Open</a>
 							</li>
 
 							{/*<li>*/}
