@@ -13,6 +13,7 @@ var clicked_button_cmd = "";
 function App(props) {
 	let textInput = null;
 	let button_ref = null;
+	let menu_ref = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,clickedButton} = props;
@@ -121,6 +122,10 @@ function App(props) {
 		// console.log("hello from handleMouseDown");
 		textInput.value = button_ref.value;
 	};
+
+	function handleMouseDown_menu() {
+		console.log("hello from handleMouseDown");
+	};
 	// console.log("the globale", cmd_id);
 	const switchDetail = (e) => {
 		// console.log("the globale in switch", cmd_id);
@@ -147,10 +152,11 @@ function App(props) {
 								<img src="https://sciunit.run/static/assets/images/new_GeoTrust.png" height="30" width="40" alt=""/>
 							</li>
 							<li>
-								<a value="Create" onClick={switchDetail} >
-									Create
+								{/*<a value="Create" onClick={switchDetail} >*/}
+									{/*Create*/}
 
-								</a>
+								{/*</a>*/}
+								<button value="Create" ref={(input) => { menu_ref = input; }} onMouseDown={handleMouseDown_menu}>Create</button>
 							</li>
 							<li>
 								<a value="Exec" onClick={switchDetail}>Exec</a>
