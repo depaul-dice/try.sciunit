@@ -22,7 +22,7 @@ function App(props) {
 	const { output, runCommand,cmd_detail,clickedButton} = props;
 	const {menu_selection,cmd_id_M} = props;
 	console.log(typeof(cmd_id_M),cmd_id_M);
-	cmd_id = cmd_id_M;
+	// cmd_id = cmd_id_M;
 
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
@@ -201,10 +201,10 @@ function App(props) {
 									{/*Create*/}
 
 								{/*</a>*/}
-								<button value="0" onMouseDown={menu_selection}>Create</button>
+								<a value="0" onMouseDown={menu_selection}>Create</a>
 							</li>
 							<li>
-								<button value="1" onMouseDown={menu_selection}>Exec</button>
+								<a value="1" onMouseDown={menu_selection}>Exec</a>
 							</li>
 
 							<li>
