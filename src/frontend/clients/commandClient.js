@@ -63,7 +63,9 @@ CommandClient.prototype.begin = function begin(command) {
 					// console.log(command);
 					try
 					{
-						this.webSocket.send(JSON.stringify({ command }));
+						this.webSocket.send(JSON.stringify({ command }),function(error){
+
+						});
 					}
 					catch (err){
 						console.log(err);
@@ -74,7 +76,9 @@ CommandClient.prototype.begin = function begin(command) {
 					console.log("--i -i!!!");
 					command = "env SHELL=./fakeshell.py sciunit exec -i";
 					try{
-						this.webSocket.send(JSON.stringify({command}));
+						this.webSocket.send(JSON.stringify({ command }),function(error){
+
+						});
 					}
 					catch (err){
 						console.log(err);
@@ -82,7 +86,9 @@ CommandClient.prototype.begin = function begin(command) {
 				}
 				else
 				{
-					this.webSocket.send(JSON.stringify("ERROR"));
+					this.webSocket.send(JSON.stringify("ERROR"),function(error){
+
+					});
 				}
 			}
 			else if(command_lst.length > 2 && command_lst[1] == 'create')
@@ -100,7 +106,9 @@ CommandClient.prototype.begin = function begin(command) {
 				command = random_num_command;
 				// console.log(command);
 				try{
-					this.webSocket.send(JSON.stringify({ command }));
+					this.webSocket.send(JSON.stringify({ command }),function(error){
+
+					});
 				}
 				catch (err){
 					console.log(err);
@@ -124,7 +132,9 @@ CommandClient.prototype.begin = function begin(command) {
 				}
 				// console.log(command);
 				try{
-					this.webSocket.send(JSON.stringify({ command }));
+					this.webSocket.send(JSON.stringify({ command }),function(error){
+
+					});
 				}
 				catch (err){
 					console.log(err);
@@ -137,7 +147,9 @@ CommandClient.prototype.begin = function begin(command) {
 				// console.log('anything but exec');
 				// console.log(command);
 				try{
-					this.webSocket.send(JSON.stringify({ command }));
+					this.webSocket.send(JSON.stringify({ command }),function(error){
+
+					});
 				}
 				catch (err){
 					console.log(err);
@@ -150,7 +162,9 @@ CommandClient.prototype.begin = function begin(command) {
 	// }
 	else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
 		try{
-			this.webSocket.send(JSON.stringify({ command }));
+			this.webSocket.send(JSON.stringify({ command }),function(error){
+
+			});
 		}
 		catch (err){
 			console.log(err);
