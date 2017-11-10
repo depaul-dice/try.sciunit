@@ -131,7 +131,7 @@ function App(props) {
 
 		if (switch_detail === 'Create'){
 			cmd_id = 0;
-
+			console.log("YES");
 		}
 		else if (switch_detail === 'Exec'){
 			cmd_id = 1;
