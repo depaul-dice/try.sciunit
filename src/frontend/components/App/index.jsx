@@ -29,6 +29,7 @@ function App(props) {
 		}
 		if (o.value.slice(8,12) == 'open')
 		{
+			console.log("hello from open");
 			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 
