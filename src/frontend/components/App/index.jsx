@@ -131,6 +131,7 @@ function App(props) {
 
 		if (switch_detail === 'Create'){
 			cmd_id = 0;
+			return <h1>{cmd_detail[cmd_id].title}</h1>;
 
 		}
 		else if (switch_detail === 'Exec'){
