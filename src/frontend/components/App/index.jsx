@@ -131,7 +131,6 @@ function App(props) {
 
 		if (switch_detail === 'Create'){
 			cmd_id = 0;
-			return <h1>{cmd_detail[cmd_id].title}</h1>;
 
 		}
 		else if (switch_detail === 'Exec'){
@@ -223,7 +222,7 @@ function App(props) {
 
 
 				<div className="commandDetail" >
-					{/*<h1>The global{cmd_id}</h1>*/}
+					<h1>The global{cmd_id}</h1>
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
