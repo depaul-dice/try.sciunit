@@ -13,7 +13,6 @@ var clicked_button_cmd = "";
 function App(props) {
 	let textInput = null;
 	let button_ref = null;
-	let menu_cmd = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,clickedButton} = props;
@@ -123,22 +122,19 @@ function App(props) {
 		textInput.value = button_ref.value;
 	};
 	// console.log("the globale", cmd_id);
-	function switchDetail(e){
-
-		console.log("the globale in switch", cmd_id);
-		// console.log(menu_cmd.value);
-		switch_detail = e.target.getAttribute('value');
-		var cmd_title = menu_cmd.value;
-		console.log(switch_detail);
-		for (var i = 0;i<length_of_cmd_detail; i++){
-			if (cmd_title == command_key[i]){
-				switch_detail_byID = i;
-			}
-		}
-		console.log(switch_detail_byID);
-		cmd_id = switch_detail_byID;
-		console.log(cmd_detail[cmd_id]);
-		console.log("the globale in switch after ", cmd_id);
+	const switchDetail = (e) => {
+		// console.log("the globale in switch", cmd_id);
+		// switch_detail = e.target.getAttribute('value');
+		// console.log(switch_detail);
+		// for (var i = 0;i<length_of_cmd_detail; i++){
+		// 	if (switch_detail == command_key[i]){
+		// 		switch_detail_byID = i;
+		// 	}
+		// }
+		// console.log(switch_detail_byID);
+		// cmd_id = switch_detail_byID;
+		// // console.log(cmd_detail[cmd_id]);
+		// console.log("the globale in switch after ", cmd_id);
 	};
 	return (
 		<div>
@@ -151,9 +147,9 @@ function App(props) {
 								<img src="https://sciunit.run/static/assets/images/new_GeoTrust.png" height="30" width="40" alt=""/>
 							</li>
 							<li>
-								<a value="Create" ref={(input) => { menu_cmd = input; }}  onClick={switchDetail} >
-									{/*//data-tooltip data-tooltip-label={cmd_detail[cmd_id].title} data-tooltip-message-1={cmd_detail[cmd_id].description_1} data-tooltip-message-2={cmd_detail[cmd_id].description_2}*/}
+								<a value="Create" onClick={switchDetail} >
 									Create
+
 								</a>
 							</li>
 							<li>
