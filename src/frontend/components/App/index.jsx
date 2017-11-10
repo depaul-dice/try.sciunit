@@ -30,7 +30,7 @@ function App(props) {
 
 		if (o.value.slice(8,15) == 'exec -i'){
 			copy_token = "";
-			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre>{o.value}</pre></li>
 		}
 
 		if ((o.value.slice(0,7) === 'sciunit' || o.value.slice(0,2) === 'ls' || o.value.slice(0,3) === 'man' ) && user_input_command.length < 5){
@@ -49,7 +49,6 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 		else {
-			copy_token = "";
 			// console.log(o.value);
 			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
