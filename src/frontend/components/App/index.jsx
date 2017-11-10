@@ -172,7 +172,7 @@ function App(props) {
 								<button value="Create" ref={(input) => { menu_ref = input; }} onMouseDown={handleMouseDown_menu}>Create</button>
 							</li>
 							<li>
-								<a value="Exec" onClick={switchDetail}>Exec</a>
+								<button value="Exec" ref={(input) => { menu_ref = input; }} onMouseDown={handleMouseDown_menu}>Exec</button>
 							</li>
 
 							<li>
