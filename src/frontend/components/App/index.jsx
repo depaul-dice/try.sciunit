@@ -27,6 +27,10 @@ function App(props) {
 			copy_token = "";
 			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
+		if (o.value.slice(8,12) == 'open')
+		{
+			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
+		}
 
 		if (o.value.slice(8,15) == 'exec -i'){
 			copy_token = "";
