@@ -19,8 +19,9 @@ function App(props) {
 	let detail_ref = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail,clickedButton} = props;
+	const { output, runCommand,cmd_detail,clickedButton,cmd_id_M} = props;
 	const {menu_selection} = props;
+	cmd_id = cmd_id_M;
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
