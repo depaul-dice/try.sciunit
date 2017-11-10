@@ -124,38 +124,41 @@ function App(props) {
 		textInput.value = button_ref.value;
 	};
 
-	function handleMouseDown_menu() {
-		console.log("hello from handleMouseDown");
-		switch_detail = menu_ref.value;
-		console.log(menu_ref.value);
+	function handleMouseDown_menu(e) {
+		switch_detail = e.target.getAttribute('value');
 		console.log(switch_detail);
-		for (var i = 0;i<length_of_cmd_detail; i++){
-			if (switch_detail == command_key[i]){
-				switch_detail_byID = i;
-			}
-		}
 
-		console.log(switch_detail_byID);
-		cmd_id = switch_detail_byID;
-		// console.log(cmd_detail[cmd_id]);
-		console.log("the globale in switch after ", cmd_id);
-
-	};
-	// console.log("the globale", cmd_id);
-	const switchDetail = (e) => {
-		// console.log("the globale in switch", cmd_id);
-		// switch_detail = e.target.getAttribute('value');
+		// console.log("hello from handleMouseDown");
+		// switch_detail = menu_ref.value;
+		// console.log(menu_ref.value);
 		// console.log(switch_detail);
 		// for (var i = 0;i<length_of_cmd_detail; i++){
 		// 	if (switch_detail == command_key[i]){
 		// 		switch_detail_byID = i;
 		// 	}
 		// }
+        //
 		// console.log(switch_detail_byID);
 		// cmd_id = switch_detail_byID;
 		// // console.log(cmd_detail[cmd_id]);
 		// console.log("the globale in switch after ", cmd_id);
+
 	};
+	// console.log("the globale", cmd_id);
+	// const switchDetail = (e) => {
+	// 	// console.log("the globale in switch", cmd_id);
+	// 	// switch_detail = e.target.getAttribute('value');
+	// 	// console.log(switch_detail);
+	// 	// for (var i = 0;i<length_of_cmd_detail; i++){
+	// 	// 	if (switch_detail == command_key[i]){
+	// 	// 		switch_detail_byID = i;
+	// 	// 	}
+	// 	// }
+	// 	// console.log(switch_detail_byID);
+	// 	// cmd_id = switch_detail_byID;
+	// 	// // console.log(cmd_detail[cmd_id]);
+	// 	// console.log("the globale in switch after ", cmd_id);
+	// };
 	return (
 		<div>
 			<div className="content-body">
@@ -171,10 +174,10 @@ function App(props) {
 									{/*Create*/}
 
 								{/*</a>*/}
-								<button value="Create" ref={(input) => { menu_ref = input; }} onMouseDown={handleMouseDown_menu}>Create</button>
+								<button value="Create" onMouseDown={handleMouseDown_menu}>Create</button>
 							</li>
 							<li>
-								<button value="Exec" ref={(input) => { menu_ref = input; }} onMouseDown={handleMouseDown_menu}>Exec</button>
+								<button value="Exec" onMouseDown={handleMouseDown_menu}>Exec</button>
 							</li>
 
 							<li>
