@@ -85,6 +85,8 @@ function App(props) {
 
 	};
 	const nextStep = (e) => {
+
+
 		// console.log(user_input_command.trim(" "),button_ref.value.trim(" "),user_input_command.trim(" "),("sicunit open "+copy_token).trim(" "),user_input_command === button_ref.value, user_input_command === "sicunit open "+copy_token);
 		if (e.key === 'Enter' && (user_input_command == button_ref.value)===false && (user_input_command == "sicunit open"+copy_token)===false){
 			if (cmd_id == length_of_cmd_detail-1){
@@ -92,7 +94,8 @@ function App(props) {
 				cmd_id =0;
 			}
 		}
-		if (e.key === 'Enter' &&  user_input_command == button_ref.value && command_list_restrict.includes(user_input_command)) {
+
+		else if (e.key === 'Enter' &&  user_input_command == button_ref.value && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id<length_of_cmd_detail-1){
 				cmd_id+=1;
 				if (cmd_id == length_of_cmd_detail-1){
@@ -111,6 +114,10 @@ function App(props) {
 				cmd_id = 0;
 				// console.log(cmd_id);
 			}
+		}
+		else
+		{
+			cmd_id = 1;
 		}
 
 	};
@@ -190,10 +197,10 @@ function App(props) {
 									{/*Create*/}
 
 								{/*</a>*/}
-								<button value="0" onMouseDown={handleMouseDown_menu}>Create</button>
+								<button value="0" onMouseDown={nextStep}>Create</button>
 							</li>
 							<li>
-								<button value="1" onMouseDown={handleMouseDown_menu}>Exec</button>
+								<button value="1" onMouseDown={nextStep}>Exec</button>
 							</li>
 
 							<li>
