@@ -18,8 +18,7 @@ function App(props) {
 	let menu_ref = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
-	const { output, runCommand,cmd_detail,cmd_id_M} = props;
-	cmd_id = cmd_id_M;
+	const { output, runCommand,cmd_detail,clickedButton} = props;
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
@@ -132,6 +131,8 @@ function App(props) {
 
 		if (switch_detail === 'Create'){
 			cmd_id = 0;
+			console.log("YES");
+
 		}
 		else if (switch_detail === 'Exec'){
 			cmd_id = 1;
@@ -154,7 +155,6 @@ function App(props) {
 		// console.log("the globale in switch after ", cmd_id);
 
 	};
-	console.log(cmd_id);
 	// console.log("the globale", cmd_id);
 	// const switchDetail = (e) => {
 	// 	// console.log("the globale in switch", cmd_id);
@@ -185,11 +185,10 @@ function App(props) {
 									{/*Create*/}
 
 								{/*</a>*/}
-								<button value="0" onClick={() => menu_selection(0)}>Create</button>
+								<button value="Create" onMouseDown={handleMouseDown_menu}>Create</button>
 							</li>
 							<li>
-								<button value="1" onClick={() => menu_selection(1)}>Exec</button>
-								{/*<button value="Exec" onMouseDown={handleMouseDown_menu}>Exec</button>*/}
+								<button value="Exec" onMouseDown={handleMouseDown_menu}>Exec</button>
 							</li>
 
 							<li>
