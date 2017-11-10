@@ -125,7 +125,8 @@ function App(props) {
 	// console.log("the globale", cmd_id);
 	function switchDetail(){
 
-		// console.log("the globale in switch", cmd_id);
+		console.log("the globale in switch", cmd_id);
+		console.log(menu_cmd.value);
 		// switch_detail = e.target.getAttribute('value');
 		var cmd_title = menu_cmd.value;
 		// console.log(switch_detail);
