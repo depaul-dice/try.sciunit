@@ -24,14 +24,17 @@ function App(props) {
 		if(o.value.slice(8,12) == 'copy')
 		{
 			copy_token_flag = true;
+			copy_token = "";
 			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
 
 		if (o.value.slice(8,15) == 'exec -i'){
+			copy_token = "";
 			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
 
 		if ((o.value.slice(0,7) === 'sciunit' || o.value.slice(0,2) === 'ls' || o.value.slice(0,3) === 'man' ) && user_input_command.length < 5){
+			copy_token = "";
 			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
 
@@ -41,7 +44,8 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 		else {
-			console.log(o.value);
+			copy_token = "";
+			// console.log(o.value);
 			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
 		}
 	});
@@ -74,7 +78,7 @@ function App(props) {
 
 	};
 	const nextStep = (e) => {
-		if (e.key === 'Enter' &&  user_input_command == cmd_detail[cmd_id].cmd_button && command_list_restrict.includes(user_input_command)) {
+		if (e.key === 'Enter' &&  user_input_command == button_ref.value && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id<length_of_cmd_detail-1){
 				cmd_id+=1;
 				if (cmd_id == length_of_cmd_detail-1){
@@ -183,7 +187,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3} <br/>
 
 					</div>
-					<button type="button" value={cmd_detail[cmd_id].cmd_button} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+					<button type="button" value={cmd_detail[cmd_id].cmd_button}{copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
 
 
