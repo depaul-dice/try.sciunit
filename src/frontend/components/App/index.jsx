@@ -127,6 +127,16 @@ function App(props) {
 		var switch_detail = menu_ref.value;
 		console.log(menu_ref.value);
 		console.log(switch_detail);
+		for (var i = 0;i<length_of_cmd_detail; i++){
+			if (switch_detail == command_key[i]){
+				switch_detail_byID = i;
+			}
+		}
+
+		console.log(switch_detail_byID);
+		cmd_id = switch_detail_byID;
+		// console.log(cmd_detail[cmd_id]);
+		console.log("the globale in switch after ", cmd_id);
 
 	};
 	// console.log("the globale", cmd_id);
