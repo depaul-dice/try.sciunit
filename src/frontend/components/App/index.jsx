@@ -132,6 +132,96 @@ function App(props) {
 		if (switch_detail === 'Create'){
 			cmd_id = 0;
 			console.log("YES");
+			return (
+				<div>
+					<div className="content-body">
+						<div id="codeschool">
+							<div className="inner">
+
+								<ol className="progress-bar">
+									<li>
+										<img src="https://sciunit.run/static/assets/images/new_GeoTrust.png" height="30" width="40" alt=""/>
+									</li>
+									<li>
+										{/*<a value="Create" onClick={switchDetail} >*/}
+										{/*Create*/}
+
+										{/*</a>*/}
+										<button value="Create" onMouseDown={handleMouseDown_menu}>Create</button>
+									</li>
+									<li>
+										<button value="Exec" onMouseDown={handleMouseDown_menu}>Exec</button>
+									</li>
+
+									<li>
+										<a value="Show">Show</a>
+									</li>
+
+									<li>
+										<a value="Repeat">Repeat</a>
+									</li>
+
+									<li>
+										<a value="List">List</a>
+									</li>
+
+									<li>
+										<a value="Copy">Copy</a>
+									</li>
+
+									<li>
+										<a value="Open">Open</a>
+									</li>
+
+									{/*<li>*/}
+									{/*<a href="#">Rm</a>*/}
+									{/*</li>*/}
+								</ol>
+							</div>
+							<div className="meter">
+								<span style={{width:progress_bar_percentage}}></span>
+							</div>
+						</div>
+
+
+						<div className="commandDetail" >
+							<h1>The global{cmd_id}</h1>
+							<h1>{cmd_detail[cmd_id].title}</h1>
+							<hr/>
+							<div>
+								{cmd_detail[cmd_id].description_1} <br/>
+								{cmd_detail[cmd_id].description} <br/>
+								{cmd_detail[cmd_id].description_2} <br/>
+								{cmd_detail[cmd_id].description} <br/>
+								{cmd_detail[cmd_id].description_3} <br/>
+
+							</div>
+							<button type="button" value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+						</div>
+
+
+						<div className="fakeMenu">
+							<div className="fakeButtons fakeClose"></div>
+							<div className="fakeButtons fakeMinimize"></div>
+							<div className="fakeButtons fakeZoom"></div>
+							<div>unbuntu@16.4 session1</div>
+						</div>
+						<div className="fakeScreen" onClick={handlefoucs}>
+							<div className="scroll-box">
+								Press enter to submit commands
+								<ul className="terminal--output">{outputChildren}</ul>
+								><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
+							</div>
+						</div>
+					</div>
+					<footer class="footer">
+						<a href="https://sciunit.run/" style={{fontSize: "22px", paddingLeft:"20px"}}>Sciunit Home</a>		<a href="https://sciunit.run/docs/" style={{fontSize: "22px", paddingLeft:"20px"}}>Documentaion</a><br/>
+						The Sciunit is supported by the National Science Foundation under grants ICER-1639759,<br/>
+						ICER-1661918, ICER-1440327, and ICER-1343816, and by Bloomberg Philanthropies (a UChicago subcontract).
+					</footer>
+				</div>
+			);
+
 		}
 		else if (switch_detail === 'Exec'){
 			cmd_id = 1;
