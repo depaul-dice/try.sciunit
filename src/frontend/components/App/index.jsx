@@ -239,7 +239,7 @@ function App(props) {
 
 
 				<div className="commandDetail" value={cmd_id} ref={(input) => { detail_ref = input; }}>
-					<h1>The global{cmd_id}</h1>
+					{/*<h1>The global{cmd_id}</h1>*/}
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
@@ -258,7 +258,7 @@ function App(props) {
 					<div className="fakeButtons fakeClose"></div>
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
-					<div>unbuntu@16.4 session1</div>
+					{/*<div>unbuntu@16.4 session1</div>*/}
 				</div>
 				<div className="fakeScreen" onClick={handlefoucs}>
 					<div className="scroll-box">
