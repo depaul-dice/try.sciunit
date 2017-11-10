@@ -4,19 +4,6 @@ const CommandRunner = require('./CommandRunner');
 const commandRunner = new CommandRunner();
 const specialCommands = require('./specialCommands');
 const server = require('./server');
-const PORT = 9001;
-const child_process = require('child_process');
-
-// const WEBSOCKET_PORT = 9002;
-var env = null;
-const http = require('http');
-const express = require('express');
-const { Server } = require('ws');
-
-const assets = express();
-const assetsServer = http.createServer(assets);
-const path = require('path');
-const webSocketServer = new Server({ server: assetsServer });
 
 module.exports = {
 	_parseMessage(message) {
@@ -37,15 +24,15 @@ module.exports = {
 		// {
 		 	try {
 				parsedMessage = JSON.parse(message);
-				console.log(parsedMessage);
+				// console.log(parsedMessage);
 				 // var session_two = webSocketServer.on('connection', socket => start(socket));
 				 // console.log(session_two);
 			} catch (e) {
 				return null;
 			}
 		// }
-		console.log(parsedMessage);
-		console.log(parsedMessage.command);
+		// console.log(parsedMessage);
+		// console.log(parsedMessage.command);
 		return parsedMessage.command ? parsedMessage.command : null;
 	},
 
@@ -58,7 +45,7 @@ module.exports = {
 
 		webSocket.on('message', message => {
 			const command = this._parseMessage(message);
-			console.log("hello from start():",message);
+			// console.log("hello from start():",message);
 			if (!command) {
 
 				webSocket.send(JSON.stringify({ error: 'Invalid payload' }));
