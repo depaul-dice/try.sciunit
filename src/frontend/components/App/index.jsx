@@ -129,7 +129,9 @@ function App(props) {
 		console.log(switch_detail);
 		if (switch_detail == 'Create'){
 			cmd_id = 0;
+
 		}
+		console.log(cmd_id);
 
 		// console.log("hello from handleMouseDown");
 		// switch_detail = menu_ref.value;
