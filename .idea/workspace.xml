@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e909162-5247-4a77-a8fa-0fdf4dfdd818" name="Default" comment="d">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" afterPath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/clients/commandClient.js" afterPath="$PROJECT_DIR$/src/frontend/clients/commandClient.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,6 +21,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/backend/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/frontend/reducers/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,41 +61,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commandClient.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="commandClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frontend/clients/commandClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="60" column="43" lean-forward="false" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+            <state relative-caret-position="124">
+              <caret line="115" column="9" lean-forward="false" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fakeshell.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fakeshell.py">
+      <file leaf-file-name="DOMTraversalAndRange.js" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMTraversalAndRange.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="226">
+              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="30" column="86" lean-forward="true" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandRunner.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/backend/CommandRunner.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -214,8 +214,8 @@
         <option value="$PROJECT_DIR$/src/frontend/components/App/_app.scss" />
         <option value="$PROJECT_DIR$/src/backend/CommandRunner.js" />
         <option value="$PROJECT_DIR$/src/backend/session.js" />
-        <option value="$PROJECT_DIR$/src/frontend/clients/commandClient.js" />
         <option value="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
+        <option value="$PROJECT_DIR$/src/frontend/clients/commandClient.js" />
       </list>
     </option>
   </component>
@@ -234,7 +234,7 @@
     <option name="x" value="-280" />
     <option name="y" value="-1057" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -431,7 +431,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="_parseMessage&#9;null&#9;null&#10;_parse&#9;null&#9;null&#10;commandDetailReducer&#9;null&#9;null&#10;http&#9;null&#9;null&#10;config&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/.editorconfig&#10;Upgrade Required&#9;null&#9;null&#10;isBackendReady&#9;null&#9;null&#10;webpack&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/webpack/lib/webpack.js&#10;bindA&#9;null&#9;null&#10;createStore&#9;null&#9;null&#10;createstore&#9;null&#9;null&#10;reducer&#9;null&#9;null&#10;setState&#9;null&#9;null&#10;getInitialApp&#9;null&#9;null&#10;getInitialState&#9;null&#9;null&#10;child_process&#9;null&#9;null&#10;child process&#9;null&#9;null&#10;server&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/backend/server.js&#10;css&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/frontend/components/App/_app.scss&#10;PreventDefault&#9;null&#9;null&#10;getPreventDefault()&#9;null&#9;null&#10;events.js&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/mocha/lib/browser/events.js&#10;Invalid payload&#9;null&#9;null&#10;.terminal__input&#9;null&#9;null&#10;index.jsx&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/trySciunit/src/frontend/components/App/index.jsx&#10;progress-bar&#9;null&#9;null&#10;codeschool-logo&#9;null&#9;null&#10;'root'&#9;null&#9;null&#10;runCommand&#9;null&#9;null&#10;user&#9;null&#9;null&#10;command&#9;null&#9;null&#10;cd&#9;null&#9;null&#10;react-dom&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/react-dom/dist/react-dom.js&#10;bro&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/babel-register/lib/browser.js&#10;store&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/src/frontend/getStore.js&#10;index.css&#9;FILE&#9;file:///Users/Chilli/Documents/term4all/dist/frontend/index.css&#10;Hello&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="startContainer&#9;null&#9;null&#10;_parseMessage&#9;null&#9;null&#10;_parse&#9;null&#9;null&#10;commandDetailReducer&#9;null&#9;null&#10;http&#9;null&#9;null&#10;config&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/.editorconfig&#10;Upgrade Required&#9;null&#9;null&#10;isBackendReady&#9;null&#9;null&#10;webpack&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/webpack/lib/webpack.js&#10;bindA&#9;null&#9;null&#10;createStore&#9;null&#9;null&#10;createstore&#9;null&#9;null&#10;reducer&#9;null&#9;null&#10;setState&#9;null&#9;null&#10;getInitialApp&#9;null&#9;null&#10;getInitialState&#9;null&#9;null&#10;child_process&#9;null&#9;null&#10;child process&#9;null&#9;null&#10;server&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/backend/server.js&#10;css&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/frontend/components/App/_app.scss&#10;PreventDefault&#9;null&#9;null&#10;getPreventDefault()&#9;null&#9;null&#10;events.js&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/mocha/lib/browser/events.js&#10;Invalid payload&#9;null&#9;null&#10;.terminal__input&#9;null&#9;null&#10;index.jsx&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/trySciunit/src/frontend/components/App/index.jsx&#10;progress-bar&#9;null&#9;null&#10;codeschool-logo&#9;null&#9;null&#10;'root'&#9;null&#9;null&#10;runCommand&#9;null&#9;null&#10;user&#9;null&#9;null&#10;command&#9;null&#9;null&#10;cd&#9;null&#9;null&#10;react-dom&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/react-dom/dist/react-dom.js&#10;bro&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/babel-register/lib/browser.js&#10;store&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/src/frontend/getStore.js&#10;index.css&#9;FILE&#9;file:///Users/Chilli/Documents/term4all/dist/frontend/index.css&#10;Hello&#9;null&#9;null" />
     <property name="editor.config.accepted" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -549,15 +549,15 @@
       <workItem from="1509680260368" duration="1000" />
       <workItem from="1509926006429" duration="9811000" />
       <workItem from="1509947120953" duration="385000" />
-      <workItem from="1510020542364" duration="23630000" />
+      <workItem from="1510020542364" duration="24481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284096000" />
+    <option name="totallyTimeSpent" value="284947000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-280" y="-1057" width="1920" height="1057" extended-state="6" />
+    <frame x="-280" y="-1057" width="1920" height="1014" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17482886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -567,7 +567,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -613,13 +613,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/backend/session.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/electron.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -833,14 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backend/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/reducers/commands.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -889,26 +874,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/clients/commandClient.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="60" column="43" lean-forward="false" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/session.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/reducers/commandDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -941,6 +910,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="86" lean-forward="true" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/reducers/commandDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMTraversalAndRange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/clients/commandClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="115" column="9" lean-forward="false" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
           <folding />
         </state>
       </provider>

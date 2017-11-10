@@ -31,21 +31,20 @@ CommandClient.prototype.begin = function begin(command) {
 		this.webSocket.onopen = () => {
 			this.webSocket.send(JSON.stringify({ command }));
 		}
-	}
-	var workspace_name = "";
-	// console.log("global var:",workspace_relocate_path);
-	// console.log("Command is : " + command);
-	var command_lst = parse(command);
-	// console.log(typeof(command_lst[command_lst.length-1]));
-	// console.log(command_lst.length);
+		var workspace_name = "";
+		// console.log("global var:",workspace_relocate_path);
+		// console.log("Command is : " + command);
+		var command_lst = parse(command);
+		// console.log(typeof(command_lst[command_lst.length-1]));
+		// console.log(command_lst.length);
 
-	// console.log(command_lst[2].slice(0, 2));
-	// if (command_lst[0] == 'sciunit' && command_lst.length == 1)
-	// {
-	// 	console.log("ONLY SCIUNIT")
-	// 	this.webSocket.send(JSON.stringify({ command }));
-	// }
-	if (command_lst[0] == 'sciunit' && (command_lst[1] == ''|| '--version' || '--help' || 'exec' || 'create'|| 'list' || 'show' || 'copy' || 'open' || 'rm' || 'repeat')){
+		// console.log(command_lst[2].slice(0, 2));
+		// if (command_lst[0] == 'sciunit' && command_lst.length == 1)
+		// {
+		// 	console.log("ONLY SCIUNIT")
+		// 	this.webSocket.send(JSON.stringify({ command }));
+		// }
+		if (command_lst[0] == 'sciunit' && (command_lst[1] == ''|| '--version' || '--help' || 'exec' || 'create'|| 'list' || 'show' || 'copy' || 'open' || 'rm' || 'repeat')){
 			if (command_lst.length > 2 && command_lst[1] == 'exec')
 			{
 				if( command_lst[2].slice(0, 2) == './' )
@@ -108,13 +107,15 @@ CommandClient.prototype.begin = function begin(command) {
 				this.webSocket.send(JSON.stringify({ command }));
 			}
 
+		}
+		// else if (command_lst[0] == 'ls' && command_lst.length == 1){
+		// 	this.webSocket.send(JSON.stringify({ command }));
+		// }
+		else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
+			this.webSocket.send(JSON.stringify({ command }));
+		}
 	}
-	// else if (command_lst[0] == 'ls' && command_lst.length == 1){
-	// 	this.webSocket.send(JSON.stringify({ command }));
-	// }
-	else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
-		this.webSocket.send(JSON.stringify({ command }));
-	}
+
 
 
 	// if (command != 'ls' && (command.substring(0, 7) != 'sciunit') && (command.substring(0,4) != 'man')){
