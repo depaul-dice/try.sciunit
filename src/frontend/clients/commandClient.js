@@ -19,7 +19,7 @@ function CommandClient() {
 	}
 	new_uri += "//" + loc.host;
 	new_uri += loc.pathname;
-	// console.log(new_uri);
+	console.log(new_uri);
 	this.webSocket = new WebSocket(new_uri);
 	this.webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 }
@@ -30,7 +30,9 @@ CommandClient.prototype.begin = function begin(command) {
 	if (this.webSocket.readyState === WebSocket.CONNECTING) {
 		this.webSocket.onopen = () => {
 			try{
-				this.webSocket.send(JSON.stringify({ command }));
+				this.webSocket.send(JSON.stringify({ command }),function(error){
+
+				});
 			}
 			catch (err){
 				console.log(err);
