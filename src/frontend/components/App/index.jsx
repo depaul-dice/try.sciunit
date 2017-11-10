@@ -55,7 +55,6 @@ function App(props) {
 		}
 	});
 	var user_input_command;
-	var switch_detail;
 	var command_key = ['Create','Exec','Show','Repeat','List','Copy','Open'];
 	var length_of_cmd_detail = cmd_detail.length;
 	var command_list_restrict = ['ls','man sciunit','sciunit --help'];
@@ -125,6 +124,10 @@ function App(props) {
 
 	function handleMouseDown_menu() {
 		console.log("hello from handleMouseDown");
+		var switch_detail = menu_ref.value;
+		console.log(menu_ref.value);
+		console.log(switch_detail);
+
 	};
 	// console.log("the globale", cmd_id);
 	const switchDetail = (e) => {
