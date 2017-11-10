@@ -131,6 +131,9 @@ function App(props) {
 			cmd_id = 0;
 
 		}
+		else if (switch_detail == 'Exec'){
+			cmd_id =1;
+		}
 		console.log(cmd_id);
 
 		// console.log("hello from handleMouseDown");
