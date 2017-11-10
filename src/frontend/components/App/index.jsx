@@ -129,6 +129,7 @@ function App(props) {
 
 		detail_ref.value = parseInt(e.target.getAttribute('value'));
 		console.log(detail_ref.value);
+		cmd_id = detail_ref.value;
 		// switch_detail = e.target.getAttribute('value');
 		// console.log(switch_detail);
 		// console.log(switch_detail === 'Create',switch_detail === 'Exec')
@@ -227,7 +228,7 @@ function App(props) {
 
 
 				<div className="commandDetail" value={cmd_id} ref={(input) => { detail_ref = input; }}>
-					<h1>The global{detail_ref}</h1>
+					<h1>The global{cmd_id}</h1>
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
