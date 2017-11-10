@@ -10,6 +10,8 @@ var copy_token = "";
 var copy_token_flag = false;
 var clicked_button_cmd = "";
 
+var switch_detail;
+
 function App(props) {
 	let textInput = null;
 	let button_ref = null;
@@ -124,7 +126,7 @@ function App(props) {
 
 	function handleMouseDown_menu() {
 		console.log("hello from handleMouseDown");
-		var switch_detail = menu_ref.value;
+		switch_detail = menu_ref.value;
 		console.log(menu_ref.value);
 		console.log(switch_detail);
 		for (var i = 0;i<length_of_cmd_detail; i++){
