@@ -134,10 +134,10 @@ function App(props) {
 				switch_detail_byID = i;
 			}
 		}
-		// console.log(switch_detail_byID);
+		console.log(switch_detail_byID);
 		cmd_id = switch_detail_byID;
-		// // console.log(cmd_detail[cmd_id]);
-		// console.log("the globale in switch after ", cmd_id);
+		console.log(cmd_detail[cmd_id]);
+		console.log("the globale in switch after ", cmd_id);
 	};
 	return (
 		<div>
