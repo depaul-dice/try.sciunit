@@ -227,7 +227,7 @@ function App(props) {
 
 
 				<div className="commandDetail" value={cmd_id} ref={(input) => { detail_ref = input; }}>
-					<h1>The global{detail_ref.value}</h1>
+					<h1>The global{detail_ref}</h1>
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
