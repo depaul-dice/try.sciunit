@@ -127,12 +127,14 @@ function App(props) {
 	function handleMouseDown_menu(e) {
 		switch_detail = e.target.getAttribute('value');
 		console.log(switch_detail);
-		if (switch_detail == 'Create'){
+		console.log(switch_detail === 'Create',switch_detail === 'Exec')
+
+		if (switch_detail === 'Create'){
 			cmd_id = 0;
 
 		}
-		else if (switch_detail == 'Exec'){
-			cmd_id =1;
+		else if (switch_detail === 'Exec'){
+			cmd_id = 1;
 		}
 		console.log(cmd_id);
 
