@@ -82,6 +82,11 @@ function App(props) {
 
 	};
 	const nextStep = (e) => {
+		if (e.key === 'Enter' && user_input_command == button_ref.value && user_input_command == "sicunit open"+copy_token){
+			if (cmd_id == length_of_cmd_detail-1){
+				progress_bar_percentage = "100%";
+			}
+		}
 		if (e.key === 'Enter' &&  user_input_command == button_ref.value && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id<length_of_cmd_detail-1){
 				cmd_id+=1;
