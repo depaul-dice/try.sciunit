@@ -20,6 +20,7 @@ function App(props) {
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,clickedButton} = props;
+	const {menu_selection} = props;
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
@@ -197,10 +198,10 @@ function App(props) {
 									{/*Create*/}
 
 								{/*</a>*/}
-								<button value="0" onMouseDown={nextStep}>Create</button>
+								<button value="0" onMouseDown={menu_selection}>Create</button>
 							</li>
 							<li>
-								<button value="1" onMouseDown={nextStep}>Exec</button>
+								<button value="1" onMouseDown={menu_selection}>Exec</button>
 							</li>
 
 							<li>
