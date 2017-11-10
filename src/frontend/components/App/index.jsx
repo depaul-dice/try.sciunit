@@ -21,7 +21,7 @@ function App(props) {
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,clickedButton} = props;
 	const {menu_selection,cmd_id_M} = props;
-	console.log(typeof(cmd_id_M),cmd_id_M);
+	// console.log(typeof(cmd_id_M),cmd_id_M);
 	// cmd_id = cmd_id_M;
 
 	const outputChildren = output.map(o => {
@@ -139,7 +139,7 @@ function App(props) {
 	function handleMouseDown_menu(e) {
 
 		detail_ref.value = parseInt(e.target.getAttribute('value'));
-		console.log(detail_ref.value);
+		// console.log(detail_ref.value);
 		cmd_id = detail_ref.value;
 		// switch_detail = e.target.getAttribute('value');
 		// console.log(switch_detail);
