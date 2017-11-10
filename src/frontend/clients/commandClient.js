@@ -29,22 +29,26 @@ CommandClient.prototype = Object.create(EventEmitter.prototype);
 CommandClient.prototype.begin = function begin(command) {
 	if (this.webSocket.readyState === WebSocket.CONNECTING) {
 		this.webSocket.onopen = () => {
-			this.webSocket.send(JSON.stringify({ command }));
-		}
-		var workspace_name = "";
-		// console.log("global var:",workspace_relocate_path);
-		// console.log("Command is : " + command);
-		var command_lst = parse(command);
-		// console.log(typeof(command_lst[command_lst.length-1]));
-		// console.log(command_lst.length);
+			try{
+				this.webSocket.send(JSON.stringify({ command }));
+			}
 
-		// console.log(command_lst[2].slice(0, 2));
-		// if (command_lst[0] == 'sciunit' && command_lst.length == 1)
-		// {
-		// 	console.log("ONLY SCIUNIT")
-		// 	this.webSocket.send(JSON.stringify({ command }));
-		// }
-		if (command_lst[0] == 'sciunit' && (command_lst[1] == ''|| '--version' || '--help' || 'exec' || 'create'|| 'list' || 'show' || 'copy' || 'open' || 'rm' || 'repeat')){
+		}
+	}
+	var workspace_name = "";
+	// console.log("global var:",workspace_relocate_path);
+	// console.log("Command is : " + command);
+	var command_lst = parse(command);
+	// console.log(typeof(command_lst[command_lst.length-1]));
+	// console.log(command_lst.length);
+
+	// console.log(command_lst[2].slice(0, 2));
+	// if (command_lst[0] == 'sciunit' && command_lst.length == 1)
+	// {
+	// 	console.log("ONLY SCIUNIT")
+	// 	this.webSocket.send(JSON.stringify({ command }));
+	// }
+	if (command_lst[0] == 'sciunit' && (command_lst[1] == ''|| '--version' || '--help' || 'exec' || 'create'|| 'list' || 'show' || 'copy' || 'open' || 'rm' || 'repeat')){
 			if (command_lst.length > 2 && command_lst[1] == 'exec')
 			{
 				if( command_lst[2].slice(0, 2) == './' )
@@ -52,13 +56,18 @@ CommandClient.prototype.begin = function begin(command) {
 					var code = workspace_relocate_path[0];	// TODO: Loop through the array?
 					command = "sciunit --root /tmp/"+code+" "+command_lst[1]+ " "+command_lst[2];
 					// console.log(command);
-					this.webSocket.send(JSON.stringify({ command }));
+					try
+					{
+						this.webSocket.send(JSON.stringify({ command }));
+					}
 				}
 				else if (command_lst[2].slice(0, 2) == '-i')
 				{
 					console.log("--i -i!!!");
 					command = "env SHELL=./fakeshell.py sciunit exec -i";
-					this.webSocket.send(JSON.stringify({command}));
+					try{
+						this.webSocket.send(JSON.stringify({command}));
+					}
 				}
 				else
 				{
@@ -79,7 +88,10 @@ CommandClient.prototype.begin = function begin(command) {
 				// console.log(random_num_command);
 				command = random_num_command;
 				// console.log(command);
-				this.webSocket.send(JSON.stringify({ command }));
+				try{
+					this.webSocket.send(JSON.stringify({ command }));
+				}
+
 			}
 			else if (command_lst[1] == 'show' || 'open' || 'list' || 'copy' || 'repeat')
 			{
@@ -97,25 +109,30 @@ CommandClient.prototype.begin = function begin(command) {
 					command = "sciunit --root /tmp/"+code+" "+command_lst[1];
 				}
 				// console.log(command);
-				this.webSocket.send(JSON.stringify({ command }));
+				try{
+					this.webSocket.send(JSON.stringify({ command }));
+				}
+
 
 			}
 			else if (command_lst[1] != 'exec' && 'create' && 'show'&&'open'&&'list'&&'copy'&&'repeat')	//TODO
 			{
 				// console.log('anything but exec');
 				// console.log(command);
-				this.webSocket.send(JSON.stringify({ command }));
+				try{
+					this.webSocket.send(JSON.stringify({ command }));
+				}
 			}
 
-		}
-		// else if (command_lst[0] == 'ls' && command_lst.length == 1){
-		// 	this.webSocket.send(JSON.stringify({ command }));
-		// }
-		else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
+	}
+	// else if (command_lst[0] == 'ls' && command_lst.length == 1){
+	// 	this.webSocket.send(JSON.stringify({ command }));
+	// }
+	else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
+		try{
 			this.webSocket.send(JSON.stringify({ command }));
 		}
 	}
-
 
 
 	// if (command != 'ls' && (command.substring(0, 7) != 'sciunit') && (command.substring(0,4) != 'man')){
