@@ -30,12 +30,11 @@ CommandClient.prototype.begin = function begin(command) {
 	if (this.webSocket.readyState === WebSocket.CONNECTING) {
 		this.webSocket.onopen = () => {
 			try{
-				this.webSocket.send(JSON.stringify({ command }),function(error){
-
-				});
+				this.webSocket.send(JSON.stringify({ command }));
 			}
 			catch (err){
-				console.log(err);
+				this.webSocket = new WebSocket(new_uri);
+				this.webSocket.send(JSON.stringify({ command }));
 			}
 
 		}
@@ -61,14 +60,12 @@ CommandClient.prototype.begin = function begin(command) {
 					var code = workspace_relocate_path[0];	// TODO: Loop through the array?
 					command = "sciunit --root /tmp/"+code+" "+command_lst[1]+ " "+command_lst[2];
 					// console.log(command);
-					try
-					{
-						this.webSocket.send(JSON.stringify({ command }),function(error){
-
-						});
+					try{
+						this.webSocket.send(JSON.stringify({ command }));
 					}
 					catch (err){
-						console.log(err);
+						this.webSocket = new WebSocket(new_uri);
+						this.webSocket.send(JSON.stringify({ command }));
 					}
 				}
 				else if (command_lst[2].slice(0, 2) == '-i')
@@ -76,19 +73,22 @@ CommandClient.prototype.begin = function begin(command) {
 					console.log("--i -i!!!");
 					command = "env SHELL=./fakeshell.py sciunit exec -i";
 					try{
-						this.webSocket.send(JSON.stringify({ command }),function(error){
-
-						});
+						this.webSocket.send(JSON.stringify({ command }));
 					}
 					catch (err){
-						console.log(err);
+						this.webSocket = new WebSocket(new_uri);
+						this.webSocket.send(JSON.stringify({ command }));
 					}
 				}
 				else
 				{
-					this.webSocket.send(JSON.stringify("ERROR"),function(error){
-
-					});
+					try{
+						this.webSocket.send(JSON.stringify({ command }));
+					}
+					catch (err){
+						this.webSocket = new WebSocket(new_uri);
+						this.webSocket.send(JSON.stringify({ command }));
+					}
 				}
 			}
 			else if(command_lst.length > 2 && command_lst[1] == 'create')
@@ -106,12 +106,11 @@ CommandClient.prototype.begin = function begin(command) {
 				command = random_num_command;
 				// console.log(command);
 				try{
-					this.webSocket.send(JSON.stringify({ command }),function(error){
-
-					});
+					this.webSocket.send(JSON.stringify({ command }));
 				}
 				catch (err){
-					console.log(err);
+					this.webSocket = new WebSocket(new_uri);
+					this.webSocket.send(JSON.stringify({ command }));
 				}
 
 			}
@@ -132,12 +131,11 @@ CommandClient.prototype.begin = function begin(command) {
 				}
 				// console.log(command);
 				try{
-					this.webSocket.send(JSON.stringify({ command }),function(error){
-
-					});
+					this.webSocket.send(JSON.stringify({ command }));
 				}
 				catch (err){
-					console.log(err);
+					this.webSocket = new WebSocket(new_uri);
+					this.webSocket.send(JSON.stringify({ command }));
 				}
 
 
@@ -147,12 +145,11 @@ CommandClient.prototype.begin = function begin(command) {
 				// console.log('anything but exec');
 				// console.log(command);
 				try{
-					this.webSocket.send(JSON.stringify({ command }),function(error){
-
-					});
+					this.webSocket.send(JSON.stringify({ command }));
 				}
 				catch (err){
-					console.log(err);
+					this.webSocket = new WebSocket(new_uri);
+					this.webSocket.send(JSON.stringify({ command }));
 				}
 			}
 
@@ -162,12 +159,11 @@ CommandClient.prototype.begin = function begin(command) {
 	// }
 	else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
 		try{
-			this.webSocket.send(JSON.stringify({ command }),function(error){
-
-			});
+			this.webSocket.send(JSON.stringify({ command }));
 		}
 		catch (err){
-			console.log(err);
+			this.webSocket = new WebSocket(new_uri);
+			this.webSocket.send(JSON.stringify({ command }));
 		}
 	}
 
