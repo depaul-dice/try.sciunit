@@ -5,11 +5,11 @@ var random_number_generator = require('./make_random_number');
 const EventEmitter = require('events');
 var parse = require('shell-quote').parse;
 const spawn = require('child_process').spawn;
-
+var loc = window.location, new_uri;
 var workspace_relocate_path = [];
 
 function CommandClient() {
-	var loc = window.location, new_uri;
+
 	if (loc.protocol === "https:"){
 		new_uri = "wss:";
 	}
