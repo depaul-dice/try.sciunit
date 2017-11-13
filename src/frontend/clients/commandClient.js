@@ -55,15 +55,14 @@ CommandClient.prototype.begin = function begin(command) {
 					// console.log(command);
 					try
 					{
-						if (this.webSocket.readyState === WebSocket.OPEN){
+						if (this.webSocket.readyState != WebSocket.OPEN){
+							this.webSocket = new WebSocket(new_uri);
 							this.webSocket.send(JSON.stringify({ command }));
 						}
-						else
+						else if (this.webSocket.readyState === WebSocket.OPEN)
 						{
-							this.webSocket = new WebSocket(new_uri);
-							if (this.webSocket.readyState === WebSocket.OPEN){
-								this.webSocket.send(JSON.stringify({ command }));
-							}
+							this.webSocket.send(JSON.stringify({ command }));
+
 						}
 					}
 					catch (err){
@@ -76,15 +75,14 @@ CommandClient.prototype.begin = function begin(command) {
 					command = "env SHELL=./fakeshell.py sciunit exec -i";
 					try
 					{
-						if (this.webSocket.readyState === WebSocket.OPEN){
+						if (this.webSocket.readyState != WebSocket.OPEN){
+							this.webSocket = new WebSocket(new_uri);
 							this.webSocket.send(JSON.stringify({ command }));
 						}
-						else
+						else if (this.webSocket.readyState === WebSocket.OPEN)
 						{
-							this.webSocket = new WebSocket(new_uri);
-							if (this.webSocket.readyState === WebSocket.OPEN){
-								this.webSocket.send(JSON.stringify({ command }));
-							}
+							this.webSocket.send(JSON.stringify({ command }));
+
 						}
 					}
 					catch (err){
@@ -114,15 +112,14 @@ CommandClient.prototype.begin = function begin(command) {
 				// console.log(command);
 				try
 				{
-					if (this.webSocket.readyState === WebSocket.OPEN){
+					if (this.webSocket.readyState != WebSocket.OPEN){
+						this.webSocket = new WebSocket(new_uri);
 						this.webSocket.send(JSON.stringify({ command }));
 					}
-					else
+					else if (this.webSocket.readyState === WebSocket.OPEN)
 					{
-						this.webSocket = new WebSocket(new_uri);
-						if (this.webSocket.readyState === WebSocket.OPEN){
-							this.webSocket.send(JSON.stringify({ command }));
-						}
+						this.webSocket.send(JSON.stringify({ command }));
+
 					}
 				}
 				catch (err){
@@ -148,15 +145,14 @@ CommandClient.prototype.begin = function begin(command) {
 				// console.log(command);
 				try
 				{
-					if (this.webSocket.readyState === WebSocket.OPEN){
+					if (this.webSocket.readyState != WebSocket.OPEN){
+						this.webSocket = new WebSocket(new_uri);
 						this.webSocket.send(JSON.stringify({ command }));
 					}
-					else
+					else if (this.webSocket.readyState === WebSocket.OPEN)
 					{
-						this.webSocket = new WebSocket(new_uri);
-						if (this.webSocket.readyState === WebSocket.OPEN){
-							this.webSocket.send(JSON.stringify({ command }));
-						}
+						this.webSocket.send(JSON.stringify({ command }));
+
 					}
 				}
 				catch (err){
@@ -171,15 +167,14 @@ CommandClient.prototype.begin = function begin(command) {
 				// console.log(command);
 				try
 				{
-					if (this.webSocket.readyState === WebSocket.OPEN){
+					if (this.webSocket.readyState != WebSocket.OPEN){
+						this.webSocket = new WebSocket(new_uri);
 						this.webSocket.send(JSON.stringify({ command }));
 					}
-					else
+					else if (this.webSocket.readyState === WebSocket.OPEN)
 					{
-						this.webSocket = new WebSocket(new_uri);
-						if (this.webSocket.readyState === WebSocket.OPEN){
-							this.webSocket.send(JSON.stringify({ command }));
-						}
+						this.webSocket.send(JSON.stringify({ command }));
+
 					}
 				}
 				catch (err){
@@ -194,15 +189,14 @@ CommandClient.prototype.begin = function begin(command) {
 	else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
 		try
 		{
-			if (this.webSocket.readyState === WebSocket.OPEN){
+			if (this.webSocket.readyState != WebSocket.OPEN){
+				this.webSocket = new WebSocket(new_uri);
 				this.webSocket.send(JSON.stringify({ command }));
 			}
-			else
+			else if (this.webSocket.readyState === WebSocket.OPEN)
 			{
-				this.webSocket = new WebSocket(new_uri);
-				if (this.webSocket.readyState === WebSocket.OPEN){
-					this.webSocket.send(JSON.stringify({ command }));
-				}
+				this.webSocket.send(JSON.stringify({ command }));
+
 			}
 		}
 		catch (err){
