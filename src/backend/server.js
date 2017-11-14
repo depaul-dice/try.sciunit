@@ -42,6 +42,7 @@ webSocketServer.on('connection', socket => session.start(socket));
 webSocketServer.on('close', function(socket){
 	// BROWSER DISCONNECTED
 	console.log(socket);
+	console.log("socket closed!");
 });
 console.log('Session started');
 
