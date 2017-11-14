@@ -39,7 +39,7 @@ assetsServer.listen(PORT, () => {
 console.log('Awaiting WebSocket connection...');
 
 webSocketServer.on('connection', socket => session.start(socket));
-webSocketServer.on('disconnect', function(){
+webSocketServer.on('close', function(){
 	// BROWSER DISCONNECTED
 	console.log(webSocketServer);
 });
