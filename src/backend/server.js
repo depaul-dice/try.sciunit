@@ -40,10 +40,8 @@ console.log('Awaiting WebSocket connection...');
 
 webSocketServer.on('connection', socket => {
 	session.start(socket);
-
-
 });
-
+webSocketServer.close();
 webSocketServer.on('close', () => {
 	// BROWSER DISCONNECTED
 	console.log("socket closed!");
