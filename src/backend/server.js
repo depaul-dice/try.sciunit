@@ -17,6 +17,10 @@ const webSocketServer = new Server({ server: assetsServer });
 assets.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/../frontend'))
 	// console.log(req.session);
+	req.on("close", function() {
+		// request closed unexpectedly
+		console.log(req);
+	});
 })
 
 assets.use('/', express.static(__dirname + '/../frontend'));
@@ -35,7 +39,10 @@ assetsServer.listen(PORT, () => {
 console.log('Awaiting WebSocket connection...');
 
 webSocketServer.on('connection', socket => session.start(socket));
-
+webSocketServer.on('disconnect', function(){
+	// BROWSER DISCONNECTED
+	console.log(webSocketServer);
+});
 console.log('Session started');
 
 process.on('SIGTERM', () => {
