@@ -3,7 +3,7 @@
 const EventEmitter = require('events');
 const spawn = require('child_process').spawn;
 const child_process = require('child_process');
-
+var shell = require('shelljs');
 
 function CommandRunner() {
 	this.shell = false;
@@ -32,7 +32,9 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 	if (commandName == "sciunit" && args[2] == "copy"){
 		console.log('Starting directory: ' + process.cwd());
 		try {
-			process.chdir('test_cwd/');
+			// shell.rm('-rf', '/home/ubuntu/sciunit/Project1116');
+			shell.mkdir('newD_1116');
+			process.chdir('newD_1116/');
 			console.log('New directory: ' + process.cwd());
 		}
 		catch (err) {
