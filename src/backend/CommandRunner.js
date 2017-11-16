@@ -26,6 +26,9 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 		shell: this.shell
 	});
 
+	console.log(commandName,args);
+	console.log(process.cwd);
+
 	// console.log("child_process.env",process.env);
 
 	childProcess.stdout.on('data', data => this.emit('output', data.toString()));
