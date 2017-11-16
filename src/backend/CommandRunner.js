@@ -38,9 +38,10 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 		console.log('Starting directory: ' + process.cwd());
 		try {
 			console.log(tmp_PjtName);
-			// shell.rm('-rf', '/home/ubuntu/sciunit/Project1116');
-			shell.mkdir('newD_1116');
-			process.chdir('newD_1116/');
+			var new_dir_nm = tmp_PjtName.slice(5,10);
+			shell.rm('-rf', tmp_PjtName);
+			shell.mkdir(new_dir_nm);
+			process.chdir(new_dir_nm+'/');
 			console.log('New directory: ' + process.cwd());
 		}
 		catch (err) {
