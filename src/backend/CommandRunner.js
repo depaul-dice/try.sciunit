@@ -27,7 +27,7 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 	});
 
 	console.log(commandName,args);
-	console.log(child_process.cwd);
+	console.log(process.cwd());
 
 	// console.log("child_process.env",process.env);
 
