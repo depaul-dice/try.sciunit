@@ -6,6 +6,8 @@ const specialCommands = require('./specialCommands');
 const server = require('./server');
 var parse = require('shell-quote').parse;
 var tmp_PjtName = "";
+var shell = require('shelljs');
+
 
 
 module.exports = {

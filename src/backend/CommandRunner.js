@@ -3,7 +3,6 @@
 const EventEmitter = require('events');
 const spawn = require('child_process').spawn;
 const child_process = require('child_process');
-var shell = require('shelljs');
 
 function CommandRunner() {
 	this.shell = false;
