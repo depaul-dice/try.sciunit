@@ -4,6 +4,7 @@ const EventEmitter = require('events');
 const spawn = require('child_process').spawn;
 const child_process = require('child_process');
 var shell = require('shelljs');
+var tmp_PjtName = "";
 
 function CommandRunner() {
 	this.shell = false;
@@ -25,8 +26,12 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 	const childProcess = _spawn(commandName, args, {
 		shell: this.shell
 	});
-
-	console.log(commandName,args);
+	if (commandName == "sciunit" && args[2] == "create")
+	{
+		console.log(commandName,args);
+		tmp_PjtName = args[1];
+		console.log(tmp_PjtName);
+	}
 	// console.log(process.cwd());
 	// var current_directory = "/home/ubuntu/try.sciunit_10262017/test_cwd";
 	if (commandName == "sciunit" && args[2] == "copy"){
