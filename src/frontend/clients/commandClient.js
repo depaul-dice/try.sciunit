@@ -183,9 +183,9 @@ CommandClient.prototype.begin = function begin(command) {
 			}
 
 	}
-	// else if (command_lst[0] == 'ls' && command_lst.length == 1){
-	// 	this.webSocket.send(JSON.stringify({ command }));
-	// }
+	else if (command_lst[0] == 'ls' && command_lst.length == 1){
+		this.webSocket.send(JSON.stringify({ command }));
+	}
 	else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
 		try
 		{
