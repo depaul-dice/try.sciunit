@@ -62,6 +62,7 @@ module.exports = {
 			}
 
 			commandRunner.run({ command });
+			console.log("hello after run the command!");
 		});
 	}
 };
