@@ -2,7 +2,6 @@
 
 const EventEmitter = require('events');
 const spawn = require('child_process').spawn;
-const child_process = require('child_process');
 
 function CommandRunner() {
 	this.shell = false;
@@ -25,7 +24,10 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 		shell: this.shell
 	});
 
-	childProcess.stdout.on('data', data => this.emit('output', data.toString()));
+	childProcess.stdout.on('data', data => {
+		this.emit('output', data.toString());
+		console.log("Hello from the stdout callback!",data.toString());
+	});
 	childProcess.stderr.on('data', error => this.emit('error', error.toString()));
 	childProcess.on('close', exitCode => this.emit('end', exitCode.toString()));
 
