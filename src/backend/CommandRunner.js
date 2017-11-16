@@ -30,13 +30,14 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 	{
 		console.log(commandName,args);
 		tmp_PjtName = args[1];
-		console.log(tmp_PjtName);
+		// console.log(tmp_PjtName);
 	}
 	// console.log(process.cwd());
 	// var current_directory = "/home/ubuntu/try.sciunit_10262017/test_cwd";
 	if (commandName == "sciunit" && args[2] == "copy"){
 		console.log('Starting directory: ' + process.cwd());
 		try {
+			console.log(tmp_PjtName);
 			// shell.rm('-rf', '/home/ubuntu/sciunit/Project1116');
 			shell.mkdir('newD_1116');
 			process.chdir('newD_1116/');
