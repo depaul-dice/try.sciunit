@@ -100,7 +100,6 @@ function App(props) {
 		if (e.key === 'Enter' && (user_input_command == button_ref.value)===false && (user_input_command == "sicunit open "+copy_token)===false){
 			if (cmd_id == length_of_cmd_detail-1){
 				progress_bar_percentage = "100%";
-				cmd_id =0;
 			}
 		}
 
