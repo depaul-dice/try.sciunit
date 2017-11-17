@@ -119,8 +119,8 @@ function App(props) {
 		// console.log(,button_ref.value.trim(" "),user_input_command.trim(" "),("sicunit open "+copy_token).trim(" "),user_input_command === button_ref.value, user_input_command === "sicunit open "+copy_token);
 
 		// console.log(user_input_command.slice(0,13),user_input_command.slice(0,13).length);
-		console.log(user_input_command.trim(" ").slice(0,12)==="sciunit open");
-		if (e.key === 'Enter' ){
+		// console.log(user_input_command.trim(" ").slice(0,12)==="sciunit open");
+		if (e.key === 'Enter'&& user_input_command.trim(" ").slice(0,12)==="sciunit open"){
 			progress_bar_percentage = "100%";
 			cmd_id += 1;
 		}
