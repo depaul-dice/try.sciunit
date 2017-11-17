@@ -4,7 +4,6 @@ const CommandRunner = require('./CommandRunner');
 const commandRunner = new CommandRunner();
 const specialCommands = require('./specialCommands');
 const server = require('./server');
-var shell = require('shelljs');
 
 
 

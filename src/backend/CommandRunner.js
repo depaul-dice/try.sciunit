@@ -3,6 +3,8 @@
 const EventEmitter = require('events');
 const spawn = require('child_process').spawn;
 var tmp_PjtName = "";
+var shell = require('shelljs');
+
 
 function CommandRunner() {
 	this.shell = false;
