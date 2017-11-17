@@ -118,10 +118,6 @@ function App(props) {
 				}
 				// console.log('cmd_id', cmd_id);
 			}
-			else {
-				cmd_id = 0;
-				// console.log(cmd_id);
-			}
 		}
 
 
