@@ -35,6 +35,7 @@ function App(props) {
 		if(o.value.slice(8,12) == 'copy')
 		{
 			copy_token_flag = true;
+			session_number="2";
 			copy_token = "";
 			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
