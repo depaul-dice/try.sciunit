@@ -45,6 +45,17 @@ function App(props) {
 		{
 			copy_token_flag = true;
 			session_number="2";
+			btn_blink_style ={
+				margin: "-8px",
+				paddingLeft:"70px",
+				fontFamily:"Courier New",
+				fontWeight: "bold",
+				animationDuration: "1200ms",
+				animationName: "blink",
+				animationDirection: "alternate",
+				webkitAnimation: "blink 1200ms",
+
+			}
 			copy_token = "";
 			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
 		}
