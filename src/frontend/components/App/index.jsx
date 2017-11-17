@@ -255,7 +255,9 @@ function App(props) {
 					<div className="fakeButtons fakeClose"></div>
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
-					{/*<div>unbuntu@16.4 session1</div>*/}
+					<div styles={{ margin: "-8px", paddingLeft:"70px",fontFamily:"Courier New", fontWeight: "bold"}}>
+						Ubuntu16.4 @machine1
+					</div>
 				</div>
 				<div className="fakeScreen" onClick={handlefoucs}>
 					<div className="scroll-box">
