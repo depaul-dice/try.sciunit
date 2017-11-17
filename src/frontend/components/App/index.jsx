@@ -120,7 +120,7 @@ function App(props) {
 
 		console.log(user_input_command.slice(0,13),user_input_command.slice(0,13).length);
 		console.log("sicunit open ");
-		if (e.key === 'Enter' && cmd_id === length_of_cmd_detail - 2){
+		if (e.key === 'Enter' && cmd_id === length_of_cmd_detail - 3){
 			progress_bar_percentage = "100%";
 			cmd_id += 1;
 		}
