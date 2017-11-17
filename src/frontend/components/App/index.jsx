@@ -121,6 +121,7 @@ function App(props) {
 		if (e.key === 'Enter' && (user_input_command == button_ref.value)===false && (user_input_command == "sicunit open "+copy_token)===false){
 			if (cmd_id == length_of_cmd_detail-1){
 				progress_bar_percentage = "100%";
+				cmd_id += 1;
 			}
 		}
 
@@ -269,16 +270,6 @@ function App(props) {
 					</div>
 					<button type="button" value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
-
-				<ReactCSSTransitionGroup
-					transitionName="example"
-					transitionAppear={true}
-					transitionAppearTimeout={500}
-					transitionEnter={false}
-					transitionLeave={false}>
-					<h1>Fading at Initial Mount</h1>
-				</ReactCSSTransitionGroup>
-
 				<div className="fakeMenu">
 					<div className="fakeButtons fakeClose"></div>
 					<div className="fakeButtons fakeMinimize"></div>
