@@ -3,7 +3,6 @@ const React = require('react');
 var ReactRouter = require('react-router');
 var autofocus = true;
 var parse = require('shell-quote').parse;
-var Blink = require('react-blink');
 
 var cmd_id = 0;
 var switch_detail_byID;
@@ -259,7 +258,7 @@ function App(props) {
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
 					<div style={{ margin: "-8px", paddingLeft:"70px",fontFamily:"Courier New", fontWeight: "bold"}}>
-						<Blink>Ubuntu16.4 @machine{session_number}</Blink>
+						Ubuntu16.4 @machine{session_number}
 					</div>
 				</div>
 				<div className="fakeScreen" onClick={handlefoucs}>
