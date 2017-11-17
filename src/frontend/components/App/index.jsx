@@ -255,7 +255,7 @@ function App(props) {
 					<div className="fakeButtons fakeClose"></div>
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
-					<div styles={{ margin: "-8px", paddingLeft:"70px",fontFamily:"Courier New", fontWeight: "bold"}}>
+					<div style={{ margin: "-8px", paddingLeft:"70px",fontFamily:"Courier New", fontWeight: "bold"}}>
 						Ubuntu16.4 @machine1
 					</div>
 				</div>
