@@ -91,7 +91,16 @@ module.exports = function commandDetailReducer() {
 			description_2:"sciunit open can also be used for switching between other sciunits located on your local machine.",
 
 			cmd_button: "sciunit open "
-		}
+		},
+		{
+			id: 8,
+			key:"End",
+			title: "End of the Tutorial",
+			description: "",
+			description_1: "You have reached the end of the tutorial",
+			description_2:"",
 
+			cmd_button: ""
+		}
 	]
 }

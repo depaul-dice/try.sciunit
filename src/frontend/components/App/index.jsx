@@ -12,6 +12,15 @@ var copy_token = "";
 var copy_token_flag = false;
 var clicked_button_cmd = "";
 var session_number="1";
+var btn_blink_style = null;
+btn_blink_style ={
+margin: "-8px", paddingLeft:"70px",fontFamily:"Courier New", fontWeight: "bold"
+// 	animation-duration: 1200ms;
+// animation-name: blink;
+// animation-iteration-count: infinite;
+// animation-direction: alternate;
+// -webkit-animation:blink 1200ms;
+}
 
 var switch_detail;
 
@@ -262,7 +271,7 @@ function App(props) {
 					<div className="fakeButtons fakeClose"></div>
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
-					<div style={{ margin: "-8px", paddingLeft:"70px",fontFamily:"Courier New", fontWeight: "bold"}}>
+					<div style={btn_blink_style}>
 						Ubuntu16.4 @machine{session_number}
 					</div>
 				</div>
