@@ -47,6 +47,7 @@ function App(props) {
 			session_number="2";
 			btn_blink_style ={
 				margin: "-8px",
+				color:"red",
 				paddingLeft:"70px",
 				fontFamily:"Courier New",
 				fontWeight: "bold",
