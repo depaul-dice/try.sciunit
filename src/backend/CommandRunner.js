@@ -31,18 +31,15 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 		this.emit('output', data.toString());
 		console.log(data.toString().trim());
 		var output = data.toString().trim();
-		if (args[2] === "copy"){
-			console.log("it is copy");
-		}
-		if (commandName == "sciunit" && args[2] == "create")
+		if (commandName == "sciunit" && args[2] === "create")
 		{
-			console.log("hello after run the command!",command);
+			console.log("hello form create",command);
 			tmp_PjtName = args[1];
-			// console.log(tmp_PjtName);
+			console.log(tmp_PjtName);
 		}
 		// console.log(process.cwd());
 		// var current_directory = "/home/ubuntu/try.sciunit_10262017/test_cwd";
-		if (commandName == "sciunit" && args[2] == "copy"){
+		else if (commandName == "sciunit" && args[2] == "copy"){
 			console.log('Starting directory: ' + process.cwd());
 			try {
 				console.log(tmp_PjtName);
