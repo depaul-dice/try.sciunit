@@ -47,15 +47,17 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 				//Saving the path of current opened sciunit
 				var new_dir_nm = tmp_PjtName.slice(5,10);
 
-				//Removing current opened sciunit
-				shell.rm('-rf', tmp_PjtName);
-
 				//Making a new directory
 				shell.mkdir(new_dir_nm);
 
 				//Changing current working directory
 				process.chdir(new_dir_nm+'/');
 				console.log('New directory: ' + process.cwd());
+
+				shell.cp( '/home/ubuntu/try.sciunit_10262017/hello.sh', '/home/ubuntu/try.sciunit_10262017/'+new_dir_nm);
+
+				//Removing current opened sciunit
+				shell.rm('-rf', tmp_PjtName);
 			}
 			catch (err) {
 				console.log('chdir: ' + err);
