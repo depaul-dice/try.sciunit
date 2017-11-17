@@ -118,7 +118,8 @@ function App(props) {
 		// console.log(cmd_id);
 
 		// console.log(user_input_command.trim(" "),button_ref.value.trim(" "),user_input_command.trim(" "),("sicunit open "+copy_token).trim(" "),user_input_command === button_ref.value, user_input_command === "sicunit open "+copy_token);
-		if (e.key === 'Enter' &&  (user_input_command.slice(0,13) === "sicunit open ")){
+		console.log(user_input_command.slice(0,13) === "sicunit open ");
+		if (e.key === 'Enter' &&  ){
 			progress_bar_percentage = "100%";
 			cmd_id += 1;
 		}
