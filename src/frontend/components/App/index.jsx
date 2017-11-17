@@ -116,10 +116,11 @@ function App(props) {
 	const nextStep = (e) => {
 		// console.log(user_input_command);
 		// console.log(cmd_id);
+		// console.log(user_input_command.trim(" "),button_ref.value.trim(" "),user_input_command.trim(" "),("sicunit open "+copy_token).trim(" "),user_input_command === button_ref.value, user_input_command === "sicunit open "+copy_token);
 
-		console.log(user_input_command.trim(" "),button_ref.value.trim(" "),user_input_command.trim(" "),("sicunit open "+copy_token).trim(" "),user_input_command === button_ref.value, user_input_command === "sicunit open "+copy_token);
-		console.log(user_input_command.slice(0,13) === "sicunit open ");
-		if (e.key === 'Enter' && user_input_command.slice(0,13) === "sicunit open "){
+		console.log(user_input_command.slice(0,13),user_input_command.slice(0,13).length);
+		console.log("sicunit open ");
+		if (e.key === 'Enter' && cmd_id === length_of_cmd_detail - 2){
 			progress_bar_percentage = "100%";
 			cmd_id += 1;
 		}
