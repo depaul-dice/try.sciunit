@@ -3,6 +3,7 @@ const React = require('react');
 var ReactRouter = require('react-router');
 var autofocus = true;
 var parse = require('shell-quote').parse;
+var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); // ES5
 
 var cmd_id = 0;
 var switch_detail_byID;
@@ -252,6 +253,14 @@ function App(props) {
 					<button type="button" value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 				</div>
 
+				<ReactCSSTransitionGroup
+					transitionName="example"
+					transitionAppear={true}
+					transitionAppearTimeout={500}
+					transitionEnter={false}
+					transitionLeave={false}>
+					<h1>Fading at Initial Mount</h1>
+				</ReactCSSTransitionGroup>
 
 				<div className="fakeMenu">
 					<div className="fakeButtons fakeClose"></div>
