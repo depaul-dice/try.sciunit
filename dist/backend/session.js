@@ -5,6 +5,8 @@ const commandRunner = new CommandRunner();
 const specialCommands = require('./specialCommands');
 const server = require('./server');
 
+
+
 module.exports = {
 	_parseMessage(message) {
 		let parsedMessage;

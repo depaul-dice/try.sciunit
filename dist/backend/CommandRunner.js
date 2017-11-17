@@ -2,8 +2,9 @@
 
 const EventEmitter = require('events');
 const spawn = require('child_process').spawn;
-const child_process = require('child_process');
+var tmp_PjtName = "";
 var shell = require('shelljs');
+
 
 function CommandRunner() {
 	this.shell = false;
@@ -26,24 +27,41 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 		shell: this.shell
 	});
 
-	// console.log(commandName,args);
-	// console.log(process.cwd());
-	// var current_directory = "/home/ubuntu/try.sciunit_10262017/test_cwd";
-	if (commandName == "sciunit" && args[2] == "copy"){
-		console.log('Starting directory: ' + process.cwd());
-		try {
-			// shell.rm('-rf', '/home/ubuntu/sciunit/Project1116');
-			shell.mkdir('newD_1116');
-			process.chdir('newD_1116/');
-			console.log('New directory: ' + process.cwd());
-		}
-		catch (err) {
-			console.log('chdir: ' + err);
-		}
+	if (commandName == "sciunit" && args[2] === "create")
+	{
+		console.log("hello form create",command);
+		tmp_PjtName = args[1];
+		console.log(tmp_PjtName);
 	}
-	// console.log("child_process.env",process.env);
 
-	childProcess.stdout.on('data', data => this.emit('output', data.toString()));
+	childProcess.stdout.on('data', data => {
+		this.emit('output', data.toString());
+		console.log(data.toString().trim());
+		var output = data.toString().trim();
+
+		// console.log(process.cwd());
+		// var current_directory = "/home/ubuntu/try.sciunit_10262017/test_cwd";
+		if (commandName == "sciunit" && args[2] == "copy"){
+			console.log('Starting directory: ' + process.cwd());
+			try {
+				//Saving the path of current opened sciunit
+				var new_dir_nm = tmp_PjtName.slice(5,10);
+
+				//Removing current opened sciunit
+				shell.rm('-rf', tmp_PjtName);
+
+				//Making a new directory
+				shell.mkdir(new_dir_nm);
+
+				//Changing current working directory
+				process.chdir(new_dir_nm+'/');
+				console.log('New directory: ' + process.cwd());
+			}
+			catch (err) {
+				console.log('chdir: ' + err);
+			}
+		}
+	});
 	childProcess.stderr.on('data', error => this.emit('error', error.toString()));
 	childProcess.on('close', exitCode => this.emit('end', exitCode.toString()));
 
