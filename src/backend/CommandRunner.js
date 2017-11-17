@@ -27,19 +27,21 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 		shell: this.shell
 	});
 
+	if (commandName == "sciunit" && args[2] === "create")
+	{
+		console.log("hello form create",command);
+		tmp_PjtName = args[1];
+		console.log(tmp_PjtName);
+	}
+
 	childProcess.stdout.on('data', data => {
 		this.emit('output', data.toString());
 		console.log(data.toString().trim());
 		var output = data.toString().trim();
-		if (commandName == "sciunit" && args[2] === "create")
-		{
-			console.log("hello form create",command);
-			tmp_PjtName = args[1];
-			console.log(tmp_PjtName);
-		}
+
 		// console.log(process.cwd());
 		// var current_directory = "/home/ubuntu/try.sciunit_10262017/test_cwd";
-		else if (commandName == "sciunit" && args[2] == "copy"){
+		if (commandName == "sciunit" && args[2] == "copy"){
 			console.log('Starting directory: ' + process.cwd());
 			try {
 				console.log(tmp_PjtName);
