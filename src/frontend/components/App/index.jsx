@@ -3,12 +3,15 @@ const React = require('react');
 var ReactRouter = require('react-router');
 var autofocus = true;
 var parse = require('shell-quote').parse;
+var Blink = require('react-blink');
+
 var cmd_id = 0;
 var switch_detail_byID;
 var progress_bar_percentage = "15%";
 var copy_token = "";
 var copy_token_flag = false;
 var clicked_button_cmd = "";
+var session_number="1";
 
 var switch_detail;
 
@@ -256,7 +259,7 @@ function App(props) {
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
 					<div style={{ margin: "-8px", paddingLeft:"70px",fontFamily:"Courier New", fontWeight: "bold"}}>
-						Ubuntu16.4 @machine1
+						<Blink>Ubuntu16.4 @machine{session_number}</Blink>
 					</div>
 				</div>
 				<div className="fakeScreen" onClick={handlefoucs}>
