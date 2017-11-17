@@ -68,29 +68,29 @@ module.exports = {
 
 			commandRunner.run({ command });
 
-			var command_lst = parse(command);
-			if (command_lst[0] == "sciunit" && command_lst[3] == "create")
-			{
-				console.log("hello after run the command!",command);
-				tmp_PjtName = command_lst[2];
-				// console.log(tmp_PjtName);
-			}
-			// console.log(process.cwd());
-			// var current_directory = "/home/ubuntu/try.sciunit_10262017/test_cwd";
-			if (command_lst[0] == "sciunit" && command_lst[3] == "copy"){
-				console.log('Starting directory: ' + process.cwd());
-				try {
-					console.log(tmp_PjtName);
-					var new_dir_nm = tmp_PjtName.slice(5,10);
-					shell.rm('-rf', tmp_PjtName);
-					shell.mkdir(new_dir_nm);
-					process.chdir(new_dir_nm+'/');
-					console.log('New directory: ' + process.cwd());
-				}
-				catch (err) {
-					console.log('chdir: ' + err);
-				}
-			}
+			// var command_lst = parse(command);
+			// if (command_lst[0] == "sciunit" && command_lst[3] == "create")
+			// {
+			// 	console.log("hello after run the command!",command);
+			// 	tmp_PjtName = command_lst[2];
+			// 	// console.log(tmp_PjtName);
+			// }
+			// // console.log(process.cwd());
+			// // var current_directory = "/home/ubuntu/try.sciunit_10262017/test_cwd";
+			// if (command_lst[0] == "sciunit" && command_lst[3] == "copy"){
+			// 	console.log('Starting directory: ' + process.cwd());
+			// 	try {
+			// 		console.log(tmp_PjtName);
+			// 		var new_dir_nm = tmp_PjtName.slice(5,10);
+			// 		shell.rm('-rf', tmp_PjtName);
+			// 		shell.mkdir(new_dir_nm);
+			// 		process.chdir(new_dir_nm+'/');
+			// 		console.log('New directory: ' + process.cwd());
+			// 	}
+			// 	catch (err) {
+			// 		console.log('chdir: ' + err);
+			// 	}
+			// }
 		});
 	}
 };
