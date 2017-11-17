@@ -26,7 +26,11 @@ CommandRunner.prototype.run = function run({ command, _spawn = spawn }) {
 
 	childProcess.stdout.on('data', data => {
 		this.emit('output', data.toString());
-		console.log("Hello from the stdout callback!",data.toString());
+		console.log(data.toString().trim());
+		var output = data.toString().trim();
+		if (args[2] === "copy"){
+			console.log("it is copy");
+		}
 	});
 	childProcess.stderr.on('data', error => this.emit('error', error.toString()));
 	childProcess.on('close', exitCode => this.emit('end', exitCode.toString()));
