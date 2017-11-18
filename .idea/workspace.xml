@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e909162-5247-4a77-a8fa-0fdf4dfdd818" name="Default" comment="d">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/CommandRunner.js" afterPath="$PROJECT_DIR$/src/backend/CommandRunner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" afterPath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,21 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandRunner.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommandRunner.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/backend/CommandRunner.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="660">
               <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="121" column="16" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="262" column="90" lean-forward="false" selection-start-line="262" selection-start-column="90" selection-end-line="262" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -194,8 +194,8 @@
         <option value="$PROJECT_DIR$/src/backend/session.js" />
         <option value="$PROJECT_DIR$/src/backend/server.js" />
         <option value="$PROJECT_DIR$/src/frontend/reducers/commandDetail.js" />
-        <option value="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
         <option value="$PROJECT_DIR$/src/backend/CommandRunner.js" />
+        <option value="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
       </list>
     </option>
   </component>
@@ -556,12 +556,12 @@
       <workItem from="1510539516108" duration="998000" />
       <workItem from="1510604968447" duration="6676000" />
       <workItem from="1510784896334" duration="15097000" />
-      <workItem from="1510953931212" duration="6750000" />
+      <workItem from="1510953931212" duration="7055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329504000" />
+    <option name="totallyTimeSpent" value="329809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-279" y="-1057" width="1339" height="1057" extended-state="0" />
@@ -907,14 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="121" column="16" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-215">
@@ -933,8 +925,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/CommandRunner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="660">
           <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="262" column="90" lean-forward="false" selection-start-line="262" selection-start-column="90" selection-end-line="262" selection-end-column="90" />
           <folding />
         </state>
       </provider>

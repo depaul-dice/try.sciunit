@@ -260,7 +260,7 @@ function App(props) {
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
-						{cmd_detail[cmd_id].description_1} <br/>
+						{cmd_detail[cmd_id].description_1}<span>{cmd_detail[cmd_id].title}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
 						{cmd_detail[cmd_id].description_2} <br/>
 						{cmd_detail[cmd_id].description} <br/>
