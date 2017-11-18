@@ -5,12 +5,25 @@ module.exports = function commandDetailReducer() {
 			key:"Create",
 			title: "Creating An Empty Sciunit",
 			description: "",
+
 			sciunit_1:"sciunit create ",
 			description_1: "creates and opens an empty sciunit.",
+			sciunit_1_1:"",
 
+			description_2_1:"",
+			sciunit_2:"",
 			description_2:	"Click the button to paste the command into the shell, and press Enter to run the command and create your first sciunit.",
+			sciunit_2_1:"",
+			cmd_button: "sciunit create Project1",
 
-			cmd_button: "sciunit create Project1"
+			description_3:"",
+			sciunit_3:"",
+
+			sciunit_3_1:"",
+			description_3_1:"",
+			sciunit_4:"",
+			description_3_2:""
+
 		},
 		{
 			id: 2,

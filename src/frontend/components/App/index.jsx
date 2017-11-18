@@ -260,11 +260,11 @@ function App(props) {
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
-						<span style={{fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_1}</span>{cmd_detail[cmd_id].description_1} <br/>
+						<span style={{fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_1}</span>{cmd_detail[cmd_id].description_1}<span style={{fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_1_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
-						{cmd_detail[cmd_id].description_2} <br/>
+						{cmd_detail[cmd_id].description_2_1}<span style={{fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_2}</span>{cmd_detail[cmd_id].description_2}{cmd_detail[cmd_id].sciunit_2_1} <br/>
 						{cmd_detail[cmd_id].description} <br/>
-						{cmd_detail[cmd_id].description_3} <br/>
+						{cmd_detail[cmd_id].description_3}<span style={{fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
 
 					</div>
 					<button type="button" value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
