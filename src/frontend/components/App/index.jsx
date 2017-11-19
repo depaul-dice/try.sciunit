@@ -36,6 +36,15 @@ function App(props) {
 	// console.log(typeof(cmd_id_M),cmd_id_M);
 	// cmd_id = cmd_id_M;
 
+	const if_button_exist = (cmd_detail) => {
+		if (cmd_detail[cmd_id].cmd_button != "")
+		{
+			return 	<button type="button" value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+
+		}
+
+	}
+
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
@@ -267,7 +276,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3}<span style={{fontFamily:"Courier New"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontFamily:"Courier New"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
 
 					</div>
-					<button type="button" value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+					{if_button_exist}
 				</div>
 				<div className="fakeMenu">
 					<div className="fakeButtons fakeClose"></div>
