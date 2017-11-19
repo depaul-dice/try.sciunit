@@ -55,9 +55,15 @@ module.exports = function commandDetailReducer() {
 			key:"Show",
 			title: " Displaying Last Execution",
 			description: "",
-			description_1: "Shows last captured execution in the current sciunit.",
 
-			description_2:"Here the current sciunit is Project1 and the last captured execution is e1.",
+			sciunit_1:"",
+			description_1: "Shows last captured execution in the current sciunit.",
+			sciunit_1_1:"",
+
+			description_2_1:"Here the current sciunit is ",
+			sciunit_2:" Project1 ",
+			description_2:"and the last captured execution is ",
+			sciunit_2_1:" e1.",
 
 			cmd_button: "sciunit show"
 		},
