@@ -276,7 +276,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_3}<span style={{fontFamily:"Courier New"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontFamily:"Courier New"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
 
 					</div>
-					{if_button_exist}
+					{if_button_exist()}
 				</div>
 				<div className="fakeMenu">
 					<div className="fakeButtons fakeClose"></div>
