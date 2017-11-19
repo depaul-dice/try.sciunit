@@ -83,7 +83,6 @@ module.exports = function commandDetailReducer() {
 			description_1: "will repeat a previously captured execution.",
 			sciunit_1_1:"",
 
-
 			description_2_1:"Let’s repeat ",
 			sciunit_2:" ./hello.sh ",
 			description_2:"which is captured previously in ",
@@ -95,7 +94,6 @@ module.exports = function commandDetailReducer() {
 			description_3_1:"",
 			sciunit_4:"",
 			description_3_2:"",
-
 
 			cmd_button: "sciunit repeat e1"
 		},
