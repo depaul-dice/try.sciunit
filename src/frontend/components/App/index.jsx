@@ -43,7 +43,7 @@ function App(props) {
 
 		}
 
-	}
+	});
 
 	const outputChildren = output.map(o => {
 		var user_input_command = parse(o.value);
