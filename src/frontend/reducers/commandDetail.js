@@ -117,7 +117,7 @@ module.exports = function commandDetailReducer() {
 
 			sciunit_1:"",
 			description_1: "List all executions within the current sciunit using ",
-			sciunit_1_1:"sciunit list",
+			sciunit_1_1:"sciunit list.",
 
 			description_2_1:"",
 			sciunit_2:"",
