@@ -36,8 +36,6 @@ function App(props) {
 	// console.log(typeof(cmd_id_M),cmd_id_M);
 	// cmd_id = cmd_id_M;
 
-
-
 	function if_button_exist() {
 		if (cmd_detail[cmd_id].cmd_button != "")
 		{
