@@ -6,7 +6,7 @@ module.exports = function commandDetailReducer() {
 			title: "Creating An Empty Sciunit",
 			description: "",
 
-			sciunit_1:"sciunit create",
+			sciunit_1:"sciunit create ",
 			description_1: "creates and opens an empty sciunit.",
 			sciunit_1_1:"",
 
@@ -32,20 +32,20 @@ module.exports = function commandDetailReducer() {
 			title: "Capturing Executions",
 			description: "",
 
-			sciunit_1:"sciunit exec",
+			sciunit_1:"sciunit exec ",
 			description_1: "captures an execution of your program. ",
 			sciunit_1_1:"",
 
 			description_2_1:"Use ",
-			sciunit_2:"cat hello.sh",
+			sciunit_2:" cat hello.sh ",
 			description_2: "to display its content. Run the command in the button to capture its execution.",
 			sciunit_2_1:"",
 
-			description_3: "The execution is then encapsulated as",
-			sciunit_3:"e1",
+			description_3: "The execution is then encapsulated as ",
+			sciunit_3:" e1 ",
 			sciunit_3_1:"",
-			description_3_1:"in the",
-			sciunit_4:"Project1 ",
+			description_3_1:"in the ",
+			sciunit_4:" Project1 ",
 			description_3_2:"sciunit.",
 
 			cmd_button: "sciunit exec ./hello.sh"
