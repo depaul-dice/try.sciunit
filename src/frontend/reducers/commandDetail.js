@@ -164,9 +164,22 @@ module.exports = function commandDetailReducer() {
 			key:"Open",
 			title: "Open an Existing Sciunit",
 			description: "",
-			description_1: "Click the button and press Enter to access the sciunit we just copied to the cloud.",
 
-			description_2:"sciunit open can also be used for switching between other sciunits located on your local machine.",
+			sciunit_1:"",
+			description_1: "Click the button and press Enter to access the sciunit we just copied to the cloud.",
+			sciunit_1_1:"",
+
+			description_2_1:"",
+			sciunit_2:"sciunit open ",
+			description_2:"can also be used for switching between other sciunits located on your local machine.",
+			sciunit_2_1:"",
+
+			description_3:"",
+			sciunit_3:"",
+			sciunit_3_1:"",
+			description_3_1:"",
+			sciunit_4:"",
+			description_3_2:"",
 
 			cmd_button: "sciunit open "
 		},
