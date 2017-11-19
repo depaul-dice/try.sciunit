@@ -15,7 +15,6 @@ module.exports = function commandDetailReducer() {
 			description_2:"Click the button to paste the command into the shell, and press Enter to run the command and create your first sciunit.",
 			sciunit_2_1:"",
 
-
 			description_3:"",
 			sciunit_3:"",
 			sciunit_3_1:"",
@@ -65,6 +64,13 @@ module.exports = function commandDetailReducer() {
 			description_2:"and the last captured execution is ",
 			sciunit_2_1:" e1.",
 
+			description_3:"",
+			sciunit_3:"",
+			sciunit_3_1:"",
+			description_3_1:"",
+			sciunit_4:"",
+			description_3_2:"",
+
 			cmd_button: "sciunit show"
 		},
 		{
@@ -72,9 +78,24 @@ module.exports = function commandDetailReducer() {
 			key:"Repeat",
 			title: " Repeating Executions",
 			description: "",
-			description_1: "sciunit repeat will repeat a previously captured execution.",
 
-			description_2:"Let’s repeat ./hello.sh which is captured previously in e1.",
+			sciunit_1:"sciunit repeat ",
+			description_1: "will repeat a previously captured execution.",
+			sciunit_1_1:"",
+
+
+			description_2_1:"Let’s repeat ",
+			sciunit_2:" ./hello.sh ",
+			description_2:"which is captured previously in ",
+			sciunit_2_1:" e1.",
+
+			description_3:"",
+			sciunit_3:"",
+			sciunit_3_1:"",
+			description_3_1:"",
+			sciunit_4:"",
+			description_3_2:"",
+
 
 			cmd_button: "sciunit repeat e1"
 		},
