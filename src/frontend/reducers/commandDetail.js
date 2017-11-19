@@ -114,8 +114,22 @@ module.exports = function commandDetailReducer() {
 			key:"List",
 			title: "Listing All Executions",
 			description: "",
-			description_1: "List all executions within the current sciunit:",
-			description_2: "Use sciunit list.",
+
+			sciunit_1:"",
+			description_1: "List all executions within the current sciunit using ",
+			sciunit_1_1:"sciunit list",
+
+			description_2_1:"",
+			sciunit_2:"",
+			description_2:"",
+			sciunit_2_1:"",
+
+			description_3:"",
+			sciunit_3:"",
+			sciunit_3_1:"",
+			description_3_1:"",
+			sciunit_4:"",
+			description_3_2:"",
 
 			cmd_button: "sciunit list"
 		},
