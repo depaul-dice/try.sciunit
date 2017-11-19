@@ -36,7 +36,7 @@ function App(props) {
 	// console.log(typeof(cmd_id_M),cmd_id_M);
 	// cmd_id = cmd_id_M;
 
-	const if_button_exist = (cmd_detail) => {
+	const if_button_exist = cmd_detail[cmd_id].cmd_button.map(o => {
 		if (cmd_detail[cmd_id].cmd_button != "")
 		{
 			return 	<button type="button" value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
