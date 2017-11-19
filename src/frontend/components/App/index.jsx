@@ -281,7 +281,7 @@ function App(props) {
 					<div className="fakeButtons fakeMinimize"></div>
 					<div className="fakeButtons fakeZoom"></div>
 					<div style={btn_blink_style}>
-						Ubuntu16.4 @machine{session_number}
+						Ubuntu16.04 @machine{session_number}
 					</div>
 				</div>
 				<div className="fakeScreen" onClick={handlefoucs}>

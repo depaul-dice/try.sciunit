@@ -14,15 +14,16 @@ module.exports = function commandDetailReducer() {
 			sciunit_2:"",
 			description_2:	"Click the button to paste the command into the shell, and press Enter to run the command and create your first sciunit.",
 			sciunit_2_1:"",
-			cmd_button: "sciunit create Project1",
+
 
 			description_3:"",
 			sciunit_3:"",
-
 			sciunit_3_1:"",
 			description_3_1:"",
 			sciunit_4:"",
-			description_3_2:""
+			description_3_2:"",
+
+			cmd_button: "sciunit create Project1"
 
 		},
 		{
@@ -30,11 +31,22 @@ module.exports = function commandDetailReducer() {
 			key:"Exec",
 			title: "Capturing Executions",
 			description: "",
-			description_1: "sciunit exec captures an execution of your program. ",
 
-			description_2: "Use cat hello.sh to display its content. Run the command in the button to capture its execution.",
+			sciunit_1:"sciunit exec ",
+			description_1: "captures an execution of your program. ",
+			sciunit_1_1:"",
 
-			description_3: "The execution is then encapsulated as e1 in the Project1 sciunit.",
+			description_2_1:"Use ",
+			sciunit_2:"cat hello.sh ",
+			description_2: "to display its content. Run the command in the button to capture its execution.",
+			sciunit_2_1:"",
+
+			description_3: "The execution is then encapsulated as ",
+			sciunit_3:"e1 ",
+			sciunit_3_1:"",
+			description_3_1:"in the ",
+			sciunit_4:"Project1 ",
+			description_3_2:"sciunit.",
 
 			cmd_button: "sciunit exec ./hello.sh"
 		},
