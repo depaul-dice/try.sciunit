@@ -138,11 +138,24 @@ module.exports = function commandDetailReducer() {
 			key:"Copy",
 			title: "Copying Sciunit to Another Machine",
 			description: "",
-			description_1: "sciunit copy copies the current sciunit to the cloud and gives you a token. You can use the token for accessing the sciunit on another machine. See next slide for using this token in sciunit open. ",
 
+			sciunit_1:"sciunit copy ",
+			description_1: "copies the current sciunit to the cloud and gives you a token. You can use the token for accessing the sciunit on another machine. See next slide for using this token in ",
+			sciunit_1_1:" sciunit open.",
+
+
+			description_2_1:"",
+			sciunit_2:"",
 			description_2:"The sciunit lives on the cloud for a day if you have not accessed it.",
+			sciunit_2_1:"",
 
-			description_3:"Note: After executing sciunit copy, the tutorial will take you to another machine, so that you can open your sciunit there. The tutorial continues on that machine as well.",
+
+			description_3:"Note: After executing",
+			sciunit_3:" sciunit copy",
+			sciunit_3_1:"",
+			description_3_1:", the tutorial will take you to another machine, so that you can open your sciunit there. The tutorial continues on that machine as well.",
+			sciunit_4:"",
+			description_3_2:"",
 
 			cmd_button: "sciunit copy"
 		},
