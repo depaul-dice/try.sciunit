@@ -272,7 +272,6 @@ function App(props) {
 						{cmd_detail[cmd_id].description_2_1}<span style={{fontFamily:"Courier New"}}>{cmd_detail[cmd_id].sciunit_2}</span>{cmd_detail[cmd_id].description_2}<span style={{fontFamily:"Courier New"}}>{cmd_detail[cmd_id].sciunit_2_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
 						{cmd_detail[cmd_id].description_3}<span style={{fontFamily:"Courier New"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontFamily:"Courier New"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
-
 					</div>
 					{if_button_exist()}
 				</div>
