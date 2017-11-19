@@ -37,15 +37,15 @@ module.exports = function commandDetailReducer() {
 			sciunit_1_1:"",
 
 			description_2_1:"Use ",
-			sciunit_2:"cat hello.sh ",
+			sciunit_2:" cat hello.sh ",
 			description_2: "to display its content. Run the command in the button to capture its execution.",
 			sciunit_2_1:"",
 
 			description_3: "The execution is then encapsulated as ",
-			sciunit_3:"e1 ",
+			sciunit_3:" e1 ",
 			sciunit_3_1:"",
 			description_3_1:"in the ",
-			sciunit_4:"Project1 ",
+			sciunit_4:" Project1 ",
 			description_3_2:"sciunit.",
 
 			cmd_button: "sciunit exec ./hello.sh"
