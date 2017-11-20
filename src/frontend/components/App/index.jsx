@@ -13,14 +13,7 @@ var copy_token_flag = false;
 var clicked_button_cmd = "";
 var session_number="1";
 var btn_blink_style = null;
-btn_blink_style ={
-margin: "-8px", paddingLeft:"70px",fontFamily:"Courier New", fontWeight: "bold"
-// 	animation-duration: 1200ms;
-// animation-name: blink;
-// animation-iteration-count: infinite;
-// animation-direction: alternate;
-// -webkit-animation:blink 1200ms;
-}
+btn_blink_style ={margin: "-8px", paddingLeft:"70px",fontFamily:"Lato", fontWeight: "bold"};
 
 var switch_detail;
 
@@ -56,7 +49,7 @@ function App(props) {
 				margin: "-8px",
 				color:"red",
 				paddingLeft:"70px",
-				fontFamily:"Courier New",
+				fontFamily:"Lato",
 				fontWeight: "bold",
 				animationDuration: "1200ms",
 				animationName: "blink",
