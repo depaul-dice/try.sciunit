@@ -13,7 +13,7 @@ var copy_token_flag = false;
 var clicked_button_cmd = "";
 var session_number="1";
 var btn_blink_style = null;
-btn_blink_style ={margin: "-8px", paddingLeft:"70px",fontFamily:"Lato"};
+btn_blink_style ={margin: "-11px", paddingLeft:"70px",fontFamily:"Lato",color:"Black"};
 
 var switch_detail;
 
@@ -46,7 +46,7 @@ function App(props) {
 			copy_token_flag = true;
 			session_number="2";
 			btn_blink_style ={
-				margin: "-8px",
+				margin: "-11px",
 				color:"red",
 				paddingLeft:"70px",
 				fontFamily:"Lato",
