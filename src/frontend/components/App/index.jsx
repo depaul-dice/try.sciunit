@@ -13,7 +13,7 @@ var copy_token_flag = false;
 var clicked_button_cmd = "";
 var session_number="1";
 var btn_blink_style = null;
-btn_blink_style ={margin: "-8px", paddingLeft:"70px",fontFamily:"Lato", fontWeight: "bold"};
+btn_blink_style ={margin: "-8px", paddingLeft:"70px",fontFamily:"Lato"};
 
 var switch_detail;
 
@@ -50,7 +50,6 @@ function App(props) {
 				color:"red",
 				paddingLeft:"70px",
 				fontFamily:"Lato",
-				fontWeight: "bold",
 				animationDuration: "1200ms",
 				animationName: "blink",
 				animationDirection: "alternate",
