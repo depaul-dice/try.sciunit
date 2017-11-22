@@ -5,13 +5,16 @@ const PORT = 9000;
 
 const http = require('http');
 const express = require('express');
-const { Server } = require('ws');
+var server = http.createServer(express);
+// const { Server } = require('ws');
 const session = require('./session');
 
 const assets = express();
 const assetsServer = http.createServer(assets);
 const path = require('path');
-const webSocketServer = new Server({ server: assetsServer });
+var io = require("https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js").listen(server);
+const webSocketServer = server.listen(PORT);
+// const webSocketServer = new Server({ server: assetsServer });
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
 assets.get('/*', (req, res) => {
