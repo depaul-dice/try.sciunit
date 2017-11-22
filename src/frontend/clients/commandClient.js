@@ -7,6 +7,7 @@ var parse = require('shell-quote').parse;
 const spawn = require('child_process').spawn;
 var loc = window.location, new_uri;
 var workspace_relocate_path = [];
+var WebSocket = require("socket.io");
 
 function CommandClient() {
 
