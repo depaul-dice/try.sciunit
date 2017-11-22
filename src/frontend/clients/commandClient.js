@@ -26,7 +26,7 @@ function CommandClient() {
 	// webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 
 	webSocket.on('message', function(message){
-		webSocket.emit('message', JSON.parse(message.data));
+		this.onMessage(JSON.parse(message.data));
 	});
 }
 
