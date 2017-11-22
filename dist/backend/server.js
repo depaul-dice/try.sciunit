@@ -5,13 +5,16 @@ const PORT = 9000;
 
 const http = require('http');
 const express = require('express');
-const { Server } = require('ws');
+var server = http.createServer(express);
+// const { Server } = require('ws');
 const session = require('./session');
 
 const assets = express();
 const assetsServer = http.createServer(assets);
 const path = require('path');
-const webSocketServer = new Server({ server: assetsServer });
+var io = require("socket.io").listen(server);
+// const webSocketServer = server.listen(PORT);
+// const webSocketServer = new Server({ server: assetsServer });
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
 assets.get('/*', (req, res) => {
@@ -38,11 +41,11 @@ assetsServer.listen(PORT, () => {
 
 console.log('Awaiting WebSocket connection...');
 
-webSocketServer.on('connection', socket => {
+io.on('connection', socket => {
 	session.start(socket);
-	// console.log(socket,"started connection!!!!!!!!!!!!!!!!!!!!!!");
+	// console.log(socket,"started connection!");
 	socket.on('close', ()=>{
-		// console.log(webSocketServer,"socket closed!!!!!!!!!!!!!!!!!!!!!");
+		// console.log(webSocketServer,"socket closed!");
 	})
 });
 // webSocketServer.close();
