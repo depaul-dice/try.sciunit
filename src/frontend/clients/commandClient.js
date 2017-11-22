@@ -7,7 +7,6 @@ var parse = require('shell-quote').parse;
 const spawn = require('child_process').spawn;
 var loc = window.location, new_uri;
 var workspace_relocate_path = [];
-var io = require("socket.io");
 
 function CommandClient() {
 
@@ -21,15 +20,14 @@ function CommandClient() {
 	new_uri += "//" + loc.host;
 	new_uri += loc.pathname;
 	// console.log(new_uri);
-	this.webSocket = new io(new_uri);
-	console.log(this.webSocket);
+	this.webSocket = new WebSocket(new_uri);
 	this.webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 }
 
 CommandClient.prototype = Object.create(EventEmitter.prototype);
 
 CommandClient.prototype.begin = function begin(command) {
-	if (this.webSocket.readyState === io.CONNECTING) {
+	if (this.webSocket.readyState === WebSocket.CONNECTING) {
 		this.webSocket.onopen = () => {
 			this.webSocket.send(JSON.stringify({ command }));
 		}
@@ -57,11 +55,11 @@ CommandClient.prototype.begin = function begin(command) {
 					// console.log(command);
 					try
 					{
-						if (this.webSocket.readyState != io.OPEN){
-							this.webSocket = new io(new_uri);
+						if (this.webSocket.readyState != WebSocket.OPEN){
+							this.webSocket = new WebSocket(new_uri);
 							this.webSocket.send(JSON.stringify({ command }));
 						}
-						else if (this.webSocket.readyState === io.OPEN)
+						else if (this.webSocket.readyState === WebSocket.OPEN)
 						{
 							this.webSocket.send(JSON.stringify({ command }));
 
