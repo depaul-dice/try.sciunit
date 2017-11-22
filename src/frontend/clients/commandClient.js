@@ -11,11 +11,11 @@ var workspace_relocate_path = [];
 function CommandClient() {
 
 	if (loc.protocol === "https:"){
-		new_uri = "wss:";
+		new_uri = "https:";
 	}
 	else
 	{
-		new_uri = "ws:";
+		new_uri = "http:";
 	}
 	new_uri += "//" + loc.host;
 	new_uri += loc.pathname;
