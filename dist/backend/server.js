@@ -5,21 +5,16 @@ const PORT = 9000;
 
 const http = require('http');
 const express = require('express');
-const app = express();
-
-var server = http.createServer(app);
-// const { Server } = require('ws');
+const { Server } = require('ws');
 const session = require('./session');
 
-// const assets = express();
-// const assetsServer = http.createServer(assets);
+const assets = express();
+const assetsServer = http.createServer(assets);
 const path = require('path');
-var io = require("socket.io").listen(server);
-// const webSocketServer = server.listen(PORT);
-// const webSocketServer = new Server({ server: assetsServer });
+const webSocketServer = new Server({ server: assetsServer });
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
-app.get('/*', (req, res) => {
+assets.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/../frontend'))
 	// console.log(req.session);
 	req.on("close", function() {
@@ -28,9 +23,9 @@ app.get('/*', (req, res) => {
 	});
 })
 
-app.use('/', express.static(__dirname + '/../frontend'));
+assets.use('/', express.static(__dirname + '/../frontend'));
 
-server.listen(PORT, () => {
+assetsServer.listen(PORT, () => {
 	console.log(`Frontend running on port ${PORT}...`);
 
 	// console.log("process.env: ", process.env);
@@ -43,11 +38,11 @@ server.listen(PORT, () => {
 
 console.log('Awaiting WebSocket connection...');
 
-io.on('connection', socket => {
+webSocketServer.on('connection', socket => {
 	session.start(socket);
-	console.log(socket,"started connection!");
+	// console.log(socket,"started connection!!!!!!!!!!!!!!!!!!!!!!");
 	socket.on('close', ()=>{
-		console.log(webSocketServer,"socket closed!");
+		// console.log(webSocketServer,"socket closed!!!!!!!!!!!!!!!!!!!!!");
 	})
 });
 // webSocketServer.close();
