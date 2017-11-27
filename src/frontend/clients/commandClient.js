@@ -7,16 +7,16 @@ var parse = require('shell-quote').parse;
 const spawn = require('child_process').spawn;
 var loc = window.location, new_uri;
 var workspace_relocate_path = [];
-var WebSocket = require("socket.io");
+var WebSocket = require("ws");
 
 function CommandClient() {
 
 	if (loc.protocol === "https:"){
-		new_uri = "https:";
+		new_uri = "wss:";
 	}
 	else
 	{
-		new_uri = "http:";
+		new_uri = "ws:";
 	}
 	new_uri += "//" + loc.host;
 	new_uri += loc.pathname;
