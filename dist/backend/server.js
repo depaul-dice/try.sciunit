@@ -35,8 +35,19 @@ assetsServer.listen(PORT, () => {
 
 console.log('Awaiting WebSocket connection...');
 
+<<<<<<< HEAD
+io.on('connection', socket => {
+	session.start(socket);
+	console.log(socket,"started connection!");
+	socket.on('close', ()=>{
+		console.log(webSocketServer,"socket closed!");
+	})
+});
+// webSocketServer.close();
+=======
 webSocketServer.on('connection', socket => session.start(socket));
 console.log('Session started');
+>>>>>>> bdebf8e657345cc651829f386cd9a4678b0ea4b5
 
 process.on('SIGTERM', () => {
 	assetsServer.close(() => {
