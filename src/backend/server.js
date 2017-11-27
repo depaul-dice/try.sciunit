@@ -4,20 +4,21 @@ const PORT = 9000;
 // const WEBSOCKET_PORT = 9002;
 
 const http = require('http');
-const express = require('express');
+const express = require('express')();
+
 var server = http.createServer(express);
 // const { Server } = require('ws');
 const session = require('./session');
 
-const assets = express();
-const assetsServer = http.createServer(assets);
+// const assets = express();
+// const assetsServer = http.createServer(assets);
 const path = require('path');
 var io = require("socket.io").listen(server);
 // const webSocketServer = server.listen(PORT);
 // const webSocketServer = new Server({ server: assetsServer });
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
-assets.get('/*', (req, res) => {
+express.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/../frontend'))
 	// console.log(req.session);
 	req.on("close", function() {
@@ -26,9 +27,9 @@ assets.get('/*', (req, res) => {
 	});
 })
 
-assets.use('/', express.static(__dirname + '/../frontend'));
+express.use('/', express.static(__dirname + '/../frontend'));
 
-assetsServer.listen(PORT, () => {
+server.listen(PORT, () => {
 	console.log(`Frontend running on port ${PORT}...`);
 
 	// console.log("process.env: ", process.env);
