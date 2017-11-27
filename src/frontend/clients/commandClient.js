@@ -21,17 +21,17 @@ function CommandClient() {
 	new_uri += "//" + loc.host;
 	new_uri += loc.pathname;
 	// console.log(new_uri);
-	const webSocket = WebSocket(new_uri);
-	console.log(webSocket);
-	webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
+	this.webSocket = new WebSocket(new_uri);
+	console.log(this.webSocket);
+	this.webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 }
 
 CommandClient.prototype = Object.create(EventEmitter.prototype);
 
 CommandClient.prototype.begin = function begin(command) {
-	if (webSocket.readyState === WebSocket.CONNECTING) {
-		webSocket.onopen = () => {
-			webSocket.send(JSON.stringify({ command }));
+	if (this.webSocket.readyState === WebSocket.CONNECTING) {
+		this.webSocket.onopen = () => {
+			this.webSocket.send(JSON.stringify({ command }));
 		}
 	}
 	var workspace_name = "";
@@ -55,17 +55,45 @@ CommandClient.prototype.begin = function begin(command) {
 					var code = workspace_relocate_path[0];	// TODO: Loop through the array?
 					command = "sciunit --root /tmp/"+code+" "+command_lst[1]+ " "+command_lst[2];
 					// console.log(command);
+					try
+					{
+						if (this.webSocket.readyState != WebSocket.OPEN){
+							this.webSocket = new WebSocket(new_uri);
+							this.webSocket.send(JSON.stringify({ command }));
+						}
+						else if (this.webSocket.readyState === WebSocket.OPEN)
+						{
+							this.webSocket.send(JSON.stringify({ command }));
 
+						}
+					}
+					catch (err){
+						console.log(err);
+					}
 				}
 				else if (command_lst[2].slice(0, 2) == '-i')
 				{
 					console.log("--i -i!!!");
 					command = "env SHELL=./fakeshell.py sciunit exec -i";
-					webSocket.send(JSON.stringify({ command }));
+					try
+					{
+						if (this.webSocket.readyState != WebSocket.OPEN){
+							this.webSocket = new WebSocket(new_uri);
+							this.webSocket.send(JSON.stringify({ command }));
+						}
+						else if (this.webSocket.readyState === WebSocket.OPEN)
+						{
+							this.webSocket.send(JSON.stringify({ command }));
+
+						}
+					}
+					catch (err){
+						console.log(err);
+					}
 				}
 				else
 				{
-					webSocket.send(JSON.stringify("ERROR"),function(error){
+					this.webSocket.send(JSON.stringify("ERROR"),function(error){
 
 					});
 				}
@@ -84,7 +112,21 @@ CommandClient.prototype.begin = function begin(command) {
 				// console.log(random_num_command);
 				command = random_num_command;
 				// console.log(command);
-				webSocket.send(JSON.stringify({ command }));
+				try
+				{
+					if (this.webSocket.readyState != WebSocket.OPEN){
+						this.webSocket = new WebSocket(new_uri);
+						this.webSocket.send(JSON.stringify({ command }));
+					}
+					else if (this.webSocket.readyState === WebSocket.OPEN)
+					{
+						this.webSocket.send(JSON.stringify({ command }));
+
+					}
+				}
+				catch (err){
+					console.log(err);
+				}
 
 			}
 			else if (command_lst[1] == 'show' || 'open' || 'list' || 'copy' || 'repeat')
@@ -103,22 +145,65 @@ CommandClient.prototype.begin = function begin(command) {
 					command = "sciunit --root /tmp/"+code+" "+command_lst[1];
 				}
 				// console.log(command);
-				webSocket.send(JSON.stringify({ command }));
+				try
+				{
+					if (this.webSocket.readyState != WebSocket.OPEN){
+						this.webSocket = new WebSocket(new_uri);
+						this.webSocket.send(JSON.stringify({ command }));
+					}
+					else if (this.webSocket.readyState === WebSocket.OPEN)
+					{
+						this.webSocket.send(JSON.stringify({ command }));
+
+					}
+				}
+				catch (err){
+					console.log(err);
+				}
+
+
 			}
 			else if (command_lst[1] != 'exec' && 'create' && 'show'&&'open'&&'list'&&'copy'&&'repeat')	//TODO
 			{
 				// console.log('anything but exec');
 				// console.log(command);
-				webSocket.send(JSON.stringify({ command }));
+				try
+				{
+					if (this.webSocket.readyState != WebSocket.OPEN){
+						this.webSocket = new WebSocket(new_uri);
+						this.webSocket.send(JSON.stringify({ command }));
+					}
+					else if (this.webSocket.readyState === WebSocket.OPEN)
+					{
+						this.webSocket.send(JSON.stringify({ command }));
 
+					}
+				}
+				catch (err){
+					console.log(err);
+				}
 			}
 
 	}
 	else if (command_lst[0] == 'ls' && command_lst.length == 1){
-		webSocket.send(JSON.stringify({ command }));
+		this.webSocket.send(JSON.stringify({ command }));
 	}
 	else if (command_lst[0] == 'man' && command_lst.length == 2 && command_lst[1] == 'sciunit'){
-		webSocket.send(JSON.stringify({ command }));
+		try
+		{
+			if (this.webSocket.readyState != WebSocket.OPEN){
+				this.webSocket = new WebSocket(new_uri);
+				this.webSocket.send(JSON.stringify({ command }));
+			}
+			else if (this.webSocket.readyState === WebSocket.OPEN)
+			{
+				this.webSocket.send(JSON.stringify({ command }));
+
+			}
+		}
+		catch (err){
+			console.log(err);
+		}
 	}
 
 
