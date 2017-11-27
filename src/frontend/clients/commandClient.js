@@ -7,21 +7,21 @@ var parse = require('shell-quote').parse;
 const spawn = require('child_process').spawn;
 var loc = window.location, new_uri;
 var workspace_relocate_path = [];
-var WebSocket = require("socket.io");
+var io = require("socket.io");
 
 function CommandClient() {
 
-	if (loc.protocol === "https:"){
-		new_uri = "https:";
-	}
-	else
-	{
+	// if (loc.protocol === "https:"){
+	// 	new_uri = "https:";
+	// }
+	// else
+	//{
 		new_uri = "http:";
-	}
+	//}
 	new_uri += "//" + loc.host;
 	new_uri += loc.pathname;
 	// console.log(new_uri);
-	const webSocket = WebSocket(new_uri);
+	const webSocket = io(new_uri);
 	console.log(webSocket);
 	// webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 
