@@ -4,9 +4,10 @@ const PORT = 9000;
 // const WEBSOCKET_PORT = 9002;
 
 const http = require('http');
-const express = require('express')();
+const express = require('express');
+const app = express();
 
-var server = http.createServer(express);
+var server = http.createServer(app);
 // const { Server } = require('ws');
 const session = require('./session');
 
@@ -18,7 +19,7 @@ var io = require("socket.io").listen(server);
 // const webSocketServer = new Server({ server: assetsServer });
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
-express.get('/*', (req, res) => {
+app.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/../frontend'))
 	// console.log(req.session);
 	req.on("close", function() {
@@ -27,7 +28,7 @@ express.get('/*', (req, res) => {
 	});
 })
 
-express.use('/', express.static(__dirname + '/../frontend'));
+app.use('/', express.static(__dirname + '/../frontend'));
 
 server.listen(PORT, () => {
 	console.log(`Frontend running on port ${PORT}...`);

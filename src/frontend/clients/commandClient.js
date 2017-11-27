@@ -7,34 +7,33 @@ var parse = require('shell-quote').parse;
 const spawn = require('child_process').spawn;
 var loc = window.location, new_uri;
 var workspace_relocate_path = [];
-var io = require("socket.io");
+var WebSocket = require("socket.io");
 
 function CommandClient() {
 
-	// if (loc.protocol === "https:"){
-	// 	new_uri = "https:";
-	// }
-	// else
-	//{
+	if (loc.protocol === "https:"){
+		new_uri = "https:";
+	}
+	else
+	{
 		new_uri = "http:";
-	//}
+	}
 	new_uri += "//" + loc.host;
 	new_uri += loc.pathname;
 	// console.log(new_uri);
-	new_uri  = "http://localhost:9000";
-	const webSocket = io(new_uri);
+	const webSocket = WebSocket(new_uri);
 	console.log(webSocket);
-	// webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
-
-	webSocket.on('message', function(message){
-		this.onMessage(JSON.parse(message.data));
-	});
+	webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 }
 
 CommandClient.prototype = Object.create(EventEmitter.prototype);
 
 CommandClient.prototype.begin = function begin(command) {
-	webSocket.send(JSON.stringify({ command }));
+	if (webSocket.readyState === WebSocket.CONNECTING) {
+		webSocket.onopen = () => {
+			webSocket.send(JSON.stringify({ command }));
+		}
+	}
 	var workspace_name = "";
 	// console.log("global var:",workspace_relocate_path);
 	// console.log("Command is : " + command);
@@ -56,7 +55,7 @@ CommandClient.prototype.begin = function begin(command) {
 					var code = workspace_relocate_path[0];	// TODO: Loop through the array?
 					command = "sciunit --root /tmp/"+code+" "+command_lst[1]+ " "+command_lst[2];
 					// console.log(command);
-					webSocket.send(JSON.stringify({ command }));
+
 				}
 				else if (command_lst[2].slice(0, 2) == '-i')
 				{
