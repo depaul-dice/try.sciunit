@@ -57,32 +57,32 @@ function App(props) {
 
 			}
 			copy_token = "";
-			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}>> {o.value}</pre></li>
 		}
 
 		if (o.value.slice(8,15) == 'exec -i'){
 			copy_token = "";
-			return <li key={o.id} className="output__item"><pre>{o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}>{o.value}</pre></li>
 		}
 
 		if ((o.value.slice(0,7) === 'sciunit' || o.value.slice(0,2) === 'ls' || o.value.slice(0,3) === 'man' ) && user_input_command.length < 5){
 			copy_token = "";
-			return <li key={o.id} className="output__item"><pre>> {o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}>> {o.value}</pre></li>
 		}
 
 		else if (o.value.length == 8){
 			copy_token = o.value;
 			// console.log(copy_token);
-			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 		else if (o.value.slice(8,12) == 'open')
 		{
 			// console.log("hello from open");
-			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 		else {
 			// console.log(o.value);
-			return <li key={o.id} className="output__item"><pre> {o.value}</pre></li>
+			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 	});
 	var user_input_command;
@@ -261,9 +261,9 @@ function App(props) {
 					<div>
 						<span style={{fontFamily:"Consolas"}}>{cmd_detail[cmd_id].sciunit_1}</span>{cmd_detail[cmd_id].description_1}<span style={{fontFamily:"Consolas"}}>{cmd_detail[cmd_id].sciunit_1_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
-						{cmd_detail[cmd_id].description_2_1}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_2}</span>{cmd_detail[cmd_id].description_2}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_2_1}</span> <br/>
+						{cmd_detail[cmd_id].description_2_1}<span style={{fontFamily:"Consolas"}}>{cmd_detail[cmd_id].sciunit_2}</span>{cmd_detail[cmd_id].description_2}<span style={{fontFamily:"Consolas"}}>{cmd_detail[cmd_id].sciunit_2_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
-						{cmd_detail[cmd_id].description_3}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
+						{cmd_detail[cmd_id].description_3}<span style={{fontFamily:"Consolas"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontFamily:"Consolas"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
 					</div>
 					{if_button_exist()}
 				</div>
