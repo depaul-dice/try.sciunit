@@ -4,6 +4,7 @@
     <list default="true" id="4e909162-5247-4a77-a8fa-0fdf4dfdd818" name="Default" comment="d">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" afterPath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/index.html" afterPath="$PROJECT_DIR$/src/frontend/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="261" column="173" lean-forward="false" selection-start-line="261" selection-start-column="173" selection-end-line="261" selection-end-column="173" />
+              <caret line="261" column="59" lean-forward="false" selection-start-line="261" selection-start-column="59" selection-end-line="261" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -75,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="98" lean-forward="false" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="98" />
+              <caret line="11" column="96" lean-forward="false" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -504,12 +505,12 @@
       <workItem from="1510604968447" duration="6676000" />
       <workItem from="1510784896334" duration="15097000" />
       <workItem from="1510953931212" duration="28524000" />
-      <workItem from="1511991999423" duration="1505000" />
+      <workItem from="1511991999423" duration="1569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352783000" />
+    <option name="totallyTimeSpent" value="352847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
@@ -853,14 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/clients/commandClient.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="62" column="67" lean-forward="true" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/actions/commandsActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -880,7 +873,15 @@
     <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="98" lean-forward="false" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="98" />
+          <caret line="11" column="96" lean-forward="false" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/clients/commandClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="62" column="67" lean-forward="true" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -888,7 +889,7 @@
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="261" column="173" lean-forward="false" selection-start-line="261" selection-start-column="173" selection-end-line="261" selection-end-column="173" />
+          <caret line="261" column="59" lean-forward="false" selection-start-line="261" selection-start-column="59" selection-end-line="261" selection-end-column="59" />
           <folding />
         </state>
       </provider>
