@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
-              <caret line="429" column="17" lean-forward="false" selection-start-line="429" selection-start-column="17" selection-end-line="429" selection-end-column="17" />
+              <caret line="549" column="19" lean-forward="true" selection-start-line="549" selection-start-column="19" selection-end-line="549" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -124,7 +124,6 @@
       <find>cwd</find>
       <find>childDirectory</find>
       <find>button-one</find>
-      <find>monospace</find>
       <find>webSocket</find>
       <find>this.webSocket</find>
       <find>file</find>
@@ -132,6 +131,7 @@
       <find>output</find>
       <find>ter</find>
       <find>terminal--output</find>
+      <find>monospace</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -494,16 +494,16 @@
       <workItem from="1510604968447" duration="6676000" />
       <workItem from="1510784896334" duration="15097000" />
       <workItem from="1510953931212" duration="28524000" />
-      <workItem from="1511991999423" duration="559000" />
+      <workItem from="1511991999423" duration="713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351837000" />
+    <option name="totallyTimeSpent" value="351991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20571883" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -511,7 +511,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20779221" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20779221" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -878,7 +878,7 @@
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
-          <caret line="429" column="17" lean-forward="false" selection-start-line="429" selection-start-column="17" selection-end-line="429" selection-end-column="17" />
+          <caret line="549" column="19" lean-forward="true" selection-start-line="549" selection-start-column="19" selection-end-line="549" selection-end-column="19" />
           <folding />
         </state>
       </provider>
