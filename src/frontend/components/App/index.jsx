@@ -32,7 +32,7 @@ function App(props) {
 	function if_button_exist() {
 		if (cmd_detail[cmd_id].cmd_button != "")
 		{
-			return 	<button type="button" value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+			return 	<button type="button" style={{fontFamily:"Consolas"}} value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 		}
 	};
 
