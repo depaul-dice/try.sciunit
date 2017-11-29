@@ -24,8 +24,8 @@
       <file leaf-file-name="_app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="549" column="19" lean-forward="true" selection-start-line="549" selection-start-column="19" selection-end-line="549" selection-end-column="19" />
+            <state relative-caret-position="131">
+              <caret line="545" column="15" lean-forward="false" selection-start-line="545" selection-start-column="4" selection-end-line="545" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -102,9 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>socket</find>
-      <find>createServer</find>
-      <find>workspace_relocate_path</find>
       <find>console.log</find>
       <find>var</find>
       <find>getAttribut</find>
@@ -131,7 +128,10 @@
       <find>output</find>
       <find>ter</find>
       <find>terminal--output</find>
+      <find>pre,</find>
+      <find>pre</find>
       <find>monospace</find>
+      <find>font-family</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -494,12 +494,12 @@
       <workItem from="1510604968447" duration="6676000" />
       <workItem from="1510784896334" duration="15097000" />
       <workItem from="1510953931212" duration="28524000" />
-      <workItem from="1511991999423" duration="713000" />
+      <workItem from="1511991999423" duration="872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351991000" />
+    <option name="totallyTimeSpent" value="352150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
@@ -877,8 +877,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="549" column="19" lean-forward="true" selection-start-line="549" selection-start-column="19" selection-end-line="549" selection-end-column="19" />
+        <state relative-caret-position="131">
+          <caret line="545" column="15" lean-forward="false" selection-start-line="545" selection-start-column="4" selection-end-line="545" selection-end-column="15" />
           <folding />
         </state>
       </provider>
