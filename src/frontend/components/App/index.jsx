@@ -259,11 +259,11 @@ function App(props) {
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
-						<span style={{fontFamily:"Consolata"}}>{cmd_detail[cmd_id].sciunit_1}</span>{cmd_detail[cmd_id].description_1}<span style={{fontFamily:"Consolata"}}>{cmd_detail[cmd_id].sciunit_1_1}</span> <br/>
+						<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_1}</span>{cmd_detail[cmd_id].description_1}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_1_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
-						{cmd_detail[cmd_id].description_2_1}<span style={{fontFamily:"Consolata"}}>{cmd_detail[cmd_id].sciunit_2}</span>{cmd_detail[cmd_id].description_2}<span style={{fontFamily:"Consolata"}}>{cmd_detail[cmd_id].sciunit_2_1}</span> <br/>
+						{cmd_detail[cmd_id].description_2_1}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_2}</span>{cmd_detail[cmd_id].description_2}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_2_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
-						{cmd_detail[cmd_id].description_3}<span style={{fontFamily:"Consolata"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontFamily:"Consolata"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
+						{cmd_detail[cmd_id].description_3}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
 					</div>
 					{if_button_exist()}
 				</div>
