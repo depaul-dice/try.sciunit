@@ -113,10 +113,12 @@ function App(props) {
 		}
 
 	};
+
+	var node = getDOMNode();
+	console.log("scrollHeight",node.scrollHeight);
+	console.log("scrollTop",node.scrollTop);
 	const nextStep = (e) => {
-		var node = getDOMNode();
-		console.log("scrollHeight",node.scrollHeight);
-		console.log("scrollTop",node.scrollTop);
+
 		// console.log(user_input_command);
 		// console.log(cmd_id);
 		// console.log(,button_ref.value.trim(" "),user_input_command.trim(" "),("sicunit open "+copy_token).trim(" "),user_input_command === button_ref.value, user_input_command === "sicunit open "+copy_token);
