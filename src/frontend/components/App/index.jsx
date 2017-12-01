@@ -32,7 +32,7 @@ function App(props) {
 	function if_button_exist() {
 		if (cmd_detail[cmd_id].cmd_button != "")
 		{
-			return 	<button type="button" style={{fontFamily:"Consolas"}} value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
+			return 	<button type="button" style={{fontFamily:"Consolas"}} value={cmd_detail[cmd_id].cmd_button+copy_token} className="button-one"  ref={(input) => { button_ref = input; }} onMouseDown={handleMouseDown} onMouseUp={handlefoucs()}>{cmd_detail[cmd_id].cmd_button}{copy_token}</button>
 		}
 	};
 
@@ -259,7 +259,7 @@ function App(props) {
 					<h1>{cmd_detail[cmd_id].title}</h1>
 					<hr/>
 					<div>
-						<span style={{fontFamily:"Inconsolata", fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_1}</span>{cmd_detail[cmd_id].description_1}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_1_1}</span> <br/>
+						<span style={{fontFamily:"Consolas", fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_1}</span>{cmd_detail[cmd_id].description_1}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_1_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
 						{cmd_detail[cmd_id].description_2_1}<span style={{fontFamily:"Inconsolata"}}>{cmd_detail[cmd_id].sciunit_2}</span>{cmd_detail[cmd_id].description_2}<span style={{fontFamily:"Consolas"}}>{cmd_detail[cmd_id].sciunit_2_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
