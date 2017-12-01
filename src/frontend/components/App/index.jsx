@@ -4,7 +4,6 @@ var ReactRouter = require('react-router');
 var autofocus = true;
 var parse = require('shell-quote').parse;
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); // ES5
-var scrollIntoView = require('scroll-into-view');
 
 var cmd_id = 0;
 var switch_detail_byID;
@@ -141,9 +140,6 @@ function App(props) {
 			}
 		}
 
-		//automatically scroll down to the bottom
-		window.scrollIntoView(endOftheOutput);
-		console.log("try to implemnt scrollIntoView");
 	};
 
 	function handlefoucs() {
