@@ -142,8 +142,8 @@ function App(props) {
 		}
 
 		//automatically scroll down to the bottom
-		console.log("scrollHeight");
-
+		window.scrollIntoView(endOftheOutput);
+		console.log("try to implemnt scrollIntoView");
 	};
 
 	function handlefoucs() {
