@@ -4,6 +4,7 @@ var ReactRouter = require('react-router');
 var autofocus = true;
 var parse = require('shell-quote').parse;
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); // ES5
+var ReactDOM = require('react-dom');
 
 var cmd_id = 0;
 var switch_detail_byID;
@@ -18,6 +19,9 @@ btn_blink_style ={margin: "-11px", paddingLeft:"70px",fontFamily:"Lato",color:"B
 
 var switch_detail;
 
+
+const node = ReactDOM.findDOMNode();
+console.log("DOM Node", node);
 function App(props) {
 	let textInput = null;
 	let button_ref = null;
