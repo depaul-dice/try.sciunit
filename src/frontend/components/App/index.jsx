@@ -142,7 +142,7 @@ function App(props) {
 		}
 
 		//automatically scroll down to the bottom
-		console.log("scrollHeight",endOftheOutput.scrollHeight);
+		console.log("scrollHeight",endOftheOutput);
 
 	};
 
