@@ -114,9 +114,6 @@ function App(props) {
 
 	};
 
-	var node = getDOMNode();
-	console.log("scrollHeight",node.scrollHeight);
-	console.log("scrollTop",node.scrollTop);
 	const nextStep = (e) => {
 
 		// console.log(user_input_command);
