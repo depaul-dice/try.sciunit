@@ -84,8 +84,8 @@
       <file leaf-file-name="Receiver.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/ws/lib/Receiver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="144">
+              <caret line="688" column="0" lean-forward="false" selection-start-line="688" selection-start-column="0" selection-end-line="691" selection-end-column="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -403,7 +403,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="Receiver&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/try.sciunit_10262017/node_modules/ws/lib/Receiver.js&#10;isValidUTF8&#9;null&#9;null&#10;commandClient&#9;null&#9;null&#10;cwd&#9;null&#9;null&#10;startContainer&#9;null&#9;null&#10;_parseMessage&#9;null&#9;null&#10;_parse&#9;null&#9;null&#10;commandDetailReducer&#9;null&#9;null&#10;http&#9;null&#9;null&#10;config&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/.editorconfig&#10;Upgrade Required&#9;null&#9;null&#10;isBackendReady&#9;null&#9;null&#10;webpack&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/webpack/lib/webpack.js&#10;bindA&#9;null&#9;null&#10;createStore&#9;null&#9;null&#10;createstore&#9;null&#9;null&#10;reducer&#9;null&#9;null&#10;setState&#9;null&#9;null&#10;getInitialApp&#9;null&#9;null&#10;getInitialState&#9;null&#9;null&#10;child_process&#9;null&#9;null&#10;child process&#9;null&#9;null&#10;server&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/backend/server.js&#10;css&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/frontend/components/App/_app.scss&#10;PreventDefault&#9;null&#9;null&#10;getPreventDefault()&#9;null&#9;null&#10;events.js&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/mocha/lib/browser/events.js&#10;Invalid payload&#9;null&#9;null&#10;.terminal__input&#9;null&#9;null&#10;index.jsx&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/trySciunit/src/frontend/components/App/index.jsx&#10;progress-bar&#9;null&#9;null&#10;codeschool-logo&#9;null&#9;null&#10;'root'&#9;null&#9;null&#10;runCommand&#9;null&#9;null&#10;user&#9;null&#9;null&#10;command&#9;null&#9;null&#10;cd&#9;null&#9;null&#10;react-dom&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/react-dom/dist/react-dom.js&#10;bro&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/babel-register/lib/browser.js&#10;store&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/src/frontend/getStore.js&#10;index.css&#9;FILE&#9;file:///Users/Chilli/Documents/term4all/dist/frontend/index.css&#10;Hello&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="isValidUTF8&#9;null&#9;null&#10;Receiver&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/try.sciunit_10262017/node_modules/ws/lib/Receiver.js&#10;commandClient&#9;null&#9;null&#10;cwd&#9;null&#9;null&#10;startContainer&#9;null&#9;null&#10;_parseMessage&#9;null&#9;null&#10;_parse&#9;null&#9;null&#10;commandDetailReducer&#9;null&#9;null&#10;http&#9;null&#9;null&#10;config&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/.editorconfig&#10;Upgrade Required&#9;null&#9;null&#10;isBackendReady&#9;null&#9;null&#10;webpack&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/webpack/lib/webpack.js&#10;bindA&#9;null&#9;null&#10;createStore&#9;null&#9;null&#10;createstore&#9;null&#9;null&#10;reducer&#9;null&#9;null&#10;setState&#9;null&#9;null&#10;getInitialApp&#9;null&#9;null&#10;getInitialState&#9;null&#9;null&#10;child_process&#9;null&#9;null&#10;child process&#9;null&#9;null&#10;server&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/backend/server.js&#10;css&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/frontend/components/App/_app.scss&#10;PreventDefault&#9;null&#9;null&#10;getPreventDefault()&#9;null&#9;null&#10;events.js&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/mocha/lib/browser/events.js&#10;Invalid payload&#9;null&#9;null&#10;.terminal__input&#9;null&#9;null&#10;index.jsx&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/trySciunit/src/frontend/components/App/index.jsx&#10;progress-bar&#9;null&#9;null&#10;codeschool-logo&#9;null&#9;null&#10;'root'&#9;null&#9;null&#10;runCommand&#9;null&#9;null&#10;user&#9;null&#9;null&#10;command&#9;null&#9;null&#10;cd&#9;null&#9;null&#10;react-dom&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/react-dom/dist/react-dom.js&#10;bro&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/babel-register/lib/browser.js&#10;store&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/src/frontend/getStore.js&#10;index.css&#9;FILE&#9;file:///Users/Chilli/Documents/term4all/dist/frontend/index.css&#10;Hello&#9;null&#9;null" />
     <property name="editor.config.accepted" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -528,12 +528,12 @@
       <workItem from="1510784896334" duration="15097000" />
       <workItem from="1510953931212" duration="28524000" />
       <workItem from="1511991999423" duration="2818000" />
-      <workItem from="1512097696693" duration="8509000" />
+      <workItem from="1512097696693" duration="9023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362605000" />
+    <option name="totallyTimeSpent" value="363119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
@@ -909,8 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ws/lib/Receiver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="144">
+          <caret line="688" column="0" lean-forward="false" selection-start-line="688" selection-start-column="0" selection-end-line="691" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
