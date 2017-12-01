@@ -141,7 +141,7 @@ function App(props) {
 		}
 
 		//automatically scroll down to the bottom
-		endOftheOutput.scrollIntoView({behavior:"smooth"});
+		endOftheOutput.scrollToBottom();
 	};
 
 	function handlefoucs() {
