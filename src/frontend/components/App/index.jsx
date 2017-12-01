@@ -20,9 +20,11 @@ btn_blink_style ={margin: "-11px", paddingLeft:"70px",fontFamily:"Lato",color:"B
 var switch_detail;
 
 
-const node = ReactDOM.findDOMNode();
-console.log("DOM Node", node);
+
 function App(props) {
+	const node = ReactDOM.findDOMNode(endOftheOutput);
+	console.log("DOM Node", node);
+
 	let textInput = null;
 	let button_ref = null;
 	let menu_ref = null;
