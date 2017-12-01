@@ -13,7 +13,7 @@ var copy_token_flag = false;
 var clicked_button_cmd = "";
 var session_number="1";
 var btn_blink_style = null;
-var scrollTop = "";
+var _scrollTop = "";
 btn_blink_style ={margin: "-11px", paddingLeft:"70px",fontFamily:"Lato",color:"Black"};
 
 var switch_detail;
@@ -281,7 +281,7 @@ function App(props) {
 					</div>
 				</div>
 				<div className="fakeScreen" onClick={handlefoucs}>
-					<div className="scroll-box" style={{scrollTop}} >
+					<div className="scroll-box" style={{scrollTop:_scrollTop}} >
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
 						><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
