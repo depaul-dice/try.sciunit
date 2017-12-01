@@ -22,6 +22,7 @@ function App(props) {
 	let button_ref = null;
 	let menu_ref = null;
 	let detail_ref = null;
+	let endOftheOutput = null;
 	// console.log(props);
 	var output_fromSciunit=['sciunit create Project1'];
 	const { output, runCommand,cmd_detail,clickedButton} = props;
@@ -139,7 +140,8 @@ function App(props) {
 			}
 		}
 
-
+		//automatically scroll down to the bottom
+		endOftheOutput.scrollIntoView({behavior:"smooth"});
 	};
 
 	function handlefoucs() {
@@ -276,10 +278,11 @@ function App(props) {
 					</div>
 				</div>
 				<div className="fakeScreen" onClick={handlefoucs}>
-					<div className="scroll-box">
+					<div className="scroll-box" >
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
 						><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
+						<div style={{ float:"left", clear: "both" }} ref={(el) => { endOftheOutput = el }}></div>
 					</div>
 				</div>
 			</div>
