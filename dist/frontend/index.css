@@ -191,7 +191,7 @@ a:hover {
   padding: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 250px;
+  height: 270px;
   font-family: "Ubuntu Mono";
   font-size: 13px;
   font-weight: bold;
@@ -382,6 +382,9 @@ p {
     opacity: 1; }
   to {
     opacity: 0; } }
+
+.empty-div {
+  background: white; }
 
 .scroll-bar-wrap {
   width: 300px;
