@@ -1,6 +1,7 @@
 'use strict';
 const React = require('react');
 var ReactRouter = require('react-router');
+const scrollIntoViewIfNeeded = require('scroll-into-view-if-needed');
 var autofocus = true;
 var parse = require('shell-quote').parse;
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); // ES5
@@ -91,7 +92,7 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 	});
-emptydiv.scrollIntoView({block:'end',behavior:'smooth'});
+	scrollIntoViewIfNeeded(emptydiv);
 	// console.log(element);
 	// if (element[0] != undefined){
 	// 	console.log("scrollHeight",element[0].scrollHeight);
