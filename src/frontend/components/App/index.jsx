@@ -151,6 +151,8 @@ function App(props) {
 		_scrollTop = "500";
 		console.log(_scrollTop);
 
+		console.log("Here should scroll down");
+
 	};
 
 	function handlefoucs() {
