@@ -5,6 +5,7 @@ var autofocus = true;
 var parse = require('shell-quote').parse;
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); // ES5
 var ReactDOM = require('react-dom');
+var element = document.getElementsByClassName("scroll-box");
 
 var cmd_id = 0;
 var switch_detail_byID;
@@ -90,13 +91,13 @@ function App(props) {
 		}
 	});
 
-	var element = document.getElementsByClassName("scroll-box");
 	console.log(element);
 	if (element[0] != undefined){
 		console.log("scrollHeight",element[0].scrollHeight);
 
 		console.log("Before",element[0].scrollTop);
 		var scrollHeight = element[0].scrollHeight;
+		scrollHeight = scrollHeight + 13;
 		console.log("saved scrollHeight",scrollHeight);
 		var height = element[0].clientHeight - 13;
 		console.log(height);
