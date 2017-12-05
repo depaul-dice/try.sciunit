@@ -41,10 +41,6 @@ function App(props) {
 	};
 
 	const outputChildren = output.map(o => {
-		var element = document.getElementsByClassName("scroll-box");
-		element[0].scrollTop = element[0].scrollHeight - 250;
-		console.log("Here should scroll down");
-		console.log(element[0].scrollTop);
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
 		// console.log(o.value.slice(8,12) == 'copy');
