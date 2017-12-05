@@ -91,13 +91,13 @@ function App(props) {
 	});
 
 	var element = document.getElementsByClassName("scroll-box");
-	console.log(typeof(element));
 	console.log(element);
 	if (element[0] != undefined){
 		console.log("scrollHeight",element[0].scrollHeight);
 
 		console.log("Before",element[0].scrollTop);
-
+		var height = element[0].clientHeight;
+		element[0].scrollTop = element[0].scrollHeight - height;
 		console.log("After",element[0].scrollTop);
 
 		console.log("Here should scroll down");
