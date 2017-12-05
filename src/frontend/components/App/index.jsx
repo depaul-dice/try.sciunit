@@ -96,7 +96,7 @@ function App(props) {
 		console.log("scrollHeight",element[0].scrollHeight);
 
 		console.log("Before",element[0].scrollTop);
-		var height = element[0].clientHeight + 49;
+		var height = element[0].clientHeight + 13;
 		console.log(height);
 		element[0].scrollTop = element[0].scrollHeight - height;
 		console.log("After",element[0].scrollTop);
