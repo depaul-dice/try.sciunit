@@ -302,7 +302,7 @@ function App(props) {
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
 						><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
-						<div className="empty-div"style={{ float:"left", clear: "both" }} ref={(el) => { endOftheOutput = el }}></div>
+						<div className="empty-div"style={{ float:"left", clear: "both" }}>Empty div</div>
 					</div>
 				</div>
 			</div>
