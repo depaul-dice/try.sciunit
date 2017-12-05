@@ -93,6 +93,10 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 	});
+
+	if (outputChildren){
+		console.log("Got output!", outputChildren);
+	}
 	var user_input_command;
 	var command_key = ['Create','Exec','Show','Repeat','List','Copy','Open'];
 	var length_of_cmd_detail = cmd_detail.length;
@@ -149,18 +153,18 @@ function App(props) {
 			}
 		}
 		console.log(_scrollTop);
-		var element = document.getElementsByClassName("empty-div");
+		var element = document.getElementsByClassName("scroll-box");
 		console.log(element);
-		// // console.log(typeof(element));
-		// console.log("scrollHeight",element[0].scrollHeight);
-		// console.log("scrollTop",element[0].scrollTop);
-        //
-        //
-		// if (element[0].scrollHeight > 250){
-		// 	element[0].scrollTop = element[0].scrollHeight - 250;
-		// 	console.log("Here should scroll down");
-		// 	console.log(element[0].scrollTop);
-		// }
+		// console.log(typeof(element));
+		console.log("scrollHeight",element[0].scrollHeight);
+		console.log("scrollTop",element[0].scrollTop);
+
+
+		if (element[0].scrollHeight > 250){
+			element[0].scrollTop = element[0].scrollHeight - 250;
+			console.log("Here should scroll down");
+			console.log(element[0].scrollTop);
+		}
 
 	};
 
@@ -302,7 +306,7 @@ function App(props) {
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
 						><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
-						<div className="empty-div"style={{ float:"left", clear: "both" }}>Empty div</div>
+						<div className="empty-div"style={{ float:"left", clear: "both" }} ref={(el) => { endOftheOutput = el }}></div>
 					</div>
 				</div>
 			</div>
