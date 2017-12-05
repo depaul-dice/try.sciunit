@@ -149,18 +149,18 @@ function App(props) {
 			}
 		}
 		console.log(_scrollTop);
-		var element = document.getElementsByClassName("scroll-box");
+		var element = document.getElementsByClassName("empty-div");
 		console.log(element);
-		// console.log(typeof(element));
-		console.log("scrollHeight",element[0].scrollHeight);
-		console.log("scrollTop",element[0].scrollTop);
-
-
-		if (element[0].scrollHeight > 250){
-			element[0].scrollTop = element[0].scrollHeight - 250;
-			console.log("Here should scroll down");
-			console.log(element[0].scrollTop);
-		}
+		// // console.log(typeof(element));
+		// console.log("scrollHeight",element[0].scrollHeight);
+		// console.log("scrollTop",element[0].scrollTop);
+        //
+        //
+		// if (element[0].scrollHeight > 250){
+		// 	element[0].scrollTop = element[0].scrollHeight - 250;
+		// 	console.log("Here should scroll down");
+		// 	console.log(element[0].scrollTop);
+		// }
 
 	};
 
@@ -302,7 +302,7 @@ function App(props) {
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
 						><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
-						<div style={{ float:"left", clear: "both" }} ref={(el) => { endOftheOutput = el }}></div>
+						<div className="empty-div"style={{ float:"left", clear: "both" }} ref={(el) => { endOftheOutput = el }}></div>
 					</div>
 				</div>
 			</div>
