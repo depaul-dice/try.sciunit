@@ -100,7 +100,7 @@ function App(props) {
 		console.log("saved scrollHeight",scrollHeight);
 		var height = element[0].clientHeight - 13;
 		console.log(height);
-		element[0].scrollTop = element[0].scrollHeight - height;
+		element[0].scrollTop = scrollHeight - height;
 		console.log("After",element[0].scrollTop);
 
 		console.log("Here should scroll down");
