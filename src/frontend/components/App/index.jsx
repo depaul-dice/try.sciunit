@@ -154,7 +154,13 @@ function App(props) {
 		// console.log(typeof(element));
 		console.log("scrollHeight",element[0].scrollHeight);
 		console.log("scrollTop",element[0].scrollTop);
-		console.log("Here should scroll down");
+
+
+		if (element[0].scrollHeight > 250){
+			element[0].scrollTop = element[0].scrollHeight - 250;
+			console.log("Here should scroll down");
+			console.log(element[0].scrollTop);
+		}
 
 	};
 
