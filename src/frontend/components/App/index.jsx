@@ -94,7 +94,8 @@ function App(props) {
 	console.log(typeof(element));
 	if (element[0] != undefined){
 		console.log("scrollHeight",element[0].scrollHeight);
-		console.log("scrollTop",element[0].scrollTop);
+		element[0].scrollHeight = element[0].scrollHeight + 13;
+		console.log("scrollHeight ++", element[0].scrollHeight)
 
 		console.log("Before",element[0].scrollTop);
 
