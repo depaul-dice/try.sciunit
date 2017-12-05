@@ -150,6 +150,8 @@ function App(props) {
 		}
 		console.log(_scrollTop);
 		var element = document.getElementsByClassName("scroll-box");
+		console.log(element);
+		console.log(typeof(element));
 		console.log("scrollHeight",element.scrollHeight);
 		console.log("scrollTop",element.scrollTop);
 		console.log("Here should scroll down");
