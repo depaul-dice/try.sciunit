@@ -18,11 +18,12 @@ var _scrollTop = "";
 btn_blink_style ={margin: "-11px", paddingLeft:"70px",fontFamily:"Lato",color:"Black"};
 
 var switch_detail;
-function componentDidMount(){
-	console.log("Hello from componentDidMount()")
-}
+
 
 function App(props) {
+	function componentDidMount(){
+		console.log("Hello from componentDidMount()")
+	}
 	let textInput = null;
 	let button_ref = null;
 	let menu_ref = null;
