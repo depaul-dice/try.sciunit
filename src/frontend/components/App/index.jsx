@@ -96,19 +96,21 @@ function App(props) {
 
 	var element = document.getElementsByClassName("scroll-box");
 	console.log(element);
-	// if (element != undefined){
-	// 	console.log("scrollHeight",element[0].scrollHeight);
-	// 	console.log("scrollTop",element[0].scrollTop);
-	// }
+	if (element != undefined){
+		console.log("scrollHeight",element[0].scrollHeight);
+		console.log("scrollTop",element[0].scrollTop);
+
+		if (element[0].scrollHeight > 250){
+			element[0].scrollTop = element[0].scrollHeight - 250;
+			console.log("Here should scroll down");
+			console.log(element[0].scrollTop);
+		}
+	}
 	// console.log(typeof(element));
 
 
 
-	if (element[0].scrollHeight > 250){
-		element[0].scrollTop = element[0].scrollHeight - 250;
-		console.log("Here should scroll down");
-		console.log(element[0].scrollTop);
-	}
+
 
 
 	var user_input_command;
