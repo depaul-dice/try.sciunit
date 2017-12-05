@@ -18,13 +18,11 @@ var _scrollTop = "";
 btn_blink_style ={margin: "-11px", paddingLeft:"70px",fontFamily:"Lato",color:"Black"};
 
 var switch_detail;
-
-
+function componentDidMount(){
+	console.log("Hello from componentDidMount()")
+}
 
 function App(props) {
-	const node = ReactDOM.findDOMNode(endOftheOutput);
-	console.log("DOM Node", node);
-
 	let textInput = null;
 	let button_ref = null;
 	let menu_ref = null;
@@ -45,6 +43,10 @@ function App(props) {
 	};
 
 	const outputChildren = output.map(o => {
+		var element = document.getElementsByClassName("scroll-box");
+		element[0].scrollTop = element[0].scrollHeight - 250;
+		console.log("Here should scroll down");
+		console.log(element[0].scrollTop);
 		var user_input_command = parse(o.value);
 		// console.log(o.value.slice(8,12));
 		// console.log(o.value.slice(8,12) == 'copy');
@@ -152,19 +154,19 @@ function App(props) {
 				// console.log('cmd_id', cmd_id);
 			}
 		}
-		console.log(_scrollTop);
-		var element = document.getElementsByClassName("scroll-box");
-		console.log(element);
-		// console.log(typeof(element));
-		console.log("scrollHeight",element[0].scrollHeight);
-		console.log("scrollTop",element[0].scrollTop);
-
-
-		if (element[0].scrollHeight > 250){
-			element[0].scrollTop = element[0].scrollHeight - 250;
-			console.log("Here should scroll down");
-			console.log(element[0].scrollTop);
-		}
+		// console.log(_scrollTop);
+		// var element = document.getElementsByClassName("scroll-box");
+		// console.log(element);
+		// // console.log(typeof(element));
+		// console.log("scrollHeight",element[0].scrollHeight);
+		// console.log("scrollTop",element[0].scrollTop);
+        //
+        //
+		// if (element[0].scrollHeight > 250){
+		// 	element[0].scrollTop = element[0].scrollHeight - 250;
+		// 	console.log("Here should scroll down");
+		// 	console.log(element[0].scrollTop);
+		// }
 
 	};
 
