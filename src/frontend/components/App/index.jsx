@@ -96,9 +96,12 @@ function App(props) {
 
 	var element = document.getElementsByClassName("scroll-box");
 	console.log(element);
+	if (element){
+		console.log("scrollHeight",element[0].scrollHeight);
+		console.log("scrollTop",element[0].scrollTop);
+	}
 	// console.log(typeof(element));
-	console.log("scrollHeight",element[0].scrollHeight);
-	console.log("scrollTop",element[0].scrollTop);
+
 
 
 	if (element[0].scrollHeight > 250){
