@@ -96,7 +96,7 @@ function App(props) {
 
 	var element = document.getElementsByClassName("scroll-box");
 	console.log(element);
-	if (element){
+	if (element != undefined){
 		console.log("scrollHeight",element[0].scrollHeight);
 		console.log("scrollTop",element[0].scrollTop);
 	}
