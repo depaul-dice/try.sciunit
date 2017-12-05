@@ -148,10 +148,10 @@ function App(props) {
 				// console.log('cmd_id', cmd_id);
 			}
 		}
-		_scrollTop = "500";
 		console.log(_scrollTop);
 		var element = document.getElementsByClassName("scroll-box");
-		console.log(element);
+		console.log("scrollHeight",element.scrollHeight);
+		console.log("scrollTop",element.scrollTop);
 		console.log("Here should scroll down");
 
 	};
