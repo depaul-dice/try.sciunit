@@ -98,7 +98,7 @@ function App(props) {
 
 		console.log("Before",element[0].scrollTop);
 
-		element[0].scrollTop = element[0].scrollHeight - 250 + 13 + 13;
+		element[0].scrollTop = element[0].scrollHeight - 237;
 		console.log("After",element[0].scrollTop);
 
 		console.log("Here should scroll down");
