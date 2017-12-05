@@ -21,9 +21,6 @@ var switch_detail;
 
 
 function App(props) {
-	function componentDidMount(){
-		console.log("Hello from componentDidMount()")
-	}
 	let textInput = null;
 	let button_ref = null;
 	let menu_ref = null;
@@ -97,9 +94,20 @@ function App(props) {
 		}
 	});
 
-	if (outputChildren){
-		console.log("Got output!", outputChildren);
+	var element = document.getElementsByClassName("scroll-box");
+	console.log(element);
+	// console.log(typeof(element));
+	console.log("scrollHeight",element[0].scrollHeight);
+	console.log("scrollTop",element[0].scrollTop);
+
+
+	if (element[0].scrollHeight > 250){
+		element[0].scrollTop = element[0].scrollHeight - 250;
+		console.log("Here should scroll down");
+		console.log(element[0].scrollTop);
 	}
+
+
 	var user_input_command;
 	var command_key = ['Create','Exec','Show','Repeat','List','Copy','Open'];
 	var length_of_cmd_detail = cmd_detail.length;
@@ -156,18 +164,6 @@ function App(props) {
 			}
 		}
 		// console.log(_scrollTop);
-		// var element = document.getElementsByClassName("scroll-box");
-		// console.log(element);
-		// // console.log(typeof(element));
-		// console.log("scrollHeight",element[0].scrollHeight);
-		// console.log("scrollTop",element[0].scrollTop);
-        //
-        //
-		// if (element[0].scrollHeight > 250){
-		// 	element[0].scrollTop = element[0].scrollHeight - 250;
-		// 	console.log("Here should scroll down");
-		// 	console.log(element[0].scrollTop);
-		// }
 
 	};
 
