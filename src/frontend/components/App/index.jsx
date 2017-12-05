@@ -6,6 +6,7 @@ var parse = require('shell-quote').parse;
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); // ES5
 var ReactDOM = require('react-dom');
 var element = document.getElementsByClassName("scroll-box");
+var emptydiv = document.getElementsByClassName("empty-div");
 
 var cmd_id = 0;
 var switch_detail_byID;
@@ -90,22 +91,22 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 	});
-
-	console.log(element);
-	if (element[0] != undefined){
-		console.log("scrollHeight",element[0].scrollHeight);
-
-		console.log("Before",element[0].scrollTop);
-		var scrollHeight = element[0].scrollHeight;
-		scrollHeight = scrollHeight + 13;
-		console.log("saved scrollHeight",scrollHeight);
-		var height = element[0].clientHeight - 13;
-		console.log(height);
-		element[0].scrollTop = scrollHeight - height;
-		console.log("After",element[0].scrollTop);
-
-		console.log("Here should scroll down");
-	}
+emptydiv.scrollIntoView({block:'end',behavior:'smooth'});
+	// console.log(element);
+	// if (element[0] != undefined){
+	// 	console.log("scrollHeight",element[0].scrollHeight);
+    //
+	// 	console.log("Before",element[0].scrollTop);
+	// 	var scrollHeight = element[0].scrollHeight;
+	// 	scrollHeight = scrollHeight + 13;
+	// 	console.log("saved scrollHeight",scrollHeight);
+	// 	var height = element[0].clientHeight - 13;
+	// 	console.log(height);
+	// 	element[0].scrollTop = scrollHeight - height;
+	// 	console.log("After",element[0].scrollTop);
+    //
+	// 	console.log("Here should scroll down");
+	// }
 	// console.log(typeof(element));
 
 
@@ -310,6 +311,7 @@ function App(props) {
 						Press enter to submit commands
 						<ul className="terminal--output">{outputChildren}</ul>
 						><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
+						<div className="empty-div"></div>
 					</div>
 				</div>
 			</div>
