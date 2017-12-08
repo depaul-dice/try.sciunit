@@ -159,7 +159,7 @@ function App(props) {
 			if (cmd_id < length_of_cmd_detail - 1) {
 				cmd_id += 1;
 				if (cmd_id == length_of_cmd_detail - 1) {
-					progress_bar_percentage = "100%";
+					progress_bar_percentage = "99.9%";
 				}
 				else {
 					var percen = parseInt(progress_bar_percentage.slice(0, 2));
