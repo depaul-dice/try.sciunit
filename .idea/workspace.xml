@@ -2,8 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e909162-5247-4a77-a8fa-0fdf4dfdd818" name="Default" comment="d">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/0fgfy/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2OmDU/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2wua6/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/39ytS/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/5jVxo/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7nqHv/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/8y7u9/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GK8F4/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GPD0w/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GQBZI/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/IE3ye/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NNbxP/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OACxt/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QiRqG/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RBDmz/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RELS3/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RmGRB/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SXXbo/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TryP0/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TuaOd/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/W9qE4/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WGRd3/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YcyxL/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bP9x5/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dN1Xk/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eDGfk/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eXhJD/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eonYP/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/f2NPM/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fLPXX/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hOHgK/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imQRD/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lYZUB/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/n1zfY/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding.node" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/src/sass.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/sass.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-sass/vendor/linux-x64-57/binding.node" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/qKBdz/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/qM6sI/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/qQtEb/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vWCum/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/w5TtS/hello.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zNcfQ/hello.sh" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/new_GeoTrust.png" afterPath="$PROJECT_DIR$/src/frontend/new_GeoTrust.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/backend/fakeshell.py" afterPath="$PROJECT_DIR$/dist/backend/fakeshell.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/backend/server.js" afterPath="$PROJECT_DIR$/dist/backend/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/frontend/index.js" afterPath="$PROJECT_DIR$/dist/frontend/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/fakeshell.py" afterPath="$PROJECT_DIR$/src/backend/fakeshell.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/server.js" afterPath="$PROJECT_DIR$/src/backend/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" afterPath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/build.sh" afterPath="$PROJECT_DIR$/tasks/build.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +72,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_app.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
+      <file leaf-file-name="new_GeoTrust.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frontend/new_GeoTrust.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7920">
-              <caret line="528" column="22" lean-forward="false" selection-start-line="528" selection-start-column="22" selection-end-line="528" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="8" column="126" lean-forward="false" selection-start-line="8" selection-start-column="126" selection-end-line="8" selection-end-column="126" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frontend/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -34,48 +102,8 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="94" column="37" lean-forward="false" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandRunner.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backend/CommandRunner.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commandClient.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/clients/commandClient.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/actions/appActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="390">
+              <caret line="244" column="184" lean-forward="false" selection-start-line="244" selection-start-column="184" selection-end-line="244" selection-end-column="184" />
               <folding />
             </state>
           </provider>
@@ -92,7 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scoket</find>
       <find>span</find>
       <find>data-tooltip-message</find>
       <find>terminal</find>
@@ -122,6 +149,7 @@
       <find>fake</find>
       <find>screen</find>
       <find>scroll</find>
+      <find>scrollIn</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -171,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/backend/session.js" />
         <option value="$PROJECT_DIR$/src/backend/CommandRunner.js" />
         <option value="$PROJECT_DIR$/src/frontend/reducers/commandDetail.js" />
-        <option value="$PROJECT_DIR$/src/backend/server.js" />
         <option value="$PROJECT_DIR$/src/frontend/clients/commandClient.js" />
         <option value="$PROJECT_DIR$/src/frontend/index.html" />
         <option value="$PROJECT_DIR$/node_modules/ws/lib/Receiver.js" />
         <option value="$PROJECT_DIR$/src/frontend/components/App/_app.scss" />
+        <option value="$PROJECT_DIR$/src/backend/server.js" />
         <option value="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
       </list>
     </option>
@@ -195,7 +223,7 @@
     <option name="x" value="-280" />
     <option name="y" value="-1057" />
     <option name="width" value="1367" />
-    <option name="height" value="1053" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -296,6 +324,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="try.sciunit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="try.sciunit_10262017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -315,16 +361,16 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/frontend/components/App/tests" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/frontend" />
       <recent name="$PROJECT_DIR$/src/frontend/actions" />
       <recent name="$PROJECT_DIR$/src/frontend/components/App" />
       <recent name="$PROJECT_DIR$/src/frontend/components/App/tests" />
       <recent name="$PROJECT_DIR$/src/frontend/reducers" />
-      <recent name="$PROJECT_DIR$/src/frontend" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/frontend/components/App/tests" />
     </key>
   </component>
   <component name="RunManager">
@@ -433,15 +479,15 @@
       <workItem from="1510784896334" duration="15097000" />
       <workItem from="1510953931212" duration="28524000" />
       <workItem from="1511991999423" duration="2818000" />
-      <workItem from="1512097696693" duration="26910000" />
+      <workItem from="1512097696693" duration="28581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381006000" />
+    <option name="totallyTimeSpent" value="382677000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-280" y="-1057" width="1367" height="1053" extended-state="0" />
+    <frame x="-280" y="-1057" width="1367" height="1014" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18350668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -451,7 +497,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29518718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3080357" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -508,13 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="77" lean-forward="false" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -582,11 +621,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/new_geotrust_TYa_icon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/new_GeoTrust.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -710,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backend/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/session.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -737,14 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -799,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7920">
@@ -815,10 +826,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/new_GeoTrust.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="126" lean-forward="false" selection-start-line="8" selection-start-column="126" selection-end-line="8" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="77" lean-forward="false" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="94" column="37" lean-forward="false" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
+        <state relative-caret-position="390">
+          <caret line="244" column="184" lean-forward="false" selection-start-line="244" selection-start-column="184" selection-end-line="244" selection-end-column="184" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
 'use strict';
 const React = require('react');
 var ReactRouter = require('react-router');
-const scrollIntoViewIfNeeded = require('scroll-into-view-if-needed');
+// const scrollIntoViewIfNeeded = require('scroll-into-view-if-needed');
 var autofocus = true;
 var parse = require('shell-quote').parse;
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); // ES5
@@ -92,7 +92,7 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 	});
-	scrollIntoViewIfNeeded(emptydiv);
+	// scrollIntoViewIfNeeded(emptydiv);
 	// console.log(element);
 	// if (element[0] != undefined){
 	// 	console.log("scrollHeight",element[0].scrollHeight);
@@ -242,7 +242,7 @@ function App(props) {
 
 						<ol className="progress-bar">
 							<li>
-								<img src="https://sciunit.run/static/assets/images/new_GeoTrust.png" height="30" width="40" alt=""/>
+								<img src="https://lh4.googleusercontent.com/_qL10xMy7J5j8rQP83XinKoQ-ASb9K7IGyOoPN9M5HviqHNKsLZQuTygF3qYGNmwEAkOYZams34l56umBvAk=w2560-h1186" height="40" width="40" alt=""/>
 							</li>
 							<li>
 								{/*<a value="Create" onClick={switchDetail} >*/}
