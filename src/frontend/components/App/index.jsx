@@ -11,7 +11,7 @@ var emptydiv = document.getElementsByClassName("empty-div");
 
 var cmd_id = 0;
 var switch_detail_byID;
-var progress_bar_percentage = "0%";
+var progress_bar_percentage = "15%";
 var copy_token = "";
 var copy_token_flag = false;
 var clicked_button_cmd = "";
