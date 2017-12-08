@@ -250,30 +250,32 @@ function App(props) {
 									{/*Create*/}
 
 								{/*</a>*/}
-								<a value="0" onMouseDown={menu_selection}>Create</a>
+								<a value="0" onMouseDown={menu_selection} style={{marginTop: "3px"}}>
+									Create
+								</a>
 							</li>
 							<li>
-								<a value="1" onMouseDown={menu_selection}>Exec</a>
-							</li>
-
-							<li>
-								<a value="Show">Show</a>
+								<a value="1" onMouseDown={menu_selection} style={{marginTop: "3px"}}>Exec</a>
 							</li>
 
 							<li>
-								<a value="Repeat">Repeat</a>
+								<a value="Show" style={{marginTop: "3px"}}>Show</a>
 							</li>
 
 							<li>
-								<a value="List">List</a>
+								<a value="Repeat" style={{marginTop: "3px"}}>Repeat</a>
 							</li>
 
 							<li>
-								<a value="Copy">Copy</a>
+								<a value="List" style={{marginTop: "3px"}}>List</a>
 							</li>
 
 							<li>
-								<a value="Open">Open</a>
+								<a value="Copy" style={{marginTop: "3px"}}>Copy</a>
+							</li>
+
+							<li>
+								<a value="Open" style={{marginTop: "3px"}}>Open</a>
 							</li>
 
 							{/*<li>*/}
