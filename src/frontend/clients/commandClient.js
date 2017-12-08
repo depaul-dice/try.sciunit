@@ -22,7 +22,7 @@ function CommandClient() {
 	new_uri += loc.pathname;
 	// console.log(new_uri);
 	this.webSocket = new WebSocket(new_uri);
-	console.log(this.webSocket);
+	// console.log(this.webSocket);
 	this.webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 }
 
