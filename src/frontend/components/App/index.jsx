@@ -152,7 +152,7 @@ function App(props) {
 		// console.log(user_input_command.slice(0,13),user_input_command.slice(0,13).length);
 		// console.log(user_input_command.trim(" ").slice(0,12)==="sciunit open");
 		if (e.key === 'Enter'&& user_input_command.trim(" ").slice(0,12)==="sciunit open"){
-			progress_bar_percentage = "100%";
+			progress_bar_percentage = "99.9%";
 			cmd_id += 1;
 		}
 		else if (e.key === 'Enter' &&  user_input_command == button_ref.value && command_list_restrict.includes(user_input_command)) {
