@@ -44,14 +44,15 @@
 
 
 .meter {
-	height: 5px;  /* Can be anything */
-	position: relative;
+	height: 7px;
+	position: unset;
 	background: #f1a749;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 0px;
-	padding: 0px;
-	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	margin: 0px;
+	box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+
 }
 
 .meter > span {
@@ -1045,7 +1046,7 @@ body {
 	-webkit-backface-visibility: hidden;
 	background: #f1a848;
 	border-bottom: 1px solid #D3D3D3;
-	height: 70px;
+	height: 51px;
 	left: 0;
 	position: absolute;
 	right: 0;
@@ -1063,14 +1064,14 @@ body {
 	-ms-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
 	-webkit-backface-visibility: hidden;
-	background: url(//geotrusthub.org/images/GeoTrust.png) 0 5px no-repeat;
+	background: url(//lh4.googleusercontent.com/_qL10xMy7J5j8rQP83XinKoQ-ASb9K7IGyOoPN9M5HviqHNKsLZQuTygF3qYGNmwEAkOYZams34l56umBvAk=w2560-h1186) 0 5px no-repeat;
 	border: none;
 	float: left;
-	height: 27px;
+	height: 40px;
 	margin: 0 10px 0 0;
 	padding: 0 0 5px;
 	opacity: 0.4;
-	width: 26px;
+	width: 40px;
 }
 /* line 223, ../../app/assets/stylesheets/course.css.scss */
 #codeschool #codeschool-logo:hover, #codeschool #codeschool-logo:focus {
@@ -1082,7 +1083,9 @@ body {
 	padding: 21px 0 0;
 	width: 100%;
 	font-family: Lato;
-	font-size:140%
+	font-size:140%;
+	margin-top: -12.5px;
+	margin-bottom: -5px;
 }
 /* line 232, ../../app/assets/stylesheets/course.css.scss */
 #codeschool .progress-bar li {
@@ -1135,6 +1138,7 @@ body {
 	//float: right;
 	height: 24px;
 	width: 60px;
+	margin-top: 1.5px;
 }
 /* line 277, ../../app/assets/stylesheets/course.css.scss */
 #codeschool .progress-bar li span {
