@@ -92,22 +92,22 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 	});
-	// scrollIntoViewIfNeeded(emptydiv);
-	// console.log(element);
-	// if (element[0] != undefined){
-	// 	console.log("scrollHeight",element[0].scrollHeight);
-    //
-	// 	console.log("Before",element[0].scrollTop);
-	// 	var scrollHeight = element[0].scrollHeight;
-	// 	scrollHeight = scrollHeight + 13;
-	// 	console.log("saved scrollHeight",scrollHeight);
-	// 	var height = element[0].clientHeight - 13;
-	// 	console.log(height);
-	// 	element[0].scrollTop = scrollHeight - height;
-	// 	console.log("After",element[0].scrollTop);
-    //
-	// 	console.log("Here should scroll down");
-	// }
+	scrollIntoViewIfNeeded(emptydiv);
+	console.log(element);
+	if (element[0] != undefined){
+		// console.log("scrollHeight",element[0].scrollHeight);
+
+		console.log("Before",element[0].scrollTop);
+		var scrollHeight = element[0].scrollHeight;
+		scrollHeight = scrollHeight + 13;
+		console.log("saved scrollHeight",scrollHeight);
+		var height = element[0].clientHeight - 13;
+		console.log(height);
+		element[0].scrollTop = scrollHeight - height;
+		console.log("After",element[0].scrollTop);
+
+		console.log("Here should scroll down");
+	}
 	// console.log(typeof(element));
 
 
