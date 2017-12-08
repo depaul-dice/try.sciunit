@@ -2,59 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e909162-5247-4a77-a8fa-0fdf4dfdd818" name="Default" comment="d">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0fgfy/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2OmDU/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2wua6/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/39ytS/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/5jVxo/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/7nqHv/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/8y7u9/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GK8F4/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GPD0w/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GQBZI/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/IE3ye/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NNbxP/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OACxt/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QiRqG/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RBDmz/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RELS3/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RmGRB/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SXXbo/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TryP0/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TuaOd/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/W9qE4/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WGRd3/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/YcyxL/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bP9x5/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dN1Xk/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eDGfk/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eXhJD/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eonYP/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/f2NPM/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fLPXX/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hOHgK/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imQRD/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lYZUB/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/n1zfY/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding.node" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/src/sass.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/sass.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-sass/vendor/linux-x64-57/binding.node" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/qKBdz/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/qM6sI/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/qQtEb/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vWCum/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/w5TtS/hello.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zNcfQ/hello.sh" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/new_GeoTrust.png" afterPath="$PROJECT_DIR$/src/frontend/new_GeoTrust.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/backend/fakeshell.py" afterPath="$PROJECT_DIR$/dist/backend/fakeshell.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/backend/server.js" afterPath="$PROJECT_DIR$/dist/backend/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/frontend/index.js" afterPath="$PROJECT_DIR$/dist/frontend/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/fakeshell.py" afterPath="$PROJECT_DIR$/src/backend/fakeshell.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/server.js" afterPath="$PROJECT_DIR$/src/backend/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" afterPath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/build.sh" afterPath="$PROJECT_DIR$/tasks/build.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -102,8 +51,8 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="244" column="184" lean-forward="false" selection-start-line="244" selection-start-column="184" selection-end-line="244" selection-end-column="184" />
+            <state relative-caret-position="240">
+              <caret line="244" column="204" lean-forward="false" selection-start-line="244" selection-start-column="204" selection-end-line="244" selection-end-column="204" />
               <folding />
             </state>
           </provider>
@@ -479,12 +428,12 @@
       <workItem from="1510784896334" duration="15097000" />
       <workItem from="1510953931212" duration="28524000" />
       <workItem from="1511991999423" duration="2818000" />
-      <workItem from="1512097696693" duration="28581000" />
+      <workItem from="1512097696693" duration="28877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="382677000" />
+    <option name="totallyTimeSpent" value="382973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-280" y="-1057" width="1367" height="1014" extended-state="0" />
@@ -865,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="244" column="184" lean-forward="false" selection-start-line="244" selection-start-column="184" selection-end-line="244" selection-end-column="184" />
+        <state relative-caret-position="240">
+          <caret line="244" column="204" lean-forward="false" selection-start-line="244" selection-start-column="204" selection-end-line="244" selection-end-column="204" />
           <folding />
         </state>
       </provider>
