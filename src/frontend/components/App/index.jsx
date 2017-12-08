@@ -92,7 +92,7 @@ function App(props) {
 			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}> {o.value}</pre></li>
 		}
 	});
-	scrollIntoViewIfNeeded(emptydiv);
+	// scrollIntoViewIfNeeded(emptydiv);
 	console.log(element);
 	if (element[0] != undefined){
 		// console.log("scrollHeight",element[0].scrollHeight);
