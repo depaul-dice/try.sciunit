@@ -11,7 +11,7 @@ var emptydiv = document.getElementsByClassName("empty-div");
 
 var cmd_id = 0;
 var switch_detail_byID;
-var progress_bar_percentage = "15%";
+var progress_bar_percentage = "0%";
 var copy_token = "";
 var copy_token_flag = false;
 var clicked_button_cmd = "";
@@ -163,7 +163,7 @@ function App(props) {
 				}
 				else {
 					var percen = parseInt(progress_bar_percentage.slice(0, 2));
-					percen = percen + 10;
+					percen = percen + 9;
 					progress_bar_percentage = percen.toString() + "%";
 					// console.log(progress_bar_percentage);
 				}
@@ -242,7 +242,8 @@ function App(props) {
 
 						<ol className="progress-bar">
 							<li>
-								<img src="https://lh4.googleusercontent.com/_qL10xMy7J5j8rQP83XinKoQ-ASb9K7IGyOoPN9M5HviqHNKsLZQuTygF3qYGNmwEAkOYZams34l56umBvAk=w2560-h1186" href="https://try.sciunit.run/" height="40" width="40" alt=""/>
+								{/*<img src="/frontend/new_GeoTrust_copy.png"  alt=""/>*/}
+								<a href="https://try.sciunit.run/"><img src="https://image.ibb.co/bMCpCw/new_Geo_Trust.png" height="35" width="35" border="0" /></a>
 							</li>
 							<li>
 								{/*<a value="Create" onClick={switchDetail} >*/}
