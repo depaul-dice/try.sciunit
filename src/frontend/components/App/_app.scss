@@ -44,15 +44,14 @@
 
 
 .meter {
-	height: 7px;
-	position: unset;
+	height: 5px;  /* Can be anything */
+	position: relative;
 	background: #f1a749;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 0px;
-	margin: 0px;
-	box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-
+	padding: 0px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
 }
 
 .meter > span {
@@ -1046,7 +1045,7 @@ body {
 	-webkit-backface-visibility: hidden;
 	background: #f1a848;
 	border-bottom: 1px solid #D3D3D3;
-	height: 51px;
+	height: 70px;
 	left: 0;
 	position: absolute;
 	right: 0;
@@ -1085,7 +1084,6 @@ body {
 	font-family: Lato;
 	font-size:140%;
 	margin-top: -12.5px;
-	margin-bottom: -5px;
 }
 /* line 232, ../../app/assets/stylesheets/course.css.scss */
 #codeschool .progress-bar li {
@@ -1138,7 +1136,6 @@ body {
 	//float: right;
 	height: 24px;
 	width: 60px;
-	margin-top: 1.5px;
 }
 /* line 277, ../../app/assets/stylesheets/course.css.scss */
 #codeschool .progress-bar li span {

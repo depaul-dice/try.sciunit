@@ -152,18 +152,18 @@ function App(props) {
 		// console.log(user_input_command.slice(0,13),user_input_command.slice(0,13).length);
 		// console.log(user_input_command.trim(" ").slice(0,12)==="sciunit open");
 		if (e.key === 'Enter'&& user_input_command.trim(" ").slice(0,12)==="sciunit open"){
-			progress_bar_percentage = "99.9%";
+			progress_bar_percentage = "100%";
 			cmd_id += 1;
 		}
 		else if (e.key === 'Enter' &&  user_input_command == button_ref.value && command_list_restrict.includes(user_input_command)) {
 			if (cmd_id < length_of_cmd_detail - 1) {
 				cmd_id += 1;
 				if (cmd_id == length_of_cmd_detail - 1) {
-					progress_bar_percentage = "99.9%";
+					progress_bar_percentage = "100%";
 				}
 				else {
 					var percen = parseInt(progress_bar_percentage.slice(0, 2));
-					percen = percen + 9;
+					percen = percen + 10;
 					progress_bar_percentage = percen.toString() + "%";
 					// console.log(progress_bar_percentage);
 				}
