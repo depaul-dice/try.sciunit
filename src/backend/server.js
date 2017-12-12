@@ -1,6 +1,6 @@
 'use strict';
 
-const PORT = 9001;
+const PORT = 9000;
 //const WEBSOCKET_PORT = 9002;
 
 const http = require('http');
