@@ -3,38 +3,17 @@
 const CommandRunner = require('./CommandRunner');
 const commandRunner = new CommandRunner();
 const specialCommands = require('./specialCommands');
-const server = require('./server');
-
-
 
 module.exports = {
 	_parseMessage(message) {
 		let parsedMessage;
-		// console.log("_parseMessage:",message);
-		// console.log(message,message.length,typeof(message));
-		// console.log(message.slice(1,16));
-		// console.log(message.slice(1,16) === "sciunit exec -i");
-		// if (message.slice(1,16) === "sciunit exec -i")
-		// {
-        //
-		// 	// env = process.env;
-		// 	// message = 'env SHELL=./fakeshell.py sciunit exec -i';
-		// 	// console.log("childprocess", env);
-		// 	parsedMessage = JSON.parse(message);
-		// }
-		// else
-		// {
-		 	try {
-				parsedMessage = JSON.parse(message);
-				// console.log(parsedMessage);
-				 // var session_two = webSocketServer.on('connection', socket => start(socket));
-				 // console.log(session_two);
-			} catch (e) {
-				return null;
-			}
-		// }
-		// console.log(parsedMessage);
-		// console.log(parsedMessage.command);
+
+		try {
+			parsedMessage = JSON.parse(message);
+		} catch (e) {
+			return null;
+		}
+
 		return parsedMessage.command ? parsedMessage.command : null;
 	},
 
@@ -47,9 +26,8 @@ module.exports = {
 
 		webSocket.on('message', message => {
 			const command = this._parseMessage(message);
-			// console.log("hello from start():",message);
-			if (!command) {
 
+			if (!command) {
 				webSocket.send(JSON.stringify({ error: 'Invalid payload' }));
 				webSocket.send(JSON.stringify({ exitCode: -1 }));
 				return;
@@ -57,7 +35,7 @@ module.exports = {
 
 			if (specialCommands[command]) {
 				specialCommands[command].then(result => {
-					webSocket.send(JSON.stringify(result));
+					webSocket.send(JSON.stringify(result));					
 				});
 
 				return;
