@@ -8,7 +8,6 @@ const spawn = require('child_process').spawn;
 var loc = window.location, new_uri;
 var workspace_relocate_path = [];
 
-
 function CommandClient() {
 
 	if (loc.protocol === "https:"){
@@ -22,15 +21,13 @@ function CommandClient() {
 	new_uri += loc.pathname;
 	// console.log(new_uri);
 	this.webSocket = new WebSocket(new_uri);
-	// console.log(this.webSocket);
 	this.webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 }
 
 CommandClient.prototype = Object.create(EventEmitter.prototype);
 
 CommandClient.prototype.begin = function begin(command) {
-
-	if (this.webSocket.readyState === WebSocket.OPEN) {
+	if (this.webSocket.readyState === WebSocket.CONNECTING) {
 		this.webSocket.onopen = () => {
 			this.webSocket.send(JSON.stringify({ command }));
 		}

@@ -1,7 +1,7 @@
 'use strict';
 
 const PORT = 9000;
-//const WEBSOCKET_PORT = 9002;
+// const WEBSOCKET_PORT = 9002;
 
 const http = require('http');
 const express = require('express');
@@ -16,12 +16,18 @@ const webSocketServer = new Server({ server: assetsServer });
 
 assets.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/../frontend'))
+	// console.log(req.session);
+	req.on("close", function() {
+		// request closed unexpectedly
+		console.log(req);
+	});
 })
 
 assets.use('/', express.static(__dirname + '/../frontend'));
 
 assetsServer.listen(PORT, () => {
 	console.log(`Frontend running on port ${PORT}...`);
+
 	// console.log("process.env: ", process.env);
 
 	if (process.send) {
@@ -30,13 +36,16 @@ assetsServer.listen(PORT, () => {
 	}
 });
 
-
-
-
 console.log('Awaiting WebSocket connection...');
 
-webSocketServer.on('connection', socket => session.start(socket));
-console.log('Session started');
+webSocketServer.on('connection', socket => {
+	session.start(socket);
+	// console.log(socket,"started connection!!!!!!!!!!!!!!!!!!!!!!");
+	socket.on('close', ()=>{
+		// console.log(webSocketServer,"socket closed!!!!!!!!!!!!!!!!!!!!!");
+	})
+});
+// webSocketServer.close();
 
 process.on('SIGTERM', () => {
 	assetsServer.close(() => {

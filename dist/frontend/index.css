@@ -37,13 +37,14 @@
   display: block; }
 
 .meter {
-  height: 7px;
-  position: unset;
+  height: 5px;
+  /* Can be anything */
+  position: relative;
   background: #f1a749;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 0px;
-  margin: 0px;
+  padding: 0px;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3); }
 
 .meter > span {
@@ -132,18 +133,18 @@ a:hover {
   cursor: pointer;
   font-size: 24px; }
 
-/*Button One */
+/*Button One*/
 .button-one {
   font-family: "Courier New";
   color: #FFFFFF;
-  padding: 10px 30px;
+  padding: 20px 60px;
   outline: none;
   background-color: #2f70a8;
   border: none;
   border-radius: 5px;
   box-shadow: 0 9px #95a5a6;
-  margin-bottom: 15px;
-  margin-top: 12px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
 
 .button-one:hover {
   background-color: #2ecc71; }
@@ -190,8 +191,8 @@ a:hover {
   padding: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 270px;
-  font-family: "Ubuntu Mono";
+  height: 250px;
+  font-family: monospace;
   font-size: 13px;
   font-weight: bold;
   color: white;
@@ -203,7 +204,7 @@ p {
   margin-left: -8.5em;
   text-align: left;
   font-size: 1.25em;
-  font-family: "Ubuntu Mono";
+  font-family: monospace;
   white-space: normal;
   overflow: hidden;
   width: 0; }
@@ -328,7 +329,7 @@ p {
   float: left;
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu Mono";
+  font-family: monospace;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   font-weight: bold;
@@ -381,9 +382,6 @@ p {
     opacity: 1; }
   to {
     opacity: 0; } }
-
-.empty-div {
-  background: white; }
 
 .scroll-bar-wrap {
   width: 300px;
@@ -973,7 +971,7 @@ body {
   -webkit-backface-visibility: hidden;
   background: #f1a848;
   border-bottom: 1px solid #D3D3D3;
-  height: 51px;
+  height: 70px;
   left: 0;
   position: absolute;
   right: 0;
@@ -991,14 +989,14 @@ body {
   -ms-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
   -webkit-backface-visibility: hidden;
-  background: url(//lh4.googleusercontent.com/_qL10xMy7J5j8rQP83XinKoQ-ASb9K7IGyOoPN9M5HviqHNKsLZQuTygF3qYGNmwEAkOYZams34l56umBvAk=w2560-h1186) 0 5px no-repeat;
+  background: url(//geotrusthub.org/images/GeoTrust.png) 0 5px no-repeat;
   border: none;
   float: left;
-  height: 40px;
+  height: 27px;
   margin: 0 10px 0 0;
   padding: 0 0 5px;
   opacity: 0.4;
-  width: 40px; }
+  width: 26px; }
 
 /* line 223, ../../app/assets/stylesheets/course.css.scss */
 #codeschool #codeschool-logo:hover, #codeschool #codeschool-logo:focus {
@@ -1009,9 +1007,7 @@ body {
   padding: 21px 0 0;
   width: 100%;
   font-family: Lato;
-  font-size: 140%;
-  margin-top: -12.5px;
-  margin-bottom: -5px; }
+  font-size: 140%; }
 
 /* line 232, ../../app/assets/stylesheets/course.css.scss */
 #codeschool .progress-bar li {
@@ -1054,8 +1050,7 @@ body {
 #codeschool .progress-bar li a {
   display: block;
   height: 24px;
-  width: 60px;
-  margin-top: 1.5px; }
+  width: 60px; }
 
 /* line 277, ../../app/assets/stylesheets/course.css.scss */
 #codeschool .progress-bar li span {
