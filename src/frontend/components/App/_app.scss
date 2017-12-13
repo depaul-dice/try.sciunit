@@ -234,12 +234,12 @@ a:hover{
 	padding: 20px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	height:250px;
+	height:270px;
 
 
 	//margin: 0;
 	//padding: 0;
-	font-family:monospace;
+	font-family: "Ubuntu Mono";
 	font-size: 13px;
 	//text-rendering: optimizeLegibility;
 	font-weight: bold;
@@ -254,7 +254,7 @@ p {
 	margin-left: -8.5em;
 	text-align: left;
 	font-size: 1.25em;
-	font-family: monospace;
+	font-family: "Ubuntu Mono";
 	white-space: normal;
 	overflow: hidden;
 	width: 0;
@@ -427,7 +427,7 @@ p {
 	float: left;
 	margin: 0;
 	padding: 0;
-	font-family:monospace;
+	font-family:"Ubuntu Mono";
 	font-size: 16px;
 	text-rendering: optimizeLegibility;
 	font-weight: bold;
@@ -498,6 +498,9 @@ p {
 //	line-height: 1.4;
 //	margin: 0 0 .5em;
 //}
+.empty-div {
+	background: white;
+}
 
 
 .scroll-bar-wrap {
@@ -550,24 +553,24 @@ p {
 //		padding: 0;
 //	}
 //
-	.terminal__input {
-		background: transparent;
-		outline: none;
-		font-family: inherit;
-		font-size: inherit;
-		color: inherit;
-		width: 50%;
-		border: none;
-		font-weight: bold;
+.terminal__input {
+	background: transparent;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	width: 50%;
+	border: none;
+	font-weight: bold;
 
-		//-webkit-animation: blink 0.75s infinite;
-		//-moz-animation: blink 0.75s infinite;
-		//-o-animation: blink 0.75s infinite;
-		//animation: blink 0.75s infinite;
-		margin-left: 5px;
+	//-webkit-animation: blink 0.75s infinite;
+	//-moz-animation: blink 0.75s infinite;
+	//-o-animation: blink 0.75s infinite;
+	//animation: blink 0.75s infinite;
+	margin-left: 5px;
 
 
-	}
+}
 //}
 
 /* BASICS */
@@ -856,7 +859,7 @@ div,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, 
 	padding: 0px;
 }
 
-	/* line 6, ../../app/assets/stylesheets/course.css.scss */
+/* line 6, ../../app/assets/stylesheets/course.css.scss */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -1060,14 +1063,14 @@ body {
 	-ms-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
 	-webkit-backface-visibility: hidden;
-	background: url(//geotrusthub.org/images/GeoTrust.png) 0 5px no-repeat;
+	background: url(//lh4.googleusercontent.com/_qL10xMy7J5j8rQP83XinKoQ-ASb9K7IGyOoPN9M5HviqHNKsLZQuTygF3qYGNmwEAkOYZams34l56umBvAk=w2560-h1186) 0 5px no-repeat;
 	border: none;
 	float: left;
-	height: 27px;
+	height: 40px;
 	margin: 0 10px 0 0;
 	padding: 0 0 5px;
 	opacity: 0.4;
-	width: 26px;
+	width: 40px;
 }
 /* line 223, ../../app/assets/stylesheets/course.css.scss */
 #codeschool #codeschool-logo:hover, #codeschool #codeschool-logo:focus {
