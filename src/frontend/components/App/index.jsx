@@ -314,7 +314,7 @@ function App(props) {
 			</div>
 			<footer class="footer">
 				<a href="https://sciunit.run/" style={{fontWeight:"bold", fontSize: "1.15rem", paddingLeft:".5rem .5rem!important"}}>Sciunit Home</a>		<a href="https://sciunit.run/docs/" style={{fontSize: "22px", paddingLeft:"20px"}}>Documentaion</a><br/>
-				<span style={{color:"#cecece", fontSize:"1rem"}}>Sciunit is supported by the National Science Foundation under grants ICER-1639759, ICER-1661918, ICER-1440327, and ICER-1343816, and by Bloomberg Philanthropies (a UChicago subcontract).</span>
+				<span style={{color:"#cecece", fontSize:"0.8rem"}}>Sciunit is supported by the National Science Foundation under grants ICER-1639759, ICER-1661918, ICER-1440327, and ICER-1343816, and by Bloomberg Philanthropies (a UChicago subcontract).</span>
 			</footer>
 		</div>
 	);
