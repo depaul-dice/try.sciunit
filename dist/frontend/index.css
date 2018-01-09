@@ -68,14 +68,20 @@ footer {
   height: 150px;
   left: 0;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  height: auto;
+  margin-top: -60px;
+  background: #2b4c81;
+  color: white;
+  text-align: center;
+  float: right; }
 
 .push, footer {
   text-align: center;
   display: block;
   color: #FFFFFF;
   padding: 0px;
-  background-color: #efa753;
+  background-color: #2b4c81;
   height: 70px;
   width: 100%; }
 
