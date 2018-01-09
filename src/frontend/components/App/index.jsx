@@ -213,9 +213,7 @@ function App(props) {
 		// console.log("the globale in switch after ", cmd_id);
 
 	};
-	function () {
 
-	}
 
 	// console.log("the globale", cmd_id);
 	// const switchDetail = (e) => {
