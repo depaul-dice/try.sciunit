@@ -317,11 +317,11 @@ function App(props) {
 			</div>
 			<footer class="footer">
 				<div style={{padding:"7px"}}>
-					<a href="https://sciunit.run/" style={{ fontSize: "1.15rem", paddingRight:"46.5px",paddingLeft:"46.5px"}}>Home</a>
-					<a href="https://sciunit.run/install/" style={{fontSize: "1.15rem", paddingRight: "46.5px", paddingLeft:"46.5px"}}>Install</a>
-					<a href="https://sciunit.run/docs/" style={{fontSize: "1.15rem", paddingRight: "46.5px", paddingLeft:"46.5px"}}>Documentaion</a>
-					<a href="https://sciunit.run/papers/" style={{fontSize: "1.15rem", paddingRight: "46.5px", paddingLeft:"46.5px"}}>Papers</a>
-					<a href="https://sciunit.run/support/" style={{fontSize: "1.15rem", paddingRight: "46.5px", paddingLeft:"46.5px"}}>Support</a>
+					<a href="https://sciunit.run/" style={{ fontSize: "1.15rem", paddingRight:"48px",paddingLeft:"48px"}}>Home</a>
+					<a href="https://sciunit.run/install/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Install</a>
+					<a href="https://sciunit.run/docs/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Documentaion</a>
+					<a href="https://sciunit.run/papers/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Papers</a>
+					<a href="https://sciunit.run/support/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Support</a>
 
 				</div>
 				<div style={{color:"#cecece", fontSize:"0.8rem"}}>Sciunit is supported by the National Science Foundation under grants ICER-1639759, ICER-1661918, ICER-1440327, and ICER-
