@@ -316,7 +316,7 @@ function App(props) {
 				</div>
 			</div>
 			<footer class="footer">
-				<div style={{padding:"7px", fontWeight:"bold"}}>
+				<div style={{padding:"7px", fontStyle:"bold"}}>
 					<a href="https://sciunit.run/" style={{ fontSize: "1.15rem", paddingRight:"48px",paddingLeft:"48px"}}>Home</a>
 					<a href="https://sciunit.run/install/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Install</a>
 					<a href="https://sciunit.run/docs/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Documentaion</a>
