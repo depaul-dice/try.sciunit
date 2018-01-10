@@ -54,8 +54,8 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="320" column="107" lean-forward="false" selection-start-line="320" selection-start-column="107" selection-end-line="320" selection-end-column="107" />
+            <state relative-caret-position="247">
+              <caret line="323" column="109" lean-forward="false" selection-start-line="323" selection-start-column="109" selection-end-line="323" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -398,18 +398,18 @@
       <workItem from="1510953931212" duration="12834000" />
       <workItem from="1513134376328" duration="3561000" />
       <workItem from="1513141387763" duration="128000" />
-      <workItem from="1513654038913" duration="9237000" />
+      <workItem from="1513654038913" duration="9888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348514000" />
+    <option name="totallyTimeSpent" value="349165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24622716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07386815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -760,8 +760,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="320" column="107" lean-forward="false" selection-start-line="320" selection-start-column="107" selection-end-line="320" selection-end-column="107" />
+        <state relative-caret-position="247">
+          <caret line="323" column="109" lean-forward="false" selection-start-line="323" selection-start-column="109" selection-end-line="323" selection-end-column="109" />
           <folding />
         </state>
       </provider>
