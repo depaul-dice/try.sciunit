@@ -316,7 +316,7 @@ function App(props) {
 				</div>
 			</div>
 			<footer class="footer">
-				<div style={{padding:"5px"}}>
+				<div style={{padding:"7px"}}>
 					<a href="https://sciunit.run/" style={{ fontSize: "1.15rem", paddingRight:"46.5px",paddingLeft:"46.5px"}}>Home</a>
 					<a href="https://sciunit.run/install/" style={{fontSize: "1.15rem", paddingRight: "46.5px", paddingLeft:"46.5px"}}>Install</a>
 					<a href="https://sciunit.run/docs/" style={{fontSize: "1.15rem", paddingRight: "46.5px", paddingLeft:"46.5px"}}>Documentaion</a>
@@ -324,7 +324,7 @@ function App(props) {
 					<a href="https://sciunit.run/support/" style={{fontSize: "1.15rem", paddingRight: "46.5px", paddingLeft:"46.5px"}}>Support</a>
 
 				</div>
-				<span style={{color:"#cecece", fontSize:"0.8rem"}}>Sciunit is supported by the National Science Foundation under grants ICER-1639759, ICER-1661918, ICER-1440327, and ICER-1343816, and by Bloomberg Philanthropies (a UChicago subcontract).</span>
+				<span style={{color:"#cecece", fontSize:"0.8rem",paddingLeft:"285px",paddingRight:"285px"}}>Sciunit is supported by the National Science Foundation under grants ICER-1639759, ICER-1661918, ICER-1440327, and ICER-1343816, and by Bloomberg Philanthropies (a UChicago subcontract).</span>
 			</footer>
 		</div>
 	);
