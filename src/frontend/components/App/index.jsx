@@ -246,9 +246,9 @@ function App(props) {
 								{/*Create*/}
 
 								{/*</a>*/}
-								<a value="0" onMouseDown={menu_selection} style={{marginTop: "3px"}}>
+								<p value="0" onMouseDown={menu_selection} style={{marginTop: "3px"}}>
 									Create
-								</a>
+								</p>
 							</li>
 							<li>
 								<a value="1" onMouseDown={menu_selection} style={{marginTop: "3px"}}>Exec</a>
