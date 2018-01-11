@@ -230,6 +230,12 @@ function App(props) {
 	// 	// // console.log(cmd_detail[cmd_id]);
 	// 	// console.log("the globale in switch after ", cmd_id);
 	// };
+	function handleRefresh(){
+		console.log("original cmd",cmd_id);
+		cmd_id = 0
+		console.log("current cmd",cmd_id);
+	}
+
 	return (
 		<div>
 			<div className="content-body">
@@ -289,6 +295,7 @@ function App(props) {
 						{cmd_detail[cmd_id].description_2_1}<span style={{fontFamily:"Consolas", fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_2}</span>{cmd_detail[cmd_id].description_2}<span style={{fontFamily:"Consolas", fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_2_1}</span> <br/>
 						{cmd_detail[cmd_id].description} <br/>
 						{cmd_detail[cmd_id].description_3}<span style={{fontFamily:"Consolas", fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_3}</span>{cmd_detail[cmd_id].description_3_1}<span style={{fontFamily:"Consolas", fontWeight:"bold"}}>{cmd_detail[cmd_id].sciunit_4}</span>{cmd_detail[cmd_id].description_3_2} <br/>
+						<button onMouseDown={menu_selection}>Refresh</button>
 					</div>
 					{if_button_exist()}
 				</div>
