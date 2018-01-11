@@ -241,37 +241,31 @@ function App(props) {
 								{/*<img src="/frontend/new_GeoTrust_copy.png"  alt=""/>*/}
 								<a href="https://try.sciunit.run/"><img src="https://image.ibb.co/bMCpCw/new_Geo_Trust.png" height="35" width="35" border="0" /></a>
 							</li>
-							<li>
-								{/*<a value="Create" onClick={switchDetail} >*/}
-								{/*Create*/}
-
-								{/*</a>*/}
-								<a value="0" onMouseDown={menu_selection} style={{marginTop: "3px"}}>
+							<li style={{marginTop: "1.499px"}}>
 									Create
-								</a>
 							</li>
-							<li>
-								<a value="1" onMouseDown={menu_selection} style={{marginTop: "3px"}}>Exec</a>
-							</li>
-
-							<li>
-								<a value="Show" style={{marginTop: "3px"}}>Show</a>
+							<li style={{marginTop: "1.499px"}}>
+								Exec
 							</li>
 
-							<li>
-								<a value="Repeat" style={{marginTop: "3px"}}>Repeat</a>
+							<li style={{marginTop: "1.499px"}}>
+								Show
 							</li>
 
-							<li>
-								<a value="List" style={{marginTop: "3px"}}>List</a>
+							<li style={{marginTop: "1.499px"}}>
+								Repeat
 							</li>
 
-							<li>
-								<a value="Copy" style={{marginTop: "3px"}}>Copy</a>
+							<li style={{marginTop: "1.499px"}}>
+								List
 							</li>
 
-							<li>
-								<a value="Open" style={{marginTop: "3px"}}>Open</a>
+							<li style={{marginTop: "1.499px"}}>
+								Copy
+							</li>
+
+							<li style={{marginTop: "1.499px"}}>
+								Open
 							</li>
 
 							{/*<li>*/}
