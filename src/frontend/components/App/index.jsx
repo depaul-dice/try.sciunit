@@ -1,5 +1,6 @@
 'use strict';
 const React = require('react');
+const ArrowKeysReact = require('arrow-keys-react');
 var ReactRouter = require('react-router');
 // const scrollIntoViewIfNeeded = require('scroll-into-view-if-needed');
 var autofocus = true;
@@ -212,6 +213,8 @@ function App(props) {
 		// console.log("the globale in switch after ", cmd_id);
 
 	};
+
+
 	// console.log("the globale", cmd_id);
 	// const switchDetail = (e) => {
 	// 	// console.log("the globale in switch", cmd_id);
@@ -238,37 +241,31 @@ function App(props) {
 								{/*<img src="/frontend/new_GeoTrust_copy.png"  alt=""/>*/}
 								<a href="https://try.sciunit.run/"><img src="https://image.ibb.co/bMCpCw/new_Geo_Trust.png" height="35" width="35" border="0" /></a>
 							</li>
-							<li>
-								{/*<a value="Create" onClick={switchDetail} >*/}
-								{/*Create*/}
-
-								{/*</a>*/}
-								<a value="0" onMouseDown={menu_selection} style={{marginTop: "3px"}}>
-									Create
-								</a>
+							<li style={{marginTop: "1.499px"}}>
+								Create
 							</li>
-							<li>
-								<a value="1" onMouseDown={menu_selection} style={{marginTop: "3px"}}>Exec</a>
+							<li style={{marginTop: "1.499px"}}>
+								Exec
 							</li>
 
-							<li>
-								<a value="Show" style={{marginTop: "3px"}}>Show</a>
+							<li style={{marginTop: "1.499px"}}>
+								Show
 							</li>
 
-							<li>
-								<a value="Repeat" style={{marginTop: "3px"}}>Repeat</a>
+							<li style={{marginTop: "1.499px"}}>
+								Repeat
 							</li>
 
-							<li>
-								<a value="List" style={{marginTop: "3px"}}>List</a>
+							<li style={{marginTop: "1.499px"}}>
+								List
 							</li>
 
-							<li>
-								<a value="Copy" style={{marginTop: "3px"}}>Copy</a>
+							<li style={{marginTop: "1.499px"}}>
+								Copy
 							</li>
 
-							<li>
-								<a value="Open" style={{marginTop: "3px"}}>Open</a>
+							<li style={{marginTop: "1.499px"}}>
+								Open
 							</li>
 
 							{/*<li>*/}
@@ -313,9 +310,17 @@ function App(props) {
 				</div>
 			</div>
 			<footer class="footer">
-				<a href="https://sciunit.run/" style={{fontSize: "22px", paddingLeft:"20px"}}>Sciunit Home</a>		<a href="https://sciunit.run/docs/" style={{fontSize: "22px", paddingLeft:"20px"}}>Documentaion</a><br/>
-				The Sciunit is supported by the National Science Foundation under grants ICER-1639759,<br/>
-				ICER-1661918, ICER-1440327, and ICER-1343816, and by Bloomberg Philanthropies (a UChicago subcontract).
+				<div style={{padding:"7px", fontWeight:"bold"}}>
+					<a href="https://sciunit.run/" style={{ fontSize: "1.15rem", paddingRight:"48px",paddingLeft:"48px"}}>Home</a>
+					<a href="https://sciunit.run/install/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Install</a>
+					<a href="https://sciunit.run/docs/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Documentaion</a>
+					<a href="https://sciunit.run/papers/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Papers</a>
+					<a href="https://sciunit.run/support/" style={{fontSize: "1.15rem", paddingRight: "48px", paddingLeft:"48px"}}>Support</a>
+
+				</div>
+				<div style={{color:"#cecece", fontSize:"0.75rem"}}>The Sciunit is supported by the National Science Foundation under grants ICER-1639759, ICER-1661918, ICER-1440327, and ICER-
+				</div>
+				<div style={{color:"#cecece", fontSize:"0.75rem",}}>1343816, and by Bloomberg Philanthropies (a UChicago subcontract).</div>
 			</footer>
 		</div>
 	);
