@@ -68,15 +68,21 @@ footer {
   height: 150px;
   left: 0;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  height: auto;
+  margin-top: -60px;
+  background: #2b4c81;
+  color: white;
+  text-align: center;
+  float: right; }
 
 .push, footer {
   text-align: center;
   display: block;
   color: #FFFFFF;
   padding: 0px;
-  background-color: #efa753;
-  height: 70px;
+  background-color: #2b4c81;
+  height: 85px;
   width: 100%; }
 
 .commandDetail {
@@ -2501,7 +2507,7 @@ body .progress_inner__step:hover:before {
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #2e6c8e;
+  color: #ffffff;
   text-align: left; }
 
 body .progress_inner {
