@@ -1,5 +1,5 @@
 {
-  "name": "trySciunit",
+  "name": "try.sciunit",
   "version": "1.0.0",
   "description": "A responsive web-based tutorial for sciunit-cli",
   "main": "dist/backend/server.js",
