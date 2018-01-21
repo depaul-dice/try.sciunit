@@ -25,7 +25,6 @@ var switch_detail;
 
 
 function App(props) {
-	let outputChildren_ele = null;
 	let textInput = null;
 	let button_ref = null;
 	let menu_ref = null;
@@ -63,8 +62,8 @@ function App(props) {
 				animationName: "blink",
 				animationDirection: "alternate",
 				webkitAnimation: "blink 1200ms",
+
 			}
-			console.log(outputChildren_ele);
 			copy_token = "";
 			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}>> {o.value}</pre></li>
 		}
@@ -178,10 +177,6 @@ function App(props) {
 		// console.log("hello from handleMouseDown");
 		textInput.value = button_ref.value;
 	};
-
-	function handleAfterCopy(){
-
-	}
 
 	function handleMouseDown_menu(e) {
 
@@ -304,19 +299,14 @@ function App(props) {
 					<div style={btn_blink_style}>
 						Ubuntu16.04 @machine{session_number}
 					</div>
+					<svg>
+						<circle cx={50} cy={50} r={10} fill="red" />
+					</svg>
 				</div>
-				<svg>
-					<defs>
-						<marker id="markerArrow" markerWidth="20" markerHeight="13" refX="2" refY="6"
-								orient="auto">
-							<path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
-						</marker>
-					</defs>
-				</svg>
 				<div className="fakeScreen" onClick={handlefoucs}>
 					<div className="scroll-box" style={{scrollTop:_scrollTop}} >
 						Press enter to submit commands
-						<ul className="terminal--output" ref={(ele)=>{ outputChildren_ele = ele }}>{outputChildren}</ul>
+						<ul className="terminal--output">{outputChildren}</ul>
 						><input className="terminal__input" type="text" ref={(input) => { textInput = input; }} onKeyUp={runCommand} onKeyPress={nextStep} onKeyDown={getinput}/>
 						<div className="empty-div"></div>
 					</div>
