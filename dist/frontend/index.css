@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,900");
+a:hover {
+  text-decoration: underline;
+  color: #ffffff; }
+
 [data-tooltip] {
   position: relative; }
 
@@ -124,7 +128,7 @@ a {
   color: #fff; }
 
 a:hover {
-  color: #2d6ba1; }
+  color: #ffffff; }
 
 .main {
   width: 100%; }
