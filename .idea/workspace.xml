@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4e909162-5247-4a77-a8fa-0fdf4dfdd818" name="Default" comment="d">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" afterPath="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/reducers/commands.js" afterPath="$PROJECT_DIR$/src/frontend/reducers/commands.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,28 +23,28 @@
       <file leaf-file-name="_app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2505">
+            <state relative-caret-position="15">
               <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="359">
               <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commands.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="commands.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frontend/reducers/commands.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/frontend/reducers/commandDetail.js" />
         <option value="$PROJECT_DIR$/src/frontend/index.html" />
         <option value="$PROJECT_DIR$/src/frontend/components/App/_app.scss" />
-        <option value="$PROJECT_DIR$/src/frontend/reducers/commands.js" />
         <option value="$PROJECT_DIR$/src/frontend/components/App/index.jsx" />
+        <option value="$PROJECT_DIR$/src/frontend/reducers/commands.js" />
       </list>
     </option>
   </component>
@@ -207,50 +205,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="try.sciunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="try.sciunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="try.sciunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="try.sciunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -263,7 +217,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="commands&#9;FILE&#9;file:///Users/Chilli/Documents/try.sciunit/src/frontend/reducers/commands.js&#10;cwd&#9;null&#9;null&#10;startContainer&#9;null&#9;null&#10;_parseMessage&#9;null&#9;null&#10;_parse&#9;null&#9;null&#10;commandDetailReducer&#9;null&#9;null&#10;http&#9;null&#9;null&#10;config&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/.editorconfig&#10;Upgrade Required&#9;null&#9;null&#10;isBackendReady&#9;null&#9;null&#10;webpack&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/webpack/lib/webpack.js&#10;bindA&#9;null&#9;null&#10;createStore&#9;null&#9;null&#10;createstore&#9;null&#9;null&#10;reducer&#9;null&#9;null&#10;setState&#9;null&#9;null&#10;getInitialApp&#9;null&#9;null&#10;getInitialState&#9;null&#9;null&#10;child_process&#9;null&#9;null&#10;child process&#9;null&#9;null&#10;server&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/backend/server.js&#10;css&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/frontend/components/App/_app.scss&#10;PreventDefault&#9;null&#9;null&#10;getPreventDefault()&#9;null&#9;null&#10;events.js&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/mocha/lib/browser/events.js&#10;Invalid payload&#9;null&#9;null&#10;.terminal__input&#9;null&#9;null&#10;index.jsx&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/trySciunit/src/frontend/components/App/index.jsx&#10;progress-bar&#9;null&#9;null&#10;codeschool-logo&#9;null&#9;null&#10;'root'&#9;null&#9;null&#10;runCommand&#9;null&#9;null&#10;user&#9;null&#9;null&#10;command&#9;null&#9;null&#10;cd&#9;null&#9;null&#10;react-dom&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/react-dom/dist/react-dom.js&#10;bro&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/babel-register/lib/browser.js&#10;store&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/src/frontend/getStore.js&#10;index.css&#9;FILE&#9;file:///Users/Chilli/Documents/term4all/dist/frontend/index.css&#10;Hello&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="command&#9;FILE&#9;file:///Users/Chilli/Documents/try.sciunit/src/frontend/reducers/commands.js&#10;commands&#9;FILE&#9;file:///Users/Chilli/Documents/try.sciunit/src/frontend/reducers/commands.js&#10;cwd&#9;null&#9;null&#10;startContainer&#9;null&#9;null&#10;_parseMessage&#9;null&#9;null&#10;_parse&#9;null&#9;null&#10;commandDetailReducer&#9;null&#9;null&#10;http&#9;null&#9;null&#10;config&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/.editorconfig&#10;Upgrade Required&#9;null&#9;null&#10;isBackendReady&#9;null&#9;null&#10;webpack&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/webpack/lib/webpack.js&#10;bindA&#9;null&#9;null&#10;createStore&#9;null&#9;null&#10;createstore&#9;null&#9;null&#10;reducer&#9;null&#9;null&#10;setState&#9;null&#9;null&#10;getInitialApp&#9;null&#9;null&#10;getInitialState&#9;null&#9;null&#10;child_process&#9;null&#9;null&#10;child process&#9;null&#9;null&#10;server&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/backend/server.js&#10;css&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/src/frontend/components/App/_app.scss&#10;PreventDefault&#9;null&#9;null&#10;getPreventDefault()&#9;null&#9;null&#10;events.js&#9;FILE&#9;file:///Users/Chilli/Library/Mobile Documents/com~apple~CloudDocs/trySciunit/node_modules/mocha/lib/browser/events.js&#10;Invalid payload&#9;null&#9;null&#10;.terminal__input&#9;null&#9;null&#10;index.jsx&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/trySciunit/src/frontend/components/App/index.jsx&#10;progress-bar&#9;null&#9;null&#10;codeschool-logo&#9;null&#9;null&#10;'root'&#9;null&#9;null&#10;runCommand&#9;null&#9;null&#10;user&#9;null&#9;null&#10;cd&#9;null&#9;null&#10;react-dom&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/react-dom/dist/react-dom.js&#10;bro&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/node_modules/babel-register/lib/browser.js&#10;store&#9;FILE&#9;file:///Users/Chilli/Documents/Work/WebDeveloper_DePaul/term4all/src/frontend/getStore.js&#10;index.css&#9;FILE&#9;file:///Users/Chilli/Documents/term4all/dist/frontend/index.css&#10;Hello&#9;null&#9;null" />
     <property name="editor.config.accepted" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -389,12 +343,12 @@
       <workItem from="1510953931212" duration="12834000" />
       <workItem from="1513134376328" duration="3067000" />
       <workItem from="1515730485839" duration="159000" />
-      <workItem from="1516502736352" duration="2007000" />
+      <workItem from="1516502736352" duration="2249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343845000" />
+    <option name="totallyTimeSpent" value="344087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
@@ -733,24 +687,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/_app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
+        <state relative-caret-position="15">
           <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/reducers/commands.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/components/App/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="359">
           <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/reducers/commands.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
