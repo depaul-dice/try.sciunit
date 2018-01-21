@@ -309,6 +309,9 @@ function App(props) {
 					</div>
 				</div>
 			</div>
+			<svg>
+				<circle cx={50} cy={50} r={10} fill="red" />
+			</svg>
 			<footer class="footer">
 				<div style={{padding:"7px", fontWeight:"bold"}}>
 					<a href="https://sciunit.run/" style={{ fontSize: "1.15rem", paddingRight:"48px",paddingLeft:"48px"}}>Home</a>
