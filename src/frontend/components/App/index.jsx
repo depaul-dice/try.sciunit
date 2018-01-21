@@ -304,15 +304,15 @@ function App(props) {
 					<div style={btn_blink_style}>
 						Ubuntu16.04 @machine{session_number}
 					</div>
-					<svg>
-						<defs>
-							<marker id="markerArrow" markerWidth="20" markerHeight="13" refX="2" refY="6"
-									orient="auto">
-								<path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
-							</marker>
-						</defs>
-					</svg>
 				</div>
+				<svg>
+					<defs>
+						<marker id="markerArrow" markerWidth="20" markerHeight="13" refX="2" refY="6"
+								orient="auto">
+							<path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
+						</marker>
+					</defs>
+				</svg>
 				<div className="fakeScreen" onClick={handlefoucs}>
 					<div className="scroll-box" style={{scrollTop:_scrollTop}} >
 						Press enter to submit commands
