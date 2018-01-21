@@ -64,7 +64,7 @@ function App(props) {
 				animationDirection: "alternate",
 				webkitAnimation: "blink 1200ms",
 			}
-			console.log("outputChildren"+outputChildren_ele);
+			console.log("outputChildren"+outputChildren_ele.value);
 			copy_token = "";
 			return <li key={o.id} className="output__item"><pre style={{fontFamily:"Ubuntu Mono"}}>> {o.value}</pre></li>
 		}
