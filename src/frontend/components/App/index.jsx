@@ -304,6 +304,14 @@ function App(props) {
 					<div style={btn_blink_style}>
 						Ubuntu16.04 @machine{session_number}
 					</div>
+					<svg>
+						<defs>
+							<marker id="markerArrow" markerWidth="20" markerHeight="13" refX="2" refY="6"
+									orient="auto">
+								<path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
+							</marker>
+						</defs>
+					</svg>
 				</div>
 				<div className="fakeScreen" onClick={handlefoucs}>
 					<div className="scroll-box" style={{scrollTop:_scrollTop}} >
@@ -314,6 +322,7 @@ function App(props) {
 					</div>
 				</div>
 			</div>
+
 			<footer class="footer">
 				<div style={{padding:"7px", fontWeight:"bold"}}>
 					<a href="https://sciunit.run/" style={{ fontSize: "1.15rem", paddingRight:"48px",paddingLeft:"48px"}}>Home</a>
