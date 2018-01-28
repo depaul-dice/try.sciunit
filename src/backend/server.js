@@ -41,9 +41,9 @@ console.log('Awaiting WebSocket connection...');
 
 webSocketServer.on('connection', socket => {
 	session.start(socket);
-	// console.log(socket,"started connection!!!!!!!!!!!!!!!!!!!!!!");
+	console.log(socket,"started connection!!!!!!!!!!!!!!!!!!!!!!");
 	socket.on('close', ()=>{
-		// console.log(webSocketServer,"socket closed!!!!!!!!!!!!!!!!!!!!!");
+		console.log(webSocketServer,"socket closed!!!!!!!!!!!!!!!!!!!!!");
 	})
 });
 // webSocketServer.close();
