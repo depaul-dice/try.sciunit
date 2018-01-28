@@ -5,14 +5,14 @@ const PORT = 9000;
 
 const http = require('http');
 const express = require('express');
-const { Server } = require('socket.io');
+const Server = require('socket.io');
 const path = require('path');
 
 const session = require('./session');
 
 const assets = express();
 const assetsServer = http.createServer(assets);
-const webSocketServer = new Server({ server: assetsServer });
+const webSocketServer = Server( assetsServer );
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
 assets.get('/*', (req, res) => {
