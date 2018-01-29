@@ -3,8 +3,8 @@
 const PORT = 9000;
 // const WEBSOCKET_PORT = 9002;
 
-
-const assets = require('express')();
+const express = require('express');
+const assets = express();
 const http = require('http');
 
 const path = require('path');
