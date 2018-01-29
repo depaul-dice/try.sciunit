@@ -10,9 +10,8 @@ const http = require('http');
 const path = require('path');
 const session = require('./session');
 
-
 const assetsServer = http.Server(assets);
-const webSocketServer = require('socket.io')(assetsServer);
+const io = require('socket.io')(assetsServer);
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
 assets.get('/*', (req, res) => {
@@ -39,14 +38,14 @@ assetsServer.listen(PORT, () => {
 
 console.log('Awaiting WebSocket connection...');
 
-webSocketServer.on('connection', function(socket){
+io.on('connection', function(socket){
+	console.log("hello from webSocketServer");
 	session.start(socket);
 	console.log(socket,"started connection!!!!!!!!!!!!!!!!!!!!!!");
 	socket.on('close', ()=>{
-		console.log(webSocketServer,"socket closed!!!!!!!!!!!!!!!!!!!!!");
+		console.log(io,"socket closed!!!!!!!!!!!!!!!!!!!!!");
 	})
 });
-// webSocketServer.close();
 
 process.on('SIGTERM', () => {
 	assetsServer.close(() => {
