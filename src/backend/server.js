@@ -39,7 +39,7 @@ assetsServer.listen(PORT, () => {
 
 console.log('Awaiting WebSocket connection...');
 
-webSocketServer.on('connection', (socket) => {
+webSocketServer.on('connection', function(socket){
 	session.start(socket);
 	console.log(socket,"started connection!!!!!!!!!!!!!!!!!!!!!!");
 	socket.on('close', ()=>{
