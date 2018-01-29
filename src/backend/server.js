@@ -12,7 +12,7 @@ const session = require('./session');
 
 const assets = express();
 const assetsServer = http.createServer(assets);
-const webSocketServer = Server( assetsServer );
+const webSocketServer = new Server( assetsServer );
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
 assets.get('/*', (req, res) => {
