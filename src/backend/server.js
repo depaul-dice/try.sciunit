@@ -3,15 +3,15 @@
 const PORT = 9000;
 // const WEBSOCKET_PORT = 9002;
 
+
+const assets = require('express')();
 const http = require('http');
-const express = require('express');
 
 const path = require('path');
-
 const session = require('./session');
 
-const assets = express();
-const assetsServer = http.createServer(assets);
+
+const assetsServer = http.Server(assets);
 const webSocketServer = require('socket.io')(assetsServer);
 // const webSocketServer = new Server({ port: WEBSOCKET_PORT });
 
