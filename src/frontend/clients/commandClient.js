@@ -8,6 +8,11 @@ const spawn = require('child_process').spawn;
 var loc = window.location, new_uri;
 var workspace_relocate_path = [];
 
+
+//socket.io implementation
+const io = require('socket.io-client');
+
+
 function CommandClient() {
 
 	if (loc.protocol === "https:"){
@@ -20,7 +25,8 @@ function CommandClient() {
 	new_uri += "//" + loc.host;
 	new_uri += loc.pathname;
 	// console.log(new_uri);
-	this.webSocket = new WebSocket(new_uri);
+	// this.webSocket = new WebSocket(new_uri);
+	this.webSocket = io(new_uri);
 	this.webSocket.onmessage = message => this.onMessage(JSON.parse(message.data));
 }
 
