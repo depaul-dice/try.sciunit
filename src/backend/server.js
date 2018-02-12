@@ -28,7 +28,7 @@ assets.use('/', express.static(__dirname + '/../frontend'));
 assetsServer.listen(PORT, () => {
 	console.log(`Frontend running on port ${PORT}...`);
 	// console.log("process.env: ", process.env);
-	console.log(process);
+	// console.log(process);
 	if (process.send) {
 		process.send({ isBackendReady: true });
 
