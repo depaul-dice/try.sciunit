@@ -33,7 +33,7 @@ function CommandClient() {
 CommandClient.prototype = Object.create(EventEmitter.prototype);
 
 CommandClient.prototype.begin = function begin(command) {
-	if (this.webSocket.readyState === WebSocket.CONNECTING) {
+	if (this.webSocket.readyState === WebSocket.OPEN) {
 		this.webSocket.onopen = () => {
 			this.webSocket.send(JSON.stringify({ command }));
 		}
