@@ -2,7 +2,7 @@
 
 const CommandRunner = require('./CommandRunner');
 const commandRunner = new CommandRunner();
-const specialCommands = require('./specialCommands');
+// const specialCommands = require('./specialCommands');
 const server = require('./server');
 
 
@@ -52,14 +52,6 @@ module.exports = {
 
 				webSocket.send(JSON.stringify({ error: 'Invalid payload' }));
 				webSocket.send(JSON.stringify({ exitCode: -1 }));
-				return;
-			}
-
-			if (specialCommands[command]) {
-				specialCommands[command].then(result => {
-					webSocket.send(JSON.stringify(result));
-				});
-
 				return;
 			}
 
